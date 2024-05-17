@@ -1,9 +1,13 @@
 
 
+
+using Proyecto_II.Services;
+using Services;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddScoped<ISvCita, SvCita>();
+builder.Services.AddScoped<SvICita, ICita>();
 builder.Services.AddScoped<ISvBook, SvBook>();
 
 builder.Services.AddControllers();

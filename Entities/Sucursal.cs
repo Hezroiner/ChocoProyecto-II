@@ -6,6 +6,8 @@
         public DateTime FechaHora { get; set; }
         public string Lugar { get; set; }
         public string Status { get; set; }
+
+
         public int PacienteId { get; set; }
         public Paciente Paciente { get; set; }
         public int TipoCitaId { get; set; }
