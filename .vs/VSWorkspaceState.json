@@ -4,8 +4,10 @@
     "\\Entities",
     "\\Services",
     "\\Services\\Cita",
-    "\\Services\\MyDbContext"
+    "\\Services\\MyDbContext",
+    "\\Services\\Paciente",
+    "\\Services\\User"
   ],
-  "SelectedNode": "\\Entities\\Sucursal.cs",
+  "SelectedNode": "\\Program.cs",
   "PreviewInSolutionExplorer": false
 }

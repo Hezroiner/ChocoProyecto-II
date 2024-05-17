@@ -1,3 +1,6 @@
+using Microsoft.EntityFrameworkCore;
+using Proyecto_II.Entities;
+
 namespace Services.MyDbContext
 {
     public class MyContext : DbContext
@@ -19,18 +22,16 @@ namespace Services.MyDbContext
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             //Paciente y Cita
-            modelBuilder.Entity<Paciente>()
-                .HasOne(paciente => paciente.Cita)
-                .WithMany(cita => cita.Pacientes);
-                .HasForeignKey(cita => cita.PacienteId)
+            modelBuilder.Entity<Cita>()
+                .HasOne(cita => cita.Paciente)
+                .WithMany(paciente => paciente.Citas)
+                .HasForeignKey(cita => cita.PacienteId);
 
             //Cita y Sucursal
                 modelBuilder.Entity<Cita>()
                 .HasOne(cita => cita.Sucursal)
                 .WithMany(sucursal => sucursal.Citas)
                 .HasForeignKey(cita => cita.SucursalId);
-            
-                .HasForeignKey(cita => cita.TipoCitaId);
 
             // User, Role y UserRole (relación muchos a muchos)
             modelBuilder.Entity<UserRole>()
