@@ -1,0 +1,11 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Entities",
+    "\\Services",
+    "\\Services\\Cita",
+    "\\Services\\MyDbContext"
+  ],
+  "SelectedNode": "\\Entities\\Sucursal.cs",
+  "PreviewInSolutionExplorer": false
+}
