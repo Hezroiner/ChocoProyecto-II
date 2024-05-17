@@ -1158,6 +1158,29 @@
             "rid": "win"
           }
         }
+      },
+      "Entitites/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Entitites.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Entitites.dll": {}
+        }
+      },
+      "Services/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Entitites": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Services.dll": {}
+        }
       }
     }
   },
@@ -3289,6 +3312,16 @@
         "system.windows.extensions.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "Entitites/1.0.0": {
+      "type": "project",
+      "path": "../Entitites/Entitites.csproj",
+      "msbuildProject": "../Entitites/Entitites.csproj"
+    },
+    "Services/1.0.0": {
+      "type": "project",
+      "path": "../Services/Services.csproj",
+      "msbuildProject": "../Services/Services.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -3298,6 +3331,7 @@
       "Microsoft.EntityFrameworkCore >= 7.0.19",
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.19",
       "Microsoft.Extensions.DependencyInjection >= 7.0.0",
+      "Services >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.4.0"
     ]
   },
@@ -3327,7 +3361,11 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Documentos\\Programacion\\Lenguajes\\C#\\Services\\Services.csproj": {
+              "projectPath": "C:\\Documentos\\Programacion\\Lenguajes\\C#\\Services\\Services.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
