@@ -12,6 +12,7 @@
         public TipoCita TipoCita { get; set; }
         public int SucursalId { get; set; }
         public Sucursal Sucursales { get; set; }
+        public List<Cita> Citas { get; set; }
 
     }
 }
