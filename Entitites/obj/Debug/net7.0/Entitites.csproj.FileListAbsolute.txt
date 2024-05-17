@@ -1,0 +1,12 @@
+C:\Documentos\Programacion\Lenguajes\C#\Entitites\bin\Debug\net7.0\Entitites.deps.json
+C:\Documentos\Programacion\Lenguajes\C#\Entitites\bin\Debug\net7.0\Entitites.dll
+C:\Documentos\Programacion\Lenguajes\C#\Entitites\bin\Debug\net7.0\Entitites.pdb
+C:\Documentos\Programacion\Lenguajes\C#\Entitites\obj\Debug\net7.0\Entitites.csproj.AssemblyReference.cache
+C:\Documentos\Programacion\Lenguajes\C#\Entitites\obj\Debug\net7.0\Entitites.GeneratedMSBuildEditorConfig.editorconfig
+C:\Documentos\Programacion\Lenguajes\C#\Entitites\obj\Debug\net7.0\Entitites.AssemblyInfoInputs.cache
+C:\Documentos\Programacion\Lenguajes\C#\Entitites\obj\Debug\net7.0\Entitites.AssemblyInfo.cs
+C:\Documentos\Programacion\Lenguajes\C#\Entitites\obj\Debug\net7.0\Entitites.csproj.CoreCompileInputs.cache
+C:\Documentos\Programacion\Lenguajes\C#\Entitites\obj\Debug\net7.0\Entitites.dll
+C:\Documentos\Programacion\Lenguajes\C#\Entitites\obj\Debug\net7.0\refint\Entitites.dll
+C:\Documentos\Programacion\Lenguajes\C#\Entitites\obj\Debug\net7.0\Entitites.pdb
+C:\Documentos\Programacion\Lenguajes\C#\Entitites\obj\Debug\net7.0\ref\Entitites.dll
