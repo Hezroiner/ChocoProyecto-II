@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "rpImbRBHxFZhKovbDbTSYrbnf1nZbYoN61KqNhjt+eymjk1nQ64Lp1rvZ1Yhx8wlWf6JViWQnEYGXekBm6BdwQ==",
+  "dgSpecHash": "lATZEPXF42hOS50hg29IQFhnd4Tqnfk904pyySMPCRKCQZHw1RzVrHR9efrLkW2y1uIMAoFTkeWzfH4d44GvfQ==",
   "success": true,
-  "projectFilePath": "C:\\Documentos\\Programacion\\Lenguajes\\C#\\Proyecto II\\Proyecto II.csproj",
+  "projectFilePath": "C:\\Documentos\\Programacion\\Lenguajes\\C#\\Proyect II\\ChocoProyecto-II\\Proyecto II\\Proyecto II.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Hezron\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\Hezron\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
