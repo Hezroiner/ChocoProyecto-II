@@ -1,0 +1,7 @@
+C:\Documentos\Programacion\Lenguajes\C#\Proyecto II\obj\Debug\net7.0\Proyecto II.csproj.AssemblyReference.cache
+C:\Documentos\Programacion\Lenguajes\C#\Proyecto II\obj\Debug\net7.0\Proyecto II.GeneratedMSBuildEditorConfig.editorconfig
+C:\Documentos\Programacion\Lenguajes\C#\Proyecto II\obj\Debug\net7.0\Proyecto II.AssemblyInfoInputs.cache
+C:\Documentos\Programacion\Lenguajes\C#\Proyecto II\obj\Debug\net7.0\Proyecto II.AssemblyInfo.cs
+C:\Documentos\Programacion\Lenguajes\C#\Proyecto II\obj\Debug\net7.0\Proyecto II.csproj.CoreCompileInputs.cache
+C:\Documentos\Programacion\Lenguajes\C#\Proyecto II\obj\Debug\net7.0\Proyecto II.MvcApplicationPartsAssemblyInfo.cs
+C:\Documentos\Programacion\Lenguajes\C#\Proyecto II\obj\Debug\net7.0\Proyecto II.MvcApplicationPartsAssemblyInfo.cache
