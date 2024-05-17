@@ -56,7 +56,7 @@ namespace Proyecto_II.Services
 
             if (cita == null)
             {
-                // Manejo de la situación cuando no se encuentra la entidad
+                // Manejo de la situación cuando no se encuentra la entidad choco
                 throw new KeyNotFoundException("Cita not found");
             }
 

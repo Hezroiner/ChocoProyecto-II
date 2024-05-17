@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Documentos\\Programacion\\Lenguajes\\C#\\Services\\Services.csproj": {}
+    "C:\\Documentos\\Programacion\\Lenguajes\\C#\\Proyect II\\ChocoProyecto-II\\Services\\Services.csproj": {}
   },
   "projects": {
-    "C:\\Documentos\\Programacion\\Lenguajes\\C#\\Entitites\\Entitites.csproj": {
+    "C:\\Documentos\\Programacion\\Lenguajes\\C#\\Proyect II\\ChocoProyecto-II\\Entitites\\Entitites.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Documentos\\Programacion\\Lenguajes\\C#\\Entitites\\Entitites.csproj",
+        "projectUniqueName": "C:\\Documentos\\Programacion\\Lenguajes\\C#\\Proyect II\\ChocoProyecto-II\\Entitites\\Entitites.csproj",
         "projectName": "Entitites",
-        "projectPath": "C:\\Documentos\\Programacion\\Lenguajes\\C#\\Entitites\\Entitites.csproj",
+        "projectPath": "C:\\Documentos\\Programacion\\Lenguajes\\C#\\Proyect II\\ChocoProyecto-II\\Entitites\\Entitites.csproj",
         "packagesPath": "C:\\Users\\Hezron\\.nuget\\packages\\",
-        "outputPath": "C:\\Documentos\\Programacion\\Lenguajes\\C#\\Entitites\\obj\\",
+        "outputPath": "C:\\Documentos\\Programacion\\Lenguajes\\C#\\Proyect II\\ChocoProyecto-II\\Entitites\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Hezron\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -59,14 +59,14 @@
         }
       }
     },
-    "C:\\Documentos\\Programacion\\Lenguajes\\C#\\Services\\Services.csproj": {
+    "C:\\Documentos\\Programacion\\Lenguajes\\C#\\Proyect II\\ChocoProyecto-II\\Services\\Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Documentos\\Programacion\\Lenguajes\\C#\\Services\\Services.csproj",
+        "projectUniqueName": "C:\\Documentos\\Programacion\\Lenguajes\\C#\\Proyect II\\ChocoProyecto-II\\Services\\Services.csproj",
         "projectName": "Services",
-        "projectPath": "C:\\Documentos\\Programacion\\Lenguajes\\C#\\Services\\Services.csproj",
+        "projectPath": "C:\\Documentos\\Programacion\\Lenguajes\\C#\\Proyect II\\ChocoProyecto-II\\Services\\Services.csproj",
         "packagesPath": "C:\\Users\\Hezron\\.nuget\\packages\\",
-        "outputPath": "C:\\Documentos\\Programacion\\Lenguajes\\C#\\Services\\obj\\",
+        "outputPath": "C:\\Documentos\\Programacion\\Lenguajes\\C#\\Proyect II\\ChocoProyecto-II\\Services\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Hezron\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -83,8 +83,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Documentos\\Programacion\\Lenguajes\\C#\\Entitites\\Entitites.csproj": {
-                "projectPath": "C:\\Documentos\\Programacion\\Lenguajes\\C#\\Entitites\\Entitites.csproj"
+              "C:\\Documentos\\Programacion\\Lenguajes\\C#\\Proyect II\\ChocoProyecto-II\\Entitites\\Entitites.csproj": {
+                "projectPath": "C:\\Documentos\\Programacion\\Lenguajes\\C#\\Proyect II\\ChocoProyecto-II\\Entitites\\Entitites.csproj"
               }
             }
           }

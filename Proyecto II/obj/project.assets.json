@@ -3343,11 +3343,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Documentos\\Programacion\\Lenguajes\\C#\\Proyecto II\\Proyecto II.csproj",
+      "projectUniqueName": "C:\\Documentos\\Programacion\\Lenguajes\\C#\\Proyect II\\ChocoProyecto-II\\Proyecto II\\Proyecto II.csproj",
       "projectName": "Proyecto II",
-      "projectPath": "C:\\Documentos\\Programacion\\Lenguajes\\C#\\Proyecto II\\Proyecto II.csproj",
+      "projectPath": "C:\\Documentos\\Programacion\\Lenguajes\\C#\\Proyect II\\ChocoProyecto-II\\Proyecto II\\Proyecto II.csproj",
       "packagesPath": "C:\\Users\\Hezron\\.nuget\\packages\\",
-      "outputPath": "C:\\Documentos\\Programacion\\Lenguajes\\C#\\Proyecto II\\obj\\",
+      "outputPath": "C:\\Documentos\\Programacion\\Lenguajes\\C#\\Proyect II\\ChocoProyecto-II\\Proyecto II\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Hezron\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -3364,8 +3364,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Documentos\\Programacion\\Lenguajes\\C#\\Services\\Services.csproj": {
-              "projectPath": "C:\\Documentos\\Programacion\\Lenguajes\\C#\\Services\\Services.csproj"
+            "C:\\Documentos\\Programacion\\Lenguajes\\C#\\Proyect II\\ChocoProyecto-II\\Services\\Services.csproj": {
+              "projectPath": "C:\\Documentos\\Programacion\\Lenguajes\\C#\\Proyect II\\ChocoProyecto-II\\Services\\Services.csproj"
             }
           }
         }
