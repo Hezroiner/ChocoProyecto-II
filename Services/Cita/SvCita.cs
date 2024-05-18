@@ -70,7 +70,7 @@ namespace Proyecto_II.Services
             if (updateCita is not null) 
             {
                 updateCita.FechaHora = newCita.FechaHora;
-                updateCita.FechaHora = newCita.FechaHora;
+                updateCita.Lugar = newCita.Lugar;
                 updateCita.Status = newCita.Status;
 
                 _myContext.Citas.Update(updateCita);
