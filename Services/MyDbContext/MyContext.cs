@@ -42,6 +42,7 @@ namespace Services.MyDbContext
                 .WithMany(user => user.UserRoles)
                 .HasForeignKey(userRole => userRole.UserId);
 
+
             modelBuilder.Entity<UserRole>()
                 .HasOne(userRole => userRole.Role)
                 .WithMany(role => role.UserRoles)
