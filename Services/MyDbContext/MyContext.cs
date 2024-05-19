@@ -46,6 +46,7 @@ namespace Services.MyDbContext
                 .HasOne(userRole => userRole.Role)
                 .WithMany(role => role.UserRoles)
                 .HasForeignKey(userRole => userRole.RoleId);
+
         }
     }
 }
