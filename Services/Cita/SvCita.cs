@@ -40,7 +40,7 @@ namespace Proyecto_II.Services
         public List<Cita> GetAll()
         {
             return _myContext.Citas
-            .Include(cita => cita.Paciente)    // Incluye la relación con Paciente
+            .Include(cita => cita.User)    // Incluye la relación con User
             .Include(cita => cita.TipoCita)    // Incluye la relación con TipoCita
             .Include(cita => cita.Sucursal)    // Incluye la relación con Sucursal
             .ToList();
@@ -49,7 +49,7 @@ namespace Proyecto_II.Services
         public Cita GetById(int id)
         {
             var cita = _myContext.Citas
-            .Include(cita => cita.Paciente)
+            .Include(cita => cita.User)
             .Include(cita => cita.TipoCita)
             .Include(cita => cita.Sucursal)
             .FirstOrDefault(cita => cita.Id == id);

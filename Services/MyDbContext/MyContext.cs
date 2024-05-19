@@ -10,22 +10,21 @@ namespace Services.MyDbContext
             //base.OnConfiguring(optionsBuilder);
             optionsBuilder.UseSqlServer("Server=MSI;Database=apitest;Trusted_Connection=True; MultipleActiveResultSets=true;TrustServerCertificate=True");
         }
-        public DbSet<Paciente> Pacientes { get; set; }
+        
         public DbSet<Cita> Citas { get; set; }
         public DbSet<Sucursal> Sucursales { get; set; }
         public DbSet<TipoCita> TiposCita { get; set; }
         public DbSet<User> Users { get; set; }
         public DbSet<Role> Roles { get; set; }
-        public DbSet<UserRole> UserRoles { get; set; }
-
+       
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            //Paciente y Cita
+            //User y Cita
             modelBuilder.Entity<Cita>()
-                .HasOne(cita => cita.Paciente)
-                .WithMany(paciente => paciente.Citas)
-                .HasForeignKey(cita => cita.PacienteId);
+                .HasOne(cita => cita.User)
+                .WithMany(user => user.Citas)
+                .HasForeignKey(cita => cita.UserId);
 
             //Cita y Sucursal
                 modelBuilder.Entity<Cita>()
@@ -33,20 +32,11 @@ namespace Services.MyDbContext
                 .WithMany(sucursal => sucursal.Citas)
                 .HasForeignKey(cita => cita.SucursalId);
 
-            // User, Role y UserRole (relación muchos a muchos)
-            modelBuilder.Entity<UserRole>()
-                .HasKey(userRole => new { userRole.UserId, userRole.RoleId });
-
-            modelBuilder.Entity<UserRole>()
-                .HasOne(userRole => userRole.User)
-                .WithMany(user => user.UserRoles)
-                .HasForeignKey(userRole => userRole.UserId);
-
-
-            modelBuilder.Entity<UserRole>()
-                .HasOne(userRole => userRole.Role)
-                .WithMany(role => role.UserRoles)
-                .HasForeignKey(userRole => userRole.RoleId);
+            //Relación uno a muchos entre User y Role
+            modelBuilder.Entity<User>()
+                .HasOne(user => user.Role)
+                .WithMany(role => role.Users)
+                .HasForeignKey(user => user.RoleId);
         }
     }
 }
