@@ -1,7 +1,13 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Entities",
+    "\\Services",
+    "\\Services\\Cita",
+    "\\Services\\MyDbContext",
+    "\\Services\\Paciente",
+    "\\Services\\User"
   ],
-  "SelectedNode": "\\Proyecto II.sln",
+  "SelectedNode": "\\Program.cs",
   "PreviewInSolutionExplorer": false
 }
