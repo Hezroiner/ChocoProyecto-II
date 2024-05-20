@@ -17,14 +17,14 @@ namespace Proyecto_II.Controllers
 
         //Get All
         [HttpGet]
-        public IEnumerable<User> Get()
+        public IEnumerable<User> GetAll()
         {
             return _svUser.GetAll();
         }
 
         //GetById
         [HttpGet("{id}")]
-        public User Get(int id)
+        public User GetById(int id)
         {
             return _svUser.GetById(id);
         }

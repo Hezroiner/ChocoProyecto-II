@@ -1,5 +1,7 @@
+using Microsoft.EntityFrameworkCore;
 using Proyecto_II.Services;
 using Services;
+using Services.MyDbContext;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -7,7 +9,11 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddScoped<ICita, SvCita>();
 builder.Services.AddScoped<ISucursal, SvSucursal>();
 builder.Services.AddScoped<ITipoCita, SvTipoCita>();
+builder.Services.AddScoped<IUser, SvUser>();
+builder.Services.AddScoped<IRole, SvRole>();
 
+//builder.Services.AddDbContext<MyContext>(options =>
+//    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 builder.Services.AddControllers()
     .AddNewtonsoftJson(x =>

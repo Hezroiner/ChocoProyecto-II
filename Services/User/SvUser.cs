@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿
+using Microsoft.EntityFrameworkCore;
 using Proyecto_II.Entities;
 using Services;
 using Services.MyDbContext;
@@ -9,9 +10,9 @@ namespace Proyecto_II.Services
     {
         private MyContext _myContext = default!;
 
-        public SvUser(MyContext context)
+        public SvUser()
         {
-            _myContext = context;
+            _myContext = new MyContext();
         }
 
         public List<User> GetAll()

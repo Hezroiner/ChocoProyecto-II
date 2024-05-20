@@ -8,9 +8,9 @@ namespace Proyecto_II.Services
     {
         private  MyContext _myContext = default!;
 
-        public SvRole(MyContext context)
+        public SvRole()
         {
-            _myContext = context;
+            _myContext = new MyContext();
         }
 
         public List<Role> GetAll()

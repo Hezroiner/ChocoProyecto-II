@@ -37,6 +37,16 @@ namespace Services.MyDbContext
                 .HasOne(user => user.Role)
                 .WithMany(role => role.Users)
                 .HasForeignKey(user => user.RoleId);
+
+
+           //Insercion de los tipos de cita
+
+           //modelBuilder.Entity<TipoCita>().HasData(
+           //new TipoCita { Id = 1, Nombre = "Medicina General" },
+           //new TipoCita { Id = 2, Nombre = "Odontología" },
+           //new TipoCita { Id = 3, Nombre = "Pediatría" },
+           //new TipoCita { Id = 4, Nombre = "Neurología" }
+            //);
         }
     }
 }
