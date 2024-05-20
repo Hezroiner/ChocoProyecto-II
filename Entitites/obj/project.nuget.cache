@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< Updated upstream
   "dgSpecHash": "FlDcc3fHNphhWDSdO1zSoFX00Edol71Joqrioimsh3nCdngt5j2ExoaSpCBhm4N5533VmtMk7VbICfmf3GtgNQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\ozsan\\OneDrive\\Escritorio\\V Semestre\\Progra IV\\Proyecto 2\\Entitites\\Entitites.csproj",
+=======
+  "dgSpecHash": "s1wSnOx2CNDk2onGkMzl0GTw2m00gxIKYZwypmDicHMdGs39I0g0NEwjdZrJTkGzdKBZIumbNZ+bE9QTIopleg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ozsan\\OneDrive\\Escritorio\\V Semestre\\Progra IV\\Project_2\\Entitites\\Entitites.csproj",
+>>>>>>> Stashed changes
   "expectedPackageFiles": [],
   "logs": []
 }
