@@ -532,3 +532,16 @@ C:\Users\ozsan\OneDrive\Escritorio\V Semestre\Progra IV\Proyecto 2\Proyecto II\o
 C:\Users\ozsan\OneDrive\Escritorio\V Semestre\Progra IV\Proyecto 2\Proyecto II\obj\Debug\net7.0\Proyecto II.pdb
 C:\Users\ozsan\OneDrive\Escritorio\V Semestre\Progra IV\Proyecto 2\Proyecto II\obj\Debug\net7.0\Proyecto II.genruntimeconfig.cache
 C:\Users\ozsan\OneDrive\Escritorio\V Semestre\Progra IV\Proyecto 2\Proyecto II\obj\Debug\net7.0\ref\Proyecto II.dll
+C:\Users\ozsan\OneDrive\Escritorio\V Semestre\Progra IV\Project_2\Proyecto II\obj\Debug\net7.0\Proyecto II.csproj.AssemblyReference.cache
+C:\Users\ozsan\OneDrive\Escritorio\V Semestre\Progra IV\Project_2\Proyecto II\obj\Debug\net7.0\Proyecto II.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ozsan\OneDrive\Escritorio\V Semestre\Progra IV\Project_2\Proyecto II\obj\Debug\net7.0\Proyecto II.AssemblyInfoInputs.cache
+C:\Users\ozsan\OneDrive\Escritorio\V Semestre\Progra IV\Project_2\Proyecto II\obj\Debug\net7.0\Proyecto II.AssemblyInfo.cs
+C:\Users\ozsan\OneDrive\Escritorio\V Semestre\Progra IV\Project_2\Proyecto II\obj\Debug\net7.0\Proyecto II.csproj.CoreCompileInputs.cache
+C:\Users\ozsan\OneDrive\Escritorio\V Semestre\Progra IV\Project_2\Proyecto II\obj\Debug\net7.0\Proyecto II.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\ozsan\OneDrive\Escritorio\V Semestre\Progra IV\Project_2\Proyecto II\obj\Debug\net7.0\Proyecto II.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\ozsan\OneDrive\Escritorio\V Semestre\Progra IV\Project_2\Proyecto II\obj\Debug\net7.0\Proyecto II.RazorAssemblyInfo.cache
+C:\Users\ozsan\OneDrive\Escritorio\V Semestre\Progra IV\Project_2\Proyecto II\obj\Debug\net7.0\Proyecto II.RazorAssemblyInfo.cs
+C:\Users\ozsan\OneDrive\Escritorio\V Semestre\Progra IV\Project_2\Proyecto II\obj\Debug\net7.0\Proyecto II.sourcelink.json
+C:\Users\ozsan\OneDrive\Escritorio\V Semestre\Progra IV\Project_2\Proyecto II\obj\Debug\net7.0\Proyecto II.dll
+C:\Users\ozsan\OneDrive\Escritorio\V Semestre\Progra IV\Project_2\Proyecto II\obj\Debug\net7.0\refint\Proyecto II.dll
+C:\Users\ozsan\OneDrive\Escritorio\V Semestre\Progra IV\Project_2\Proyecto II\obj\Debug\net7.0\Proyecto II.pdb

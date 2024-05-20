@@ -1,24 +1,6 @@
 {
   "format": 1,
   "restore": {
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-    "C:\\Users\\ozsan\\OneDrive\\Escritorio\\V Semestre\\Progra IV\\Proyecto 2\\Proyecto II\\Proyecto II.csproj": {}
-=======
-    "C:\\Documentos\\Programacion\\Lenguajes\\C#\\Proyect II\\ChocoProyecto-II\\Proyecto II\\Proyecto II.csproj": {}
->>>>>>> Hezroiner
-  },
-  "projects": {
-    "C:\\Documentos\\Programacion\\Lenguajes\\C#\\Proyect II\\ChocoProyecto-II\\Entitites\\Entitites.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Documentos\\Programacion\\Lenguajes\\C#\\Proyect II\\ChocoProyecto-II\\Entitites\\Entitites.csproj",
-        "projectName": "Entitites",
-<<<<<<< HEAD
-        "projectPath": "C:\\Users\\ozsan\\OneDrive\\Escritorio\\V Semestre\\Progra IV\\Proyecto 2\\Entitites\\Entitites.csproj",
-        "packagesPath": "C:\\Users\\ozsan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ozsan\\OneDrive\\Escritorio\\V Semestre\\Progra IV\\Proyecto 2\\Entitites\\obj\\",
-=======
     "C:\\Users\\ozsan\\OneDrive\\Escritorio\\V Semestre\\Progra IV\\Project_2\\Proyecto II\\Proyecto II.csproj": {}
   },
   "projects": {
@@ -30,15 +12,13 @@
         "projectPath": "C:\\Users\\ozsan\\OneDrive\\Escritorio\\V Semestre\\Progra IV\\Project_2\\Entitites\\Entitites.csproj",
         "packagesPath": "C:\\Users\\ozsan\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\ozsan\\OneDrive\\Escritorio\\V Semestre\\Progra IV\\Project_2\\Entitites\\obj\\",
->>>>>>> Stashed changes
-=======
-        "projectPath": "C:\\Documentos\\Programacion\\Lenguajes\\C#\\Proyect II\\ChocoProyecto-II\\Entitites\\Entitites.csproj",
-        "packagesPath": "C:\\Users\\Hezron\\.nuget\\packages\\",
-        "outputPath": "C:\\Documentos\\Programacion\\Lenguajes\\C#\\Proyect II\\ChocoProyecto-II\\Entitites\\obj\\",
->>>>>>> Hezroiner
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Hezron\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ozsan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -58,6 +38,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -79,25 +64,10 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
         }
       }
     },
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-    "C:\\Users\\ozsan\\OneDrive\\Escritorio\\V Semestre\\Progra IV\\Proyecto 2\\Proyecto II\\Proyecto II.csproj": {
-=======
-    "C:\\Documentos\\Programacion\\Lenguajes\\C#\\Proyect II\\ChocoProyecto-II\\Proyecto II\\Proyecto II.csproj": {
->>>>>>> Hezroiner
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Documentos\\Programacion\\Lenguajes\\C#\\Proyect II\\ChocoProyecto-II\\Proyecto II\\Proyecto II.csproj",
-        "projectName": "Proyecto II",
-<<<<<<< HEAD
-        "projectPath": "C:\\Users\\ozsan\\OneDrive\\Escritorio\\V Semestre\\Progra IV\\Proyecto 2\\Proyecto II\\Proyecto II.csproj",
-        "packagesPath": "C:\\Users\\ozsan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ozsan\\OneDrive\\Escritorio\\V Semestre\\Progra IV\\Proyecto 2\\Proyecto II\\obj\\",
-=======
     "C:\\Users\\ozsan\\OneDrive\\Escritorio\\V Semestre\\Progra IV\\Project_2\\Proyecto II\\Proyecto II.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -106,15 +76,13 @@
         "projectPath": "C:\\Users\\ozsan\\OneDrive\\Escritorio\\V Semestre\\Progra IV\\Project_2\\Proyecto II\\Proyecto II.csproj",
         "packagesPath": "C:\\Users\\ozsan\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\ozsan\\OneDrive\\Escritorio\\V Semestre\\Progra IV\\Project_2\\Proyecto II\\obj\\",
->>>>>>> Stashed changes
-=======
-        "projectPath": "C:\\Documentos\\Programacion\\Lenguajes\\C#\\Proyect II\\ChocoProyecto-II\\Proyecto II\\Proyecto II.csproj",
-        "packagesPath": "C:\\Users\\Hezron\\.nuget\\packages\\",
-        "outputPath": "C:\\Documentos\\Programacion\\Lenguajes\\C#\\Proyect II\\ChocoProyecto-II\\Proyecto II\\obj\\",
->>>>>>> Hezroiner
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Hezron\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ozsan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -128,21 +96,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-              "C:\\Users\\ozsan\\OneDrive\\Escritorio\\V Semestre\\Progra IV\\Proyecto 2\\Services\\Services.csproj": {
-                "projectPath": "C:\\Users\\ozsan\\OneDrive\\Escritorio\\V Semestre\\Progra IV\\Proyecto 2\\Services\\Services.csproj"
-=======
-              "C:\\Users\\ozsan\\OneDrive\\Escritorio\\V Semestre\\Progra IV\\Project_2\\Entitites\\Entitites.csproj": {
-                "projectPath": "C:\\Users\\ozsan\\OneDrive\\Escritorio\\V Semestre\\Progra IV\\Project_2\\Entitites\\Entitites.csproj"
-              },
               "C:\\Users\\ozsan\\OneDrive\\Escritorio\\V Semestre\\Progra IV\\Project_2\\Services\\Services.csproj": {
                 "projectPath": "C:\\Users\\ozsan\\OneDrive\\Escritorio\\V Semestre\\Progra IV\\Project_2\\Services\\Services.csproj"
->>>>>>> Stashed changes
-=======
-              "C:\\Documentos\\Programacion\\Lenguajes\\C#\\Proyect II\\ChocoProyecto-II\\Services\\Services.csproj": {
-                "projectPath": "C:\\Documentos\\Programacion\\Lenguajes\\C#\\Proyect II\\ChocoProyecto-II\\Services\\Services.csproj"
->>>>>>> Hezroiner
               }
             }
           }
@@ -151,6 +106,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -211,25 +171,10 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
         }
       }
     },
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-    "C:\\Users\\ozsan\\OneDrive\\Escritorio\\V Semestre\\Progra IV\\Proyecto 2\\Services\\Services.csproj": {
-=======
-    "C:\\Documentos\\Programacion\\Lenguajes\\C#\\Proyect II\\ChocoProyecto-II\\Services\\Services.csproj": {
->>>>>>> Hezroiner
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Documentos\\Programacion\\Lenguajes\\C#\\Proyect II\\ChocoProyecto-II\\Services\\Services.csproj",
-        "projectName": "Services",
-<<<<<<< HEAD
-        "projectPath": "C:\\Users\\ozsan\\OneDrive\\Escritorio\\V Semestre\\Progra IV\\Proyecto 2\\Services\\Services.csproj",
-        "packagesPath": "C:\\Users\\ozsan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ozsan\\OneDrive\\Escritorio\\V Semestre\\Progra IV\\Proyecto 2\\Services\\obj\\",
-=======
     "C:\\Users\\ozsan\\OneDrive\\Escritorio\\V Semestre\\Progra IV\\Project_2\\Services\\Services.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -238,15 +183,13 @@
         "projectPath": "C:\\Users\\ozsan\\OneDrive\\Escritorio\\V Semestre\\Progra IV\\Project_2\\Services\\Services.csproj",
         "packagesPath": "C:\\Users\\ozsan\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\ozsan\\OneDrive\\Escritorio\\V Semestre\\Progra IV\\Project_2\\Services\\obj\\",
->>>>>>> Stashed changes
-=======
-        "projectPath": "C:\\Documentos\\Programacion\\Lenguajes\\C#\\Proyect II\\ChocoProyecto-II\\Services\\Services.csproj",
-        "packagesPath": "C:\\Users\\Hezron\\.nuget\\packages\\",
-        "outputPath": "C:\\Documentos\\Programacion\\Lenguajes\\C#\\Proyect II\\ChocoProyecto-II\\Services\\obj\\",
->>>>>>> Hezroiner
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Hezron\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ozsan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -260,18 +203,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-              "C:\\Users\\ozsan\\OneDrive\\Escritorio\\V Semestre\\Progra IV\\Proyecto 2\\Entitites\\Entitites.csproj": {
-                "projectPath": "C:\\Users\\ozsan\\OneDrive\\Escritorio\\V Semestre\\Progra IV\\Proyecto 2\\Entitites\\Entitites.csproj"
-=======
               "C:\\Users\\ozsan\\OneDrive\\Escritorio\\V Semestre\\Progra IV\\Project_2\\Entitites\\Entitites.csproj": {
                 "projectPath": "C:\\Users\\ozsan\\OneDrive\\Escritorio\\V Semestre\\Progra IV\\Project_2\\Entitites\\Entitites.csproj"
->>>>>>> Stashed changes
-=======
-              "C:\\Documentos\\Programacion\\Lenguajes\\C#\\Proyect II\\ChocoProyecto-II\\Entitites\\Entitites.csproj": {
-                "projectPath": "C:\\Documentos\\Programacion\\Lenguajes\\C#\\Proyect II\\ChocoProyecto-II\\Entitites\\Entitites.csproj"
->>>>>>> Hezroiner
               }
             }
           }
@@ -280,12 +213,21 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.4.4, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[7.0.19, )"
@@ -311,7 +253,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
         }
       }
     }
