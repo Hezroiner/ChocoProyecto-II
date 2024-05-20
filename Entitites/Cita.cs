@@ -6,7 +6,6 @@
         public DateTime FechaHora { get; set; }
         public string Lugar { get; set; }
         public string Status { get; set; }
-
         public int UserId { get; set; }
         public User User { get; set; }
         public int TipoCitaId { get; set; }
