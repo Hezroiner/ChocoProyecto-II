@@ -62,3 +62,5 @@ C:\Users\ozsan\OneDrive\Escritorio\V Semestre\Progra IV\Project_2\Services\bin\D
 C:\Users\ozsan\OneDrive\Escritorio\V Semestre\Progra IV\Project_2\Services\obj\Debug\net7.0\Services.csproj.Up2Date
 C:\Users\ozsan\OneDrive\Escritorio\V Semestre\Progra IV\Project_2\Services\obj\Debug\net7.0\Services.genruntimeconfig.cache
 C:\Users\ozsan\OneDrive\Escritorio\V Semestre\Progra IV\Project_2\Services\obj\Debug\net7.0\ref\Services.dll
+C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Services\bin\Debug\net7.0\Services.runtimeconfig.json
+C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Services\obj\Debug\net7.0\Services.genruntimeconfig.cache

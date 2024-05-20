@@ -6,6 +6,5 @@ namespace Proyecto_II.Services
     {
         public List<Role> GetAll();
         public Role GetById(int id);
-        public void Delete(int id);
     }
 }
