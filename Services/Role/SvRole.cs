@@ -1,11 +1,6 @@
-﻿using Proyecto_II.Entities;
-using Proyecto_II.Services;
+﻿using Microsoft.EntityFrameworkCore;
+using Proyecto_II.Entities;
 using Services.MyDbContext;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Proyecto_II.Services
 {
@@ -20,17 +15,21 @@ namespace Proyecto_II.Services
 
         public List<Role> GetAll()
         {
-            return _myContext.Roles.ToList();
+            return _myContext.Roles
+                 .Include(role => role.Users) //Relacion de role y users
+                .ToList();
         }
 
         public Role GetById(int id)
         {
-            var role = _myContext.Roles.FirstOrDefault(user => user.RoleId == id);
+            var role = _myContext.Roles
+                .Include(role => role.Users) //Relacion de role y users
+                .FirstOrDefault(user => user.RoleId == id);
 
             if (role == null)
             {
                 // Manejo de la situación cuando no se encuentra la entidad choco
-                throw new KeyNotFoundException("Sucursal not found");
+                throw new KeyNotFoundException("Role not found");
             }
 
             return role;

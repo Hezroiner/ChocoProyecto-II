@@ -1,4 +1,5 @@
-﻿using Proyecto_II.Entities;
+﻿using Microsoft.EntityFrameworkCore;
+using Proyecto_II.Entities;
 using Services;
 using Services.MyDbContext;
 
@@ -15,16 +16,19 @@ namespace Proyecto_II.Services
 
         public List<Sucursal> GetAll()
         {
-            return _myContext.Sucursales.ToList();
+            return _myContext.Sucursales
+         .Include(sucursal => sucursal.Citas)    // Incluye la relación con Citas
+         .ToList();
         }
 
         public Sucursal GetById(int id)
         {
-            var sucursal = _myContext.Sucursales.FirstOrDefault(cita => cita.Id == id);
+            var sucursal = _myContext.Sucursales
+                .Include(sucursal => sucursal.Citas)  // Incluye la relación con Citas
+                .FirstOrDefault(sucursal => sucursal.Id == id);
 
             if (sucursal == null)
             {
-                // Manejo de la situación cuando no se encuentra la entidad choco
                 throw new KeyNotFoundException("Sucursal not found");
             }
 

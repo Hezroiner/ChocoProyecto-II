@@ -14,11 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Services")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-<<<<<<< .merge_file_neX8aR
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e726fd3c902769f144feeb9cb445c31885c8e188")]
-=======
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b871e049b0d73c788015274f3b35bdd62ff33f6a")]
->>>>>>> .merge_file_dNRKif
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8428e6286143ef97f29b9be92a863a79be70fd53")]
 [assembly: System.Reflection.AssemblyProductAttribute("Services")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Services")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
