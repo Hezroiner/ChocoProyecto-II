@@ -804,3 +804,11 @@ C:\Users\ozsan\OneDrive\Escritorio\V Semestre\Progra IV\Project_2\Proyecto II\ob
 C:\Users\ozsan\OneDrive\Escritorio\V Semestre\Progra IV\Project_2\Proyecto II\obj\Debug\net7.0\Proyecto.2EEC158D.Up2Date
 C:\Users\ozsan\OneDrive\Escritorio\V Semestre\Progra IV\Project_2\Proyecto II\obj\Debug\net7.0\Proyecto II.genruntimeconfig.cache
 C:\Users\ozsan\OneDrive\Escritorio\V Semestre\Progra IV\Project_2\Proyecto II\obj\Debug\net7.0\ref\Proyecto II.dll
+C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Proyecto II\bin\Debug\net7.0\EntityFramework.SqlServer.dll
+C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Proyecto II\bin\Debug\net7.0\EntityFramework.dll
+C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Proyecto II\bin\Debug\net7.0\System.Data.SqlClient.dll
+C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Proyecto II\bin\Debug\net7.0\runtimes\win-arm64\native\sni.dll
+C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Proyecto II\bin\Debug\net7.0\runtimes\win-x64\native\sni.dll
+C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Proyecto II\bin\Debug\net7.0\runtimes\win-x86\native\sni.dll
+C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Proyecto II\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Proyecto II\bin\Debug\net7.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll

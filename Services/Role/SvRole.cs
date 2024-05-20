@@ -11,7 +11,7 @@ namespace Proyecto_II.Services
 {
     public class SvRole : IRole
     {
-        private readonly MyContext _myContext;
+        private  MyContext _myContext = default!;
 
         public SvRole(MyContext context)
         {
@@ -25,18 +25,16 @@ namespace Proyecto_II.Services
 
         public Role GetById(int id)
         {
-            return _myContext.Roles.FirstOrDefault(r => r.RoleId == id);
-        }
+            var role = _myContext.Roles.FirstOrDefault(user => user.RoleId == id);
 
-        public void Delete(int id)
-        {
-            Role deleteRole = _myContext.Roles.Find(id);
-
-            if (deleteRole is not null)
+            if (role == null)
             {
-                _myContext.Roles.Remove(deleteRole);
-                _myContext.SaveChanges();
+                // Manejo de la situación cuando no se encuentra la entidad choco
+                throw new KeyNotFoundException("Sucursal not found");
             }
+
+            return role;
         }
+
     }
 }

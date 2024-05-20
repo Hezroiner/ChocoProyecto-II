@@ -6,6 +6,8 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddScoped<ICita, SvCita>();
 builder.Services.AddScoped<ISucursal, SvSucursal>();
+builder.Services.AddScoped<ITipoCita, SvTipoCita>();
+
 
 builder.Services.AddControllers()
     .AddNewtonsoftJson(x =>
