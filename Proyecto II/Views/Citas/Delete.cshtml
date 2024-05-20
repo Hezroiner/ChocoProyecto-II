@@ -30,10 +30,10 @@
             @Html.DisplayFor(model => model.Status)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Paciente)
+            @Html.DisplayNameFor(model => model.User)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Paciente.Email)
+            @Html.DisplayFor(model => model.User.Email)
         </dd>
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.TipoCita)
@@ -44,9 +44,6 @@
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.Sucursal)
         </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Sucursal.Lugar)
-        </dd>
     </dl>
     
     <form asp-action="Delete">

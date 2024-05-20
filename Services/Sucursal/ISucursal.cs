@@ -1,6 +1,6 @@
 ﻿using Proyecto_II.Entities;
 
-namespace Proyecto_II.Services
+namespace Services
 {
     public interface ISucursal
     {
