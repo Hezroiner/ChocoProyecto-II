@@ -1,8 +1,4 @@
-﻿
-
-
-
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using Proyecto_II.Entities;
 using Services;
 using Services.MyDbContext;
