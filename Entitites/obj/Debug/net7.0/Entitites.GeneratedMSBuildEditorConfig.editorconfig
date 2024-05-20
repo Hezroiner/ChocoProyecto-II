@@ -8,4 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Entitites
-build_property.ProjectDir = C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Entitites\
+build_property.ProjectDir = C:\Users\ozsan\OneDrive\Escritorio\V Semestre\Progra IV\Project_2\Entitites\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
