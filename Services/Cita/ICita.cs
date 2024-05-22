@@ -10,6 +10,7 @@ namespace Services
         public Cita GetById(int id);
         public Cita Update(int id, Cita cita);
         public void Delete(int id);
+        void CancelarCita(int id);
     }
 }
 

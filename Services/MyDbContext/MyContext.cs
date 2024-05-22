@@ -8,7 +8,7 @@ namespace Services.MyDbContext
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             //base.OnConfiguring(optionsBuilder);
-            optionsBuilder.UseSqlServer("Server=MSI;Database=Proyecto_Progra;Trusted_Connection=True; MultipleActiveResultSets=true;TrustServerCertificate=True");
+            optionsBuilder.UseSqlServer("Server=COMPU-DE-TOSTAR\\MSSQLSERVER01;Database=Proyecto_Progra;Trusted_Connection=True; MultipleActiveResultSets=true;TrustServerCertificate=True");
         }
         
         public DbSet<Cita> Citas { get; set; }
@@ -38,17 +38,15 @@ namespace Services.MyDbContext
                 .WithMany(role => role.Users)
                 .HasForeignKey(user => user.RoleId);
 
+  
+         modelBuilder.Entity<Role>().HasData(
+      new Role { RoleId = 1, Nombre = "ADMIN"},
+      new Role { RoleId = 2, Nombre = "USER" });
 
-            //Creando los datos Role
-             modelBuilder.Entity<Role>().HasData(
-                new Role { RoleId = 1, Nombre = "ADMIN"},
-                new Role { RoleId = 2, Nombre = "USER" });
-
-            //Creando los datos de Sucursal
-             modelBuilder.Entity<Sucursal>().HasData(
-                new Sucursal { Id = 1, NombreSucursal = "Clinica Santa Cruz" },
-                new Sucursal { Id = 2, NombreSucursal = "Clinica Nicoya" },
-                new Sucursal { Id = 3, NombreSucursal = "Clinica Libera" });
+            modelBuilder.Entity<Sucursal>().HasData(
+     new Sucursal { Id = 1, NombreSucursal = "Clinica Santa Cruz" },
+      new Sucursal { Id = 2, NombreSucursal = "Clinica Nicoya" },
+       new Sucursal { Id = 3, NombreSucursal = "Clinica Libera" });
             
             //Creando los datos de TipoCita
             modelBuilder.Entity<TipoCita>().HasData(

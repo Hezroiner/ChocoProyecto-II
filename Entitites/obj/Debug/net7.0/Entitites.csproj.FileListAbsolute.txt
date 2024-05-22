@@ -36,3 +36,5 @@ C:\Users\ozsan\OneDrive\Escritorio\V Semestre\Progra IV\Project_2\Entitites\bin\
 C:\Users\ozsan\OneDrive\Escritorio\V Semestre\Progra IV\Project_2\Entitites\obj\Debug\net7.0\ref\Entitites.dll
 C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Entitites\bin\Debug\net7.0\Entitites.runtimeconfig.json
 C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Entitites\obj\Debug\net7.0\Entitites.genruntimeconfig.cache
+C:\Users\ozsan\OneDrive\Escritorio\V Semestre\Progra IV\Project_2\Entitites\bin\Debug\net7.0\Entitites.runtimeconfig.json
+C:\Users\ozsan\OneDrive\Escritorio\V Semestre\Progra IV\Project_2\Entitites\obj\Debug\net7.0\Entitites.genruntimeconfig.cache

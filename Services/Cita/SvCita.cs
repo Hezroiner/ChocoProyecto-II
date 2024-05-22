@@ -16,6 +16,13 @@ namespace Proyecto_II.Services
 
         public Cita AddCita(Cita cita)
         {
+            if (_myContext.Citas.Any(c =>
+                c.UserId == cita.UserId &&
+                c.FechaHora.Date == cita.FechaHora.Date &&
+                c.Status == "ACTIVA"))
+            {
+                throw new InvalidOperationException("No se puede crear otra cita para el mismo paciente en el mismo día.");
+            }
             _myContext.Citas.Add(cita);
             _myContext.SaveChanges();
 
@@ -74,6 +81,19 @@ namespace Proyecto_II.Services
             }
 
             return updateCita;
+        }
+
+        public void CancelarCita(int id)
+        {
+            var cita = GetById(id);
+
+            if (cita.FechaHora < DateTime.Now.AddHours(24))
+            {
+                throw new InvalidOperationException("Las citas se deben cancelar con mínimo 24 horas de antelación.");
+            }
+            cita.Status = "CANCELADA";
+            _myContext.Citas.Update(cita);
+            _myContext.SaveChanges();
         }
     }
 }
