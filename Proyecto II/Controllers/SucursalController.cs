@@ -7,7 +7,7 @@ namespace Proyecto_II.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class SucursalController : ControllerBase
+    public class SucursalController : Controller
     {
         private ISucursal _svSucursal;
 

@@ -5,6 +5,8 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddScoped<ICita, SvCita>();
+builder.Services.AddScoped<IUser, SvUser>();
+builder.Services.AddScoped<IRole, SvRole>();
 builder.Services.AddScoped<ISucursal, SvSucursal>();
 builder.Services.AddScoped<ITipoCita, SvTipoCita>();
 

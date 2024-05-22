@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "yB8xAZbk9Fg0gJwK9nxriTlBD6WWoYosEPAH79u6VWcELbPNV5tgoy8JXY2AnK0Q6s0GYmOQKYdtdNClIeHqIw==",
+  "dgSpecHash": "OAtK9o5dpSEOvv4KMI46Da/59qJMnDerGmFLZ6e9vCpGT6fd2/IjaM8f2Zm/2RaVHqaR6eYn/1tn85hkMzNvhA==",
   "success": true,
   "projectFilePath": "C:\\Users\\ozsan\\OneDrive\\Escritorio\\V Semestre\\Progra IV\\Project_2\\Proyecto II\\Proyecto II.csproj",
   "expectedPackageFiles": [
@@ -83,10 +83,10 @@
     "C:\\Users\\ozsan\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.19\\microsoft.entityframeworkcore.7.0.19.nupkg.sha512",
     "C:\\Users\\ozsan\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.19\\microsoft.entityframeworkcore.abstractions.7.0.19.nupkg.sha512",
     "C:\\Users\\ozsan\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\7.0.19\\microsoft.entityframeworkcore.analyzers.7.0.19.nupkg.sha512",
-    "C:\\Users\\ozsan\\.nuget\\packages\\microsoft.entityframeworkcore.design\\7.0.18\\microsoft.entityframeworkcore.design.7.0.18.nupkg.sha512",
+    "C:\\Users\\ozsan\\.nuget\\packages\\microsoft.entityframeworkcore.design\\7.0.19\\microsoft.entityframeworkcore.design.7.0.19.nupkg.sha512",
     "C:\\Users\\ozsan\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\7.0.19\\microsoft.entityframeworkcore.relational.7.0.19.nupkg.sha512",
     "C:\\Users\\ozsan\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\7.0.19\\microsoft.entityframeworkcore.sqlserver.7.0.19.nupkg.sha512",
-    "C:\\Users\\ozsan\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\7.0.18\\microsoft.entityframeworkcore.tools.7.0.18.nupkg.sha512",
+    "C:\\Users\\ozsan\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\7.0.19\\microsoft.entityframeworkcore.tools.7.0.19.nupkg.sha512",
     "C:\\Users\\ozsan\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\ozsan\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\7.0.0\\microsoft.extensions.caching.abstractions.7.0.0.nupkg.sha512",
     "C:\\Users\\ozsan\\.nuget\\packages\\microsoft.extensions.caching.memory\\7.0.0\\microsoft.extensions.caching.memory.7.0.0.nupkg.sha512",
@@ -246,12 +246,5 @@
     "C:\\Users\\ozsan\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\ozsan\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problema al leer el archivo de caché C:\\Users\\ozsan\\OneDrive\\Escritorio\\V Semestre\\Progra IV\\Project_2\\Proyecto II\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  "logs": []
 }

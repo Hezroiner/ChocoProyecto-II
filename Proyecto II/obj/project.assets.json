@@ -1408,11 +1408,11 @@
           "lib/netstandard2.0/_._": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.Design/7.0.18": {
+      "Microsoft.EntityFrameworkCore.Design/7.0.19": {
         "type": "package",
         "dependencies": {
           "Humanizer.Core": "2.14.1",
-          "Microsoft.EntityFrameworkCore.Relational": "7.0.18",
+          "Microsoft.EntityFrameworkCore.Relational": "7.0.19",
           "Microsoft.Extensions.DependencyModel": "7.0.0",
           "Mono.TextTemplating": "2.2.1"
         },
@@ -1464,10 +1464,10 @@
           }
         }
       },
-      "Microsoft.EntityFrameworkCore.Tools/7.0.18": {
+      "Microsoft.EntityFrameworkCore.Tools/7.0.19": {
         "type": "package",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore.Design": "7.0.18"
+          "Microsoft.EntityFrameworkCore.Design": "7.0.19"
         },
         "compile": {
           "lib/net6.0/_._": {}
@@ -6014,10 +6014,10 @@
         "microsoft.entityframeworkcore.analyzers.nuspec"
       ]
     },
-    "Microsoft.EntityFrameworkCore.Design/7.0.18": {
-      "sha512": "4pYsUcvdY8V4i+ZH6xIM8LfX3YdaRp7kZ0QvgRdzGuJ/dneX8zRKLE0rlqFRb8xQqbw6TuFssgFBkh0c23R3oA==",
+    "Microsoft.EntityFrameworkCore.Design/7.0.19": {
+      "sha512": "NL3sOFy96xh6Az2CG085glcAt7ASt4n7t7g3hVSfnFOXLPLCEzV9qe0d1WgDurnBHCXotVZujh2ns4j05zr0Cg==",
       "type": "package",
-      "path": "microsoft.entityframeworkcore.design/7.0.18",
+      "path": "microsoft.entityframeworkcore.design/7.0.19",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -6025,7 +6025,7 @@
         "build/net6.0/Microsoft.EntityFrameworkCore.Design.props",
         "lib/net6.0/Microsoft.EntityFrameworkCore.Design.dll",
         "lib/net6.0/Microsoft.EntityFrameworkCore.Design.xml",
-        "microsoft.entityframeworkcore.design.7.0.18.nupkg.sha512",
+        "microsoft.entityframeworkcore.design.7.0.19.nupkg.sha512",
         "microsoft.entityframeworkcore.design.nuspec"
       ]
     },
@@ -6057,17 +6057,17 @@
         "microsoft.entityframeworkcore.sqlserver.nuspec"
       ]
     },
-    "Microsoft.EntityFrameworkCore.Tools/7.0.18": {
-      "sha512": "AuSrOsR/DN5OYuiaYxr+zk5bHgHB7o5TFK7ZbBp8rqKLw9eZSwgBfHi8pYvEMzvgw3z7TJvvcuDT5qVQbZcUUQ==",
+    "Microsoft.EntityFrameworkCore.Tools/7.0.19": {
+      "sha512": "DKtjl+fPlO0xNaxAqL51mAhdV1YV83WSyEz7K1Hw9kvrQeEfpfmvJc6krqruN7CG0PJAVx/ot6unzfpHNKDjNQ==",
       "type": "package",
-      "path": "microsoft.entityframeworkcore.tools/7.0.18",
+      "path": "microsoft.entityframeworkcore.tools/7.0.19",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "lib/net6.0/_._",
-        "microsoft.entityframeworkcore.tools.7.0.18.nupkg.sha512",
+        "microsoft.entityframeworkcore.tools.7.0.19.nupkg.sha512",
         "microsoft.entityframeworkcore.tools.nuspec",
         "tools/EntityFrameworkCore.PS2.psd1",
         "tools/EntityFrameworkCore.PS2.psm1",
@@ -12362,7 +12362,7 @@
       "Microsoft.AspNetCore.OpenApi >= 7.0.3",
       "Microsoft.EntityFrameworkCore >= 7.0.19",
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.19",
-      "Microsoft.EntityFrameworkCore.Tools >= 7.0.18",
+      "Microsoft.EntityFrameworkCore.Tools >= 7.0.19",
       "Microsoft.Extensions.DependencyInjection >= 7.0.0",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 7.0.12",
       "Services >= 1.0.0",
@@ -12442,7 +12442,7 @@
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
             "suppressParent": "All",
             "target": "Package",
-            "version": "[7.0.18, )"
+            "version": "[7.0.19, )"
           },
           "Microsoft.Extensions.DependencyInjection": {
             "target": "Package",

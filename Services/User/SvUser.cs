@@ -9,11 +9,10 @@ namespace Proyecto_II.Services
     {
         private MyContext _myContext = default!;
 
-        public SvUser(MyContext context)
+        public SvUser()
         {
-            _myContext = context;
+            _myContext = new MyContext();
         }
-
         public List<User> GetAll()
         {
             return _myContext.Users

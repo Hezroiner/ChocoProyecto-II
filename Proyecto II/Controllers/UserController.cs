@@ -9,7 +9,8 @@ namespace Proyecto_II.Controllers
     [ApiController]
     public class UserController : Controller
     {
-        private IUser _svUser;
+        private readonly IUser _svUser;
+
         public UserController(IUser svUser)
         {
             _svUser = svUser;
