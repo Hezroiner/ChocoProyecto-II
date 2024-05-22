@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "kneDro3fDr1hz0q70oxwtbg2lShYROLHByK8AYAF4sPHtFe7zsJxyWn7zeDF/DbFkWO/GLWCBMH29VMBENPTRg==",
+  "dgSpecHash": "g5F3oBSBUHg1Jj03+xy6PiouLYJJX8IiM/AloX6e9lScn7zpvFnvkSg905oR5X1LFwhkup8adIw1EZTZqMvJOw==",
   "success": true,
   "projectFilePath": "C:\\Documentos\\Programacion\\Lenguajes\\C#\\Proyect II\\ChocoProyecto-II\\Proyecto II\\Proyecto II.csproj",
   "expectedPackageFiles": [
@@ -83,10 +83,10 @@
     "C:\\Users\\Hezron\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.19\\microsoft.entityframeworkcore.7.0.19.nupkg.sha512",
     "C:\\Users\\Hezron\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.19\\microsoft.entityframeworkcore.abstractions.7.0.19.nupkg.sha512",
     "C:\\Users\\Hezron\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\7.0.19\\microsoft.entityframeworkcore.analyzers.7.0.19.nupkg.sha512",
-    "C:\\Users\\Hezron\\.nuget\\packages\\microsoft.entityframeworkcore.design\\7.0.18\\microsoft.entityframeworkcore.design.7.0.18.nupkg.sha512",
+    "C:\\Users\\Hezron\\.nuget\\packages\\microsoft.entityframeworkcore.design\\7.0.19\\microsoft.entityframeworkcore.design.7.0.19.nupkg.sha512",
     "C:\\Users\\Hezron\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\7.0.19\\microsoft.entityframeworkcore.relational.7.0.19.nupkg.sha512",
     "C:\\Users\\Hezron\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\7.0.19\\microsoft.entityframeworkcore.sqlserver.7.0.19.nupkg.sha512",
-    "C:\\Users\\Hezron\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\7.0.18\\microsoft.entityframeworkcore.tools.7.0.18.nupkg.sha512",
+    "C:\\Users\\Hezron\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\7.0.19\\microsoft.entityframeworkcore.tools.7.0.19.nupkg.sha512",
     "C:\\Users\\Hezron\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\Hezron\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\7.0.0\\microsoft.extensions.caching.abstractions.7.0.0.nupkg.sha512",
     "C:\\Users\\Hezron\\.nuget\\packages\\microsoft.extensions.caching.memory\\7.0.0\\microsoft.extensions.caching.memory.7.0.0.nupkg.sha512",
