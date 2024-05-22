@@ -37,6 +37,16 @@ namespace Services.MyDbContext
                 .HasOne(user => user.Role)
                 .WithMany(role => role.Users)
                 .HasForeignKey(user => user.RoleId);
+
+  
+         modelBuilder.Entity<Role>().HasData(
+      new Role { RoleId = 1, Nombre = "ADMIN"},
+      new Role { RoleId = 2, Nombre = "USER" });
+
+            modelBuilder.Entity<Sucursal>().HasData(
+     new Sucursal { Id = 1, NombreSucursal = "Clinica Santa Cruz" },
+      new Sucursal { Id = 2, NombreSucursal = "Clinica Nicoya" },
+       new Sucursal { Id = 3, NombreSucursal = "Clinica Libera" });
         }
     }
 }

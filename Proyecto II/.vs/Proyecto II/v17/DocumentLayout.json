@@ -3,12 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\ozsan\\OneDrive\\Escritorio\\V Semestre\\Progra IV\\Project_2\\Proyecto II\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A9878358-71CB-46D7-84A0-8964F787872C}|Proyecto II.csproj|c:\\users\\ozsan\\onedrive\\escritorio\\v semestre\\progra iv\\project_2\\proyecto ii\\controllers\\citacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A9878358-71CB-46D7-84A0-8964F787872C}|Proyecto II.csproj|solutionrelative:controllers\\citacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{25402358-273D-4F84-9F5E-EFC22AC5BE13}|..\\Services\\Services.csproj|c:\\users\\ozsan\\onedrive\\escritorio\\v semestre\\progra iv\\project_2\\services\\mydbcontext\\mycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A9878358-71CB-46D7-84A0-8964F787872C}|Proyecto II.csproj|c:\\users\\ozsan\\onedrive\\escritorio\\v semestre\\progra iv\\project_2\\proyecto ii\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A9878358-71CB-46D7-84A0-8964F787872C}|Proyecto II.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0B58BD4B-0D3B-4DEA-8474-6AE680F0C495}|..\\Entitites\\Entitites.csproj|c:\\users\\ozsan\\onedrive\\escritorio\\v semestre\\progra iv\\project_2\\entitites\\sucursal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A9878358-71CB-46D7-84A0-8964F787872C}|Proyecto II.csproj|c:\\users\\ozsan\\onedrive\\escritorio\\v semestre\\progra iv\\project_2\\proyecto ii\\controllers\\citacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A9878358-71CB-46D7-84A0-8964F787872C}|Proyecto II.csproj|solutionrelative:controllers\\citacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{25402358-273D-4F84-9F5E-EFC22AC5BE13}|..\\Services\\Services.csproj|c:\\users\\ozsan\\onedrive\\escritorio\\v semestre\\progra iv\\project_2\\services\\role\\svrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -24,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -48,20 +50,46 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Sucursal.cs",
+              "DocumentMoniker": "C:\\Users\\ozsan\\OneDrive\\Escritorio\\V Semestre\\Progra IV\\Project_2\\Entitites\\Sucursal.cs",
+              "RelativeDocumentMoniker": "..\\Entitites\\Sucursal.cs",
+              "ToolTip": "C:\\Users\\ozsan\\OneDrive\\Escritorio\\V Semestre\\Progra IV\\Project_2\\Entitites\\Sucursal.cs",
+              "RelativeToolTip": "..\\Entitites\\Sucursal.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-22T18:56:23.591Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "MyContext.cs",
+              "DocumentMoniker": "C:\\Users\\ozsan\\OneDrive\\Escritorio\\V Semestre\\Progra IV\\Project_2\\Services\\MyDbContext\\MyContext.cs",
+              "RelativeDocumentMoniker": "..\\Services\\MyDbContext\\MyContext.cs",
+              "ToolTip": "C:\\Users\\ozsan\\OneDrive\\Escritorio\\V Semestre\\Progra IV\\Project_2\\Services\\MyDbContext\\MyContext.cs*",
+              "RelativeToolTip": "..\\Services\\MyDbContext\\MyContext.cs*",
+              "ViewState": "AQIAACAAAAAAAAAAAAAuwCkAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-22T18:51:11.899Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "CitaController.cs",
               "DocumentMoniker": "C:\\Users\\ozsan\\OneDrive\\Escritorio\\V Semestre\\Progra IV\\Project_2\\Proyecto II\\Controllers\\CitaController.cs",
               "RelativeDocumentMoniker": "Controllers\\CitaController.cs",
               "ToolTip": "C:\\Users\\ozsan\\OneDrive\\Escritorio\\V Semestre\\Progra IV\\Project_2\\Proyecto II\\Controllers\\CitaController.cs",
               "RelativeToolTip": "Controllers\\CitaController.cs",
-              "ViewState": "AQIAACAAAAAAAAAAAAAwwAAAAAAAAAAA",
+              "ViewState": "AQIAACkAAAAAAAAAAAAIwDUAAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-22T16:38:53.509Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "SvRole.cs",
               "DocumentMoniker": "C:\\Users\\ozsan\\OneDrive\\Escritorio\\V Semestre\\Progra IV\\Project_2\\Services\\Role\\SvRole.cs",
               "RelativeDocumentMoniker": "..\\Services\\Role\\SvRole.cs",
@@ -69,12 +97,11 @@
               "RelativeToolTip": "..\\Services\\Role\\SvRole.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-22T16:38:00.703Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-22T16:38:00.703Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "SvCita.cs",
               "DocumentMoniker": "C:\\Users\\ozsan\\OneDrive\\Escritorio\\V Semestre\\Progra IV\\Project_2\\Services\\Cita\\SvCita.cs",
               "RelativeDocumentMoniker": "..\\Services\\Cita\\SvCita.cs",
@@ -82,21 +109,7 @@
               "RelativeToolTip": "..\\Services\\Cita\\SvCita.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-22T16:36:02.361Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\ozsan\\OneDrive\\Escritorio\\V Semestre\\Progra IV\\Project_2\\Proyecto II\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\ozsan\\OneDrive\\Escritorio\\V Semestre\\Progra IV\\Project_2\\Proyecto II\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-22T16:36:54.603Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-22T16:36:02.361Z"
             }
           ]
         }

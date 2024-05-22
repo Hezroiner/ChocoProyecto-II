@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Services.MyDbContext;
 
@@ -11,9 +12,11 @@ using Services.MyDbContext;
 namespace Services.Migrations
 {
     [DbContext(typeof(MyContext))]
-    partial class MyContextModelSnapshot : ModelSnapshot
+    [Migration("20240522185750_SeedRoleData")]
+    partial class SeedRoleData
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -105,23 +108,6 @@ namespace Services.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Sucursales");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            NombreSucursal = "Clinica Santa Cruz"
-                        },
-                        new
-                        {
-                            Id = 2,
-                            NombreSucursal = "Clinica Nicoya"
-                        },
-                        new
-                        {
-                            Id = 3,
-                            NombreSucursal = "Clinica Libera"
-                        });
                 });
 
             modelBuilder.Entity("Proyecto_II.Entities.TipoCita", b =>
