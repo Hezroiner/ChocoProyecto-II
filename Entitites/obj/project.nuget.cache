@@ -4,5 +4,12 @@
   "success": true,
   "projectFilePath": "C:\\Users\\ozsan\\OneDrive\\Escritorio\\V Semestre\\Progra IV\\Project_2\\Entitites\\Entitites.csproj",
   "expectedPackageFiles": [],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problema al leer el archivo de caché C:\\Users\\ozsan\\OneDrive\\Escritorio\\V Semestre\\Progra IV\\Project_2\\Entitites\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
