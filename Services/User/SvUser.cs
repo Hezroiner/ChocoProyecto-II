@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿
+using Microsoft.EntityFrameworkCore;
 using Proyecto_II.Entities;
 using Services;
 using Services.MyDbContext;
@@ -13,6 +14,7 @@ namespace Proyecto_II.Services
         {
             _myContext = new MyContext();
         }
+
         public List<User> GetAll()
         {
             return _myContext.Users

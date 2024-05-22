@@ -12,7 +12,7 @@ using Services.MyDbContext;
 namespace Services.Migrations
 {
     [DbContext(typeof(MyContext))]
-    [Migration("20240522161725_initial")]
+    [Migration("20240522194628_initial")]
     partial class initial
     {
         /// <inheritdoc />
@@ -79,6 +79,18 @@ namespace Services.Migrations
                     b.HasKey("RoleId");
 
                     b.ToTable("Roles");
+
+                    b.HasData(
+                        new
+                        {
+                            RoleId = 1,
+                            Nombre = "ADMIN"
+                        },
+                        new
+                        {
+                            RoleId = 2,
+                            Nombre = "USER"
+                        });
                 });
 
             modelBuilder.Entity("Proyecto_II.Entities.Sucursal", b =>
@@ -96,6 +108,23 @@ namespace Services.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Sucursales");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            NombreSucursal = "Clinica Santa Cruz"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            NombreSucursal = "Clinica Nicoya"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            NombreSucursal = "Clinica Libera"
+                        });
                 });
 
             modelBuilder.Entity("Proyecto_II.Entities.TipoCita", b =>
@@ -113,6 +142,28 @@ namespace Services.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("TiposCita");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Nombre = "Medicina General"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Nombre = "Odontología"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Nombre = "Pediatría"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            Nombre = "Neurología"
+                        });
                 });
 
             modelBuilder.Entity("Proyecto_II.Entities.User", b =>
@@ -139,10 +190,6 @@ namespace Services.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("Telefono")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Username")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 

@@ -139,6 +139,28 @@ namespace Services.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("TiposCita");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Nombre = "Medicina General"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Nombre = "Odontología"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Nombre = "Pediatría"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            Nombre = "Neurología"
+                        });
                 });
 
             modelBuilder.Entity("Proyecto_II.Entities.User", b =>
@@ -165,10 +187,6 @@ namespace Services.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("Telefono")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Username")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 

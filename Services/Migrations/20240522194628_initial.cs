@@ -3,6 +3,8 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
+#pragma warning disable CA1814 // Prefer jagged arrays over multidimensional
+
 namespace Services.Migrations
 {
     /// <inheritdoc />
@@ -59,7 +61,6 @@ namespace Services.Migrations
                     Nombre = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Email = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Telefono = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Username = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Password = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     RoleId = table.Column<int>(type: "int", nullable: false)
                 },
@@ -108,6 +109,36 @@ namespace Services.Migrations
                         principalTable: "Users",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.InsertData(
+                table: "Roles",
+                columns: new[] { "RoleId", "Nombre" },
+                values: new object[,]
+                {
+                    { 1, "ADMIN" },
+                    { 2, "USER" }
+                });
+
+            migrationBuilder.InsertData(
+                table: "Sucursales",
+                columns: new[] { "Id", "NombreSucursal" },
+                values: new object[,]
+                {
+                    { 1, "Clinica Santa Cruz" },
+                    { 2, "Clinica Nicoya" },
+                    { 3, "Clinica Libera" }
+                });
+
+            migrationBuilder.InsertData(
+                table: "TiposCita",
+                columns: new[] { "Id", "Nombre" },
+                values: new object[,]
+                {
+                    { 1, "Medicina General" },
+                    { 2, "Odontología" },
+                    { 3, "Pediatría" },
+                    { 4, "Neurología" }
                 });
 
             migrationBuilder.CreateIndex(
