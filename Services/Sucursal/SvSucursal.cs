@@ -2,23 +2,26 @@
 using Proyecto_II.Entities;
 using Services;
 using Services.MyDbContext;
+using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace Proyecto_II.Services
 {
     public class SvSucursal : ISucursal
     {
-        private MyContext _myContext = default!;
+        private readonly MyContext _myContext;
 
-        public SvSucursal()
+        public SvSucursal(MyContext myContext)
         {
-            _myContext = new MyContext();
+            _myContext = myContext;
         }
 
         public List<Sucursal> GetAll()
         {
             return _myContext.Sucursales
-         .Include(sucursal => sucursal.Citas)    // Incluye la relación con Citas
-         .ToList();
+                .Include(sucursal => sucursal.Citas)
+                .ToList();
         }
 
         public Sucursal GetById(int id)
