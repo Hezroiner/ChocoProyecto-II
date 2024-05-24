@@ -58,7 +58,7 @@ namespace Proyecto_II.Controllers
         }
 
         //Cancelar Cita
-        [HttpPut("cancelar/{id}")]
+        [HttpPatch("cancelar/{id}")]
         public IActionResult CancelarCita(int id)
         {
             try
