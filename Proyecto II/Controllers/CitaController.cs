@@ -57,5 +57,28 @@ namespace Proyecto_II.Controllers
             _svCita.Delete(id);
         }
 
+        //Cancelar Cita
+        [HttpPatch("cancelar/{id}")]
+        public IActionResult CancelarCita(int id)
+        {
+            try
+            {
+                _svCita.CancelarCita(id);
+                return Ok("Cita cancelada con éxito.");
+            }
+            catch (InvalidOperationException ex)
+            {
+                return BadRequest(ex.Message);
+            }
+            catch (KeyNotFoundException ex)
+            {
+                return NotFound(ex.Message);
+            }
+            catch (Exception ex)
+            {
+                // Manejo general de excepciones
+                return StatusCode(500, "Ha ocurrido un error interno en el servidor.");
+            }
+        }
     }
 }

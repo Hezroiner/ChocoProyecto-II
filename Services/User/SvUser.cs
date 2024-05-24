@@ -26,14 +26,13 @@ namespace Proyecto_II.Services
         public User GetById(int id)
         {
             var user = _myContext.Users
-            .Include(user => user.Citas) //Relacion de user y citas
-            .Include(user => user.Role) //Relacion de user y role
-            .FirstOrDefault(user => user.Id == id);
+                .Include(user => user.Citas)  // Relación de User y Citas
+                .Include(user => user.Role)   // Relación de User y Role
+                .FirstOrDefault(user => user.Id == id);
 
             if (user == null)
             {
-                // Manejo de la situación cuando no se encuentra la entidad choco
-                throw new KeyNotFoundException("User not found");
+                throw new KeyNotFoundException("User not found with ID: " + id);
             }
 
             return user;
