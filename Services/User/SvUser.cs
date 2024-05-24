@@ -32,11 +32,13 @@ namespace Proyecto_II.Services
 
             if (user == null)
             {
-                throw new KeyNotFoundException("User not found with ID: " + id);
+                // Lanzar excepción con más detalles
+                throw new KeyNotFoundException($"User not found with ID {id}");
             }
 
             return user;
         }
+
 
         public User AddUser(User user)
         {
