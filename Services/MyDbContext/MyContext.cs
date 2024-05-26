@@ -5,12 +5,10 @@ namespace Services.MyDbContext
 {
     public class MyContext : DbContext
     {
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        public MyContext(DbContextOptions<MyContext> options) : base(options)
         {
-            //base.OnConfiguring(optionsBuilder);
-            optionsBuilder.UseSqlServer("Server=MSI;Database=Proyecto_Progra;Trusted_Connection=True; MultipleActiveResultSets=true;TrustServerCertificate=True");
         }
-        
+
         public DbSet<Cita> Citas { get; set; }
         public DbSet<Sucursal> Sucursales { get; set; }
         public DbSet<TipoCita> TiposCita { get; set; }

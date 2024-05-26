@@ -1,39 +1,40 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Proyecto_II.Entities;
 using Services.MyDbContext;
+using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace Proyecto_II.Services
 {
     public class SvRole : IRole
     {
-        private  MyContext _myContext = default!;
+        private readonly MyContext _myContext;
 
-        public SvRole()
+        public SvRole(MyContext myContext)
         {
-            _myContext = new MyContext();
+            _myContext = myContext;
         }
 
         public List<Role> GetAll()
         {
             return _myContext.Roles
-                 .Include(role => role.Users) //Relacion de role y users
+                 .Include(role => role.Users) // Relacion de role y users
                 .ToList();
         }
 
         public Role GetById(int id)
         {
             var role = _myContext.Roles
-                .Include(role => role.Users) //Relacion de role y users
-                .FirstOrDefault(user => user.RoleId == id);
+                .Include(role => role.Users) // Relacion de role y users
+                .FirstOrDefault(role => role.RoleId == id);
 
             if (role == null)
             {
-                // Manejo de la situación cuando no se encuentra la entidad choco
                 throw new KeyNotFoundException("Role not found");
             }
 
             return role;
         }
-
     }
 }

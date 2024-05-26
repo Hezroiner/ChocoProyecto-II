@@ -2,16 +2,19 @@
 using Proyecto_II.Entities;
 using Services;
 using Services.MyDbContext;
+using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace Proyecto_II.Services
 {
     public class SvCita : ICita
     {
-        private  MyContext _myContext = default!;
+        private readonly MyContext _myContext;
 
-        public SvCita() 
+        public SvCita(MyContext myContext)
         {
-            _myContext = new MyContext();
+            _myContext = myContext;
         }
 
         public Cita AddCita(Cita cita)
@@ -31,7 +34,7 @@ namespace Proyecto_II.Services
 
         public void Delete(int id)
         {
-           Cita deleteCita = _myContext.Citas.Find(id);
+            Cita deleteCita = _myContext.Citas.Find(id);
 
             if (deleteCita is not null)
             {
@@ -59,7 +62,7 @@ namespace Proyecto_II.Services
 
             if (cita == null)
             {
-                // Manejo de la situación cuando no se encuentra la entidad choco
+                // Manejo de la situación cuando no se encuentra la entidad cita
                 throw new KeyNotFoundException("Cita not found");
             }
 
@@ -70,7 +73,7 @@ namespace Proyecto_II.Services
         {
             Cita updateCita = _myContext.Citas.Find(id);
 
-            if (updateCita is not null) 
+            if (updateCita is not null)
             {
                 updateCita.FechaHora = newCita.FechaHora;
                 updateCita.Lugar = newCita.Lugar;

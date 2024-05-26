@@ -7,11 +7,11 @@ namespace Proyecto_II.Services
 {
     public class SvTipoCita : ITipoCita
     {
-        private MyContext _myContext = default!;
+        private readonly MyContext _myContext;
 
-        public SvTipoCita()
+        public SvTipoCita(MyContext myContext)
         {
-            _myContext = new MyContext();
+            _myContext = myContext;
         }
         public List<TipoCita> GetAll()
         {

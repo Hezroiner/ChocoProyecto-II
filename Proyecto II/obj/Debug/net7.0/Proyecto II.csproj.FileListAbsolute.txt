@@ -812,3 +812,4 @@ C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Proyecto II\
 C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Proyecto II\bin\Debug\net7.0\runtimes\win-x86\native\sni.dll
 C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Proyecto II\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Proyecto II\bin\Debug\net7.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Proyecto II\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
