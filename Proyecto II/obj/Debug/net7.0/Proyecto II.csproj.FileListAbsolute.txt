@@ -812,3 +812,8 @@ C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Proyecto II\
 C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Proyecto II\bin\Debug\net7.0\runtimes\win-x86\native\sni.dll
 C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Proyecto II\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Proyecto II\bin\Debug\net7.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+<<<<<<< Updated upstream
+=======
+C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Proyecto II\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\ozsan\OneDrive\Escritorio\V Semestre\Progra IV\Project_2\Proyecto II\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+>>>>>>> Stashed changes
