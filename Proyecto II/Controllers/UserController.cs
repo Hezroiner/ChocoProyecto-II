@@ -29,8 +29,13 @@ namespace Proyecto_II.Controllers
             return _svUser.GetById(id);
         }
 
+<<<<<<< Updated upstream
         //Post
         [HttpPost]
+=======
+    //Post
+    [HttpPost("{register}")]
+>>>>>>> Stashed changes
         public void Post([FromBody] User user)
         {
             _svUser.AddUser(user);
