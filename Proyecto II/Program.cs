@@ -1,7 +1,11 @@
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
 using Proyecto_II.Services;
 using Services;
 using Services.MyDbContext;
+using System.Security.Cryptography;
+using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,8 +16,23 @@ builder.Services.AddScoped<ITipoCita, SvTipoCita>();
 builder.Services.AddScoped<IUser, SvUser>();
 builder.Services.AddScoped<IRole, SvRole>();
 
-//builder.Services.AddDbContext<MyContext>(options =>
-//    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+builder.Services.AddDbContext<MyContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+    .AddJwtBearer(options =>
+    {
+        options.TokenValidationParameters = new TokenValidationParameters
+        {
+            ValidateIssuer = false,
+            ValidateAudience = false,
+            ValidateLifetime = true,
+            ValidateIssuerSigningKey = true,
+            IssuerSigningKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes("your_secret_key_here")),
+        };
+    });
+
 
 builder.Services.AddControllers()
     .AddNewtonsoftJson(x =>

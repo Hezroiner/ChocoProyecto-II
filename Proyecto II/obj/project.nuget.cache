@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "uIUU5mZEjFbIdop/u2auZD/IyXCKqQCvlnt5AOQOvXjiwlI4Gn3OeF9FJ48nnYEkc3uPVnuv/VIMT28uyX4ebQ==",
+  "dgSpecHash": "l7s0/Hip2kwZZIbi5Q2C8NKunuP6Vt0KWGi5mWVg1QKMrfUJsWP5Yr9Atvi6XX5rucqf658JfQYeeWbv0/DDPw==",
   "success": true,
   "projectFilePath": "C:\\Users\\ozsan\\OneDrive\\Escritorio\\V Semestre\\Progra IV\\Project_2\\Proyecto II\\Proyecto II.csproj",
   "expectedPackageFiles": [
@@ -57,6 +57,7 @@
     "C:\\Users\\ozsan\\.nuget\\packages\\humanizer.core.zh-cn\\2.14.1\\humanizer.core.zh-cn.2.14.1.nupkg.sha512",
     "C:\\Users\\ozsan\\.nuget\\packages\\humanizer.core.zh-hans\\2.14.1\\humanizer.core.zh-hans.2.14.1.nupkg.sha512",
     "C:\\Users\\ozsan\\.nuget\\packages\\humanizer.core.zh-hant\\2.14.1\\humanizer.core.zh-hant.2.14.1.nupkg.sha512",
+    "C:\\Users\\ozsan\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\7.0.19\\microsoft.aspnetcore.authentication.jwtbearer.7.0.19.nupkg.sha512",
     "C:\\Users\\ozsan\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\7.0.19\\microsoft.aspnetcore.jsonpatch.7.0.19.nupkg.sha512",
     "C:\\Users\\ozsan\\.nuget\\packages\\microsoft.aspnetcore.mvc.newtonsoftjson\\7.0.19\\microsoft.aspnetcore.mvc.newtonsoftjson.7.0.19.nupkg.sha512",
     "C:\\Users\\ozsan\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.3\\microsoft.aspnetcore.openapi.7.0.3.nupkg.sha512",

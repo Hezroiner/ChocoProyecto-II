@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Entitites;
+using Microsoft.AspNetCore.Mvc;
 using Proyecto_II.Entities;
 using Proyecto_II.Services;
 using Services;
@@ -15,12 +16,21 @@ namespace Proyecto_II.Controllers
             _svUser = svUser;
         }
 
-        //Get All
+        // GET: api/User
         [HttpGet]
-        public IEnumerable<User> GetAll()
+        public ActionResult<IEnumerable<User>> Get()
         {
-            return _svUser.GetAll();
+            try
+            {
+                var users = _svUser.GetAll();
+                return Ok(users);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, ex.Message); // Error interno del servidor
+            }
         }
+
 
         //GetById
         [HttpGet("{id}")]
@@ -44,11 +54,43 @@ namespace Proyecto_II.Controllers
         }
     
 
+<<<<<<< HEAD
     //Post
     [HttpPost]
         public void Post([FromBody] User user)
+=======
+
+        [HttpPost("register")]
+        public IActionResult Register([FromBody] UserRegisterModel model)
+>>>>>>> Hezroiner
         {
-            _svUser.AddUser(user);
+            try
+            {
+                var token = _svUser.Register(model);
+                if (token == null)
+                {
+                    return BadRequest("No se pudo registrar el usuario.");
+                }
+                return Ok(new { token });
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message); // Error en la solicitud del cliente
+            }
+        }
+
+        [HttpPost("login")]
+        public IActionResult Post([FromBody] User user)
+        {
+            try
+            {
+                _svUser.AddUser(user);
+                return CreatedAtAction(nameof(Get), new { id = user.Id }, user);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
         }
     }
 }
