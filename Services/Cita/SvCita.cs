@@ -45,11 +45,7 @@ namespace Proyecto_II.Services
 
         public List<Cita> GetAll()
         {
-            return _myContext.Citas
-            .Include(cita => cita.User)    // Incluye la relación con User
-            .Include(cita => cita.TipoCita)    // Incluye la relación con TipoCita
-            .Include(cita => cita.Sucursal)    // Incluye la relación con Sucursal
-            .ToList();
+            return _myContext.Citas.ToList();
         }
 
         public Cita GetById(int id)
@@ -76,7 +72,6 @@ namespace Proyecto_II.Services
             if (updateCita is not null)
             {
                 updateCita.FechaHora = newCita.FechaHora;
-                updateCita.Lugar = newCita.Lugar;
                 updateCita.Status = newCita.Status;
 
                 _myContext.Citas.Update(updateCita);
