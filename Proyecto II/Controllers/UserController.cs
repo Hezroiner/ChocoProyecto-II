@@ -52,44 +52,32 @@ namespace Proyecto_II.Controllers
                 return StatusCode(500, new { message = "An error occurred while processing your request.", details = ex.Message });
             }
         }
-    
-
-<<<<<<< HEAD
-    //Post
-    [HttpPost]
-        public void Post([FromBody] User user)
-=======
 
         [HttpPost("register")]
-        public IActionResult Register([FromBody] UserRegisterModel model)
->>>>>>> Hezroiner
+        public IActionResult Register([FromBody] UserRegisterModel userRegisterModel)
         {
             try
             {
-                var token = _svUser.Register(model);
-                if (token == null)
-                {
-                    return BadRequest("No se pudo registrar el usuario.");
-                }
+                var token = _svUser.Register(userRegisterModel);
                 return Ok(new { token });
             }
             catch (Exception ex)
             {
-                return BadRequest(ex.Message); // Error en la solicitud del cliente
+                return BadRequest(new { message = ex.Message });
             }
         }
 
         [HttpPost("login")]
-        public IActionResult Post([FromBody] User user)
+        public IActionResult Login([FromBody] UserLoginModel userLoginModel)
         {
             try
             {
-                _svUser.AddUser(user);
-                return CreatedAtAction(nameof(Get), new { id = user.Id }, user);
+                var token = _svUser.Login(userLoginModel);
+                return Ok(new { token });
             }
             catch (Exception ex)
             {
-                return BadRequest(ex.Message);
+                return BadRequest(new { message = ex.Message });
             }
         }
     }

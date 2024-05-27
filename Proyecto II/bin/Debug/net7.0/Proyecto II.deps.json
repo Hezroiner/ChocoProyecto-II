@@ -8,11 +8,8 @@
     ".NETCoreApp,Version=v7.0": {
       "Proyecto II/1.0.0": {
         "dependencies": {
-<<<<<<< HEAD
           "Entitites": "1.0.0",
-=======
           "Microsoft.AspNetCore.Authentication.JwtBearer": "7.0.19",
->>>>>>> Hezroiner
           "Microsoft.AspNetCore.Mvc.NewtonsoftJson": "7.0.19",
           "Microsoft.AspNetCore.OpenApi": "7.0.3",
           "Microsoft.EntityFrameworkCore": "7.0.19",
