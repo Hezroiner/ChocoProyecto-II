@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< Updated upstream
   "dgSpecHash": "maEju5ktNjPKP+nqQUI3Y2yCPMJckoufOEJ8mJFMnmxvo7BO0ew2ZrtVpViGnzbZSwSaGdq4nMMz/UPt6Lv/0A==",
   "success": true,
   "projectFilePath": "C:\\Users\\ozsan\\OneDrive\\Escritorio\\V Semestre\\Progra IV\\Project_2\\Services\\Services.csproj",
+=======
+  "dgSpecHash": "8n8HB0PApdYnRC4qBz1ZDf+UIbtVq0iasxKg51xB9vxVLX3Zm4VH+2dD1kiXpZz07XiapLMqc8csgRLS2KVczg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ozsan\\OneDrive\\Escritorio\\V Semestre\\Progra IV\\Project2_Progra\\Services\\Services.csproj",
+>>>>>>> Stashed changes
   "expectedPackageFiles": [
     "C:\\Users\\ozsan\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\ozsan\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

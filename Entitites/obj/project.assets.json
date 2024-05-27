@@ -954,11 +954,19 @@
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< Updated upstream
       "projectUniqueName": "C:\\Users\\ozsan\\OneDrive\\Escritorio\\V Semestre\\Progra IV\\Project_2\\Entitites\\Entitites.csproj",
       "projectName": "Entitites",
       "projectPath": "C:\\Users\\ozsan\\OneDrive\\Escritorio\\V Semestre\\Progra IV\\Project_2\\Entitites\\Entitites.csproj",
       "packagesPath": "C:\\Users\\ozsan\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\ozsan\\OneDrive\\Escritorio\\V Semestre\\Progra IV\\Project_2\\Entitites\\obj\\",
+=======
+      "projectUniqueName": "C:\\Users\\ozsan\\OneDrive\\Escritorio\\V Semestre\\Progra IV\\Project2_Progra\\Entitites\\Entitites.csproj",
+      "projectName": "Entitites",
+      "projectPath": "C:\\Users\\ozsan\\OneDrive\\Escritorio\\V Semestre\\Progra IV\\Project2_Progra\\Entitites\\Entitites.csproj",
+      "packagesPath": "C:\\Users\\ozsan\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ozsan\\OneDrive\\Escritorio\\V Semestre\\Progra IV\\Project2_Progra\\Entitites\\obj\\",
+>>>>>>> Stashed changes
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

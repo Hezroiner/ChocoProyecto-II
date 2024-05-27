@@ -38,3 +38,17 @@ C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Entitites\bi
 C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Entitites\obj\Debug\net7.0\Entitites.genruntimeconfig.cache
 C:\Users\ozsan\OneDrive\Escritorio\V Semestre\Progra IV\Project_2\Entitites\bin\Debug\net7.0\Entitites.runtimeconfig.json
 C:\Users\ozsan\OneDrive\Escritorio\V Semestre\Progra IV\Project_2\Entitites\obj\Debug\net7.0\Entitites.genruntimeconfig.cache
+C:\Users\ozsan\OneDrive\Escritorio\V Semestre\Progra IV\Project2_Progra\Entitites\bin\Debug\net7.0\Entitites.deps.json
+C:\Users\ozsan\OneDrive\Escritorio\V Semestre\Progra IV\Project2_Progra\Entitites\bin\Debug\net7.0\Entitites.runtimeconfig.json
+C:\Users\ozsan\OneDrive\Escritorio\V Semestre\Progra IV\Project2_Progra\Entitites\bin\Debug\net7.0\Entitites.dll
+C:\Users\ozsan\OneDrive\Escritorio\V Semestre\Progra IV\Project2_Progra\Entitites\bin\Debug\net7.0\Entitites.pdb
+C:\Users\ozsan\OneDrive\Escritorio\V Semestre\Progra IV\Project2_Progra\Entitites\obj\Debug\net7.0\Entitites.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ozsan\OneDrive\Escritorio\V Semestre\Progra IV\Project2_Progra\Entitites\obj\Debug\net7.0\Entitites.AssemblyInfoInputs.cache
+C:\Users\ozsan\OneDrive\Escritorio\V Semestre\Progra IV\Project2_Progra\Entitites\obj\Debug\net7.0\Entitites.AssemblyInfo.cs
+C:\Users\ozsan\OneDrive\Escritorio\V Semestre\Progra IV\Project2_Progra\Entitites\obj\Debug\net7.0\Entitites.csproj.CoreCompileInputs.cache
+C:\Users\ozsan\OneDrive\Escritorio\V Semestre\Progra IV\Project2_Progra\Entitites\obj\Debug\net7.0\Entitites.sourcelink.json
+C:\Users\ozsan\OneDrive\Escritorio\V Semestre\Progra IV\Project2_Progra\Entitites\obj\Debug\net7.0\Entitites.dll
+C:\Users\ozsan\OneDrive\Escritorio\V Semestre\Progra IV\Project2_Progra\Entitites\obj\Debug\net7.0\refint\Entitites.dll
+C:\Users\ozsan\OneDrive\Escritorio\V Semestre\Progra IV\Project2_Progra\Entitites\obj\Debug\net7.0\Entitites.pdb
+C:\Users\ozsan\OneDrive\Escritorio\V Semestre\Progra IV\Project2_Progra\Entitites\obj\Debug\net7.0\Entitites.genruntimeconfig.cache
+C:\Users\ozsan\OneDrive\Escritorio\V Semestre\Progra IV\Project2_Progra\Entitites\obj\Debug\net7.0\ref\Entitites.dll

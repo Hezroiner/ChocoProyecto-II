@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< Updated upstream
   "dgSpecHash": "ONYjk+7zf+6CNXEI9rvs4igYJHuL4b9iW4uxNXPRToH/W+OrUT28WxXw45RqlwrsRRImZSDznOBBYQ/gQtbrZA==",
   "success": true,
   "projectFilePath": "C:\\Users\\ozsan\\OneDrive\\Escritorio\\V Semestre\\Progra IV\\Project_2\\Entitites\\Entitites.csproj",
+=======
+  "dgSpecHash": "fVI90XYDZ17D/cbEYzwZY5QVEuFDxXAzj4eKXianwdXXf+fLuq50zFqAd0MVJjUiET96+jnZJwCuQ5qGjWpU4Q==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ozsan\\OneDrive\\Escritorio\\V Semestre\\Progra IV\\Project2_Progra\\Entitites\\Entitites.csproj",
+>>>>>>> Stashed changes
   "expectedPackageFiles": [
     "C:\\Users\\ozsan\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\ozsan\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.19\\microsoft.entityframeworkcore.7.0.19.nupkg.sha512",
