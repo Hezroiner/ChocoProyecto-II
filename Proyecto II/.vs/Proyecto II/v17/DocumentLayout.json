@@ -1,9 +1,16 @@
 {
   "Version": 1,
+<<<<<<< Updated upstream
   "WorkspaceRootPath": "C:\\Users\\ozsan\\OneDrive\\Escritorio\\V Semestre\\Progra IV\\Project2_Progra\\Proyecto II\\",
   "Documents": [
     {
       "AbsoluteMoniker": "D:0:0:{A9878358-71CB-46D7-84A0-8964F787872C}|Proyecto II.csproj|c:\\users\\ozsan\\onedrive\\escritorio\\v semestre\\progra iv\\project2_progra\\proyecto ii\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+=======
+  "WorkspaceRootPath": "C:\\Users\\ozsan\\OneDrive\\Escritorio\\V Semestre\\Progra IV\\Project2_Progra4\\Proyecto II\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A9878358-71CB-46D7-84A0-8964F787872C}|Proyecto II.csproj|c:\\users\\ozsan\\onedrive\\escritorio\\v semestre\\progra iv\\project2_progra4\\proyecto ii\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+>>>>>>> Stashed changes
       "RelativeMoniker": "D:0:0:{A9878358-71CB-46D7-84A0-8964F787872C}|Proyecto II.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -14,10 +21,27 @@
       "RelativeMoniker": "D:0:0:{A9878358-71CB-46D7-84A0-8964F787872C}|Proyecto II.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
+<<<<<<< Updated upstream
       "AbsoluteMoniker": "D:0:0:{25402358-273D-4F84-9F5E-EFC22AC5BE13}|..\\Services\\Services.csproj|c:\\users\\ozsan\\onedrive\\escritorio\\v semestre\\progra iv\\project2_progra\\services\\migrations\\20240522200706_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A9878358-71CB-46D7-84A0-8964F787872C}|Proyecto II.csproj|c:\\users\\ozsan\\onedrive\\escritorio\\v semestre\\progra iv\\project2_progra\\proyecto ii\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+=======
+      "AbsoluteMoniker": "D:0:0:{25402358-273D-4F84-9F5E-EFC22AC5BE13}|..\\Services\\Services.csproj|c:\\users\\ozsan\\onedrive\\escritorio\\v semestre\\progra iv\\project2_progra4\\services\\tipocita\\svtipocita.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25402358-273D-4F84-9F5E-EFC22AC5BE13}|..\\Services\\Services.csproj|c:\\users\\ozsan\\onedrive\\escritorio\\v semestre\\progra iv\\project2_progra4\\services\\services.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A9878358-71CB-46D7-84A0-8964F787872C}|Proyecto II.csproj|c:\\users\\ozsan\\onedrive\\escritorio\\v semestre\\progra iv\\project2_progra4\\proyecto ii\\proyecto ii.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{A9878358-71CB-46D7-84A0-8964F787872C}|Proyecto II.csproj|solutionrelative:proyecto ii.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25402358-273D-4F84-9F5E-EFC22AC5BE13}|..\\Services\\Services.csproj|c:\\users\\ozsan\\onedrive\\escritorio\\v semestre\\progra iv\\project2_progra4\\services\\mydbcontext\\mycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A9878358-71CB-46D7-84A0-8964F787872C}|Proyecto II.csproj|c:\\users\\ozsan\\onedrive\\escritorio\\v semestre\\progra iv\\project2_progra4\\proyecto ii\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+>>>>>>> Stashed changes
       "RelativeMoniker": "D:0:0:{A9878358-71CB-46D7-84A0-8964F787872C}|Proyecto II.csproj|solutionrelative:controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -34,7 +58,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
+<<<<<<< Updated upstream
           "SelectedChildIndex": 11,
+=======
+          "SelectedChildIndex": 13,
+>>>>>>> Stashed changes
           "Children": [
             {
               "$type": "Bookmark",
@@ -58,6 +86,7 @@
             },
             {
               "$type": "Document",
+<<<<<<< Updated upstream
               "DocumentIndex": 1,
               "Title": "MyContext.cs",
               "DocumentMoniker": "C:\\Users\\ozsan\\OneDrive\\Escritorio\\V Semestre\\Progra IV\\Project2_Progra\\Services\\MyDbContext\\MyContext.cs",
@@ -65,12 +94,48 @@
               "ToolTip": "C:\\Users\\ozsan\\OneDrive\\Escritorio\\V Semestre\\Progra IV\\Project2_Progra\\Services\\MyDbContext\\MyContext.cs",
               "RelativeToolTip": "..\\Services\\MyDbContext\\MyContext.cs",
               "ViewState": "AQIAABcAAAAAAAAAAAAswDgAAAABAAAA",
+=======
+              "DocumentIndex": 3,
+              "Title": "Services",
+              "DocumentMoniker": "C:\\Users\\ozsan\\OneDrive\\Escritorio\\V Semestre\\Progra IV\\Project2_Progra4\\Services\\Services.csproj",
+              "RelativeDocumentMoniker": "..\\Services\\Services.csproj",
+              "ToolTip": "C:\\Users\\ozsan\\OneDrive\\Escritorio\\V Semestre\\Progra IV\\Project2_Progra4\\Services\\Services.csproj",
+              "RelativeToolTip": "..\\Services\\Services.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-05-27T22:32:15.402Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Proyecto II",
+              "DocumentMoniker": "C:\\Users\\ozsan\\OneDrive\\Escritorio\\V Semestre\\Progra IV\\Project2_Progra4\\Proyecto II\\Proyecto II.csproj",
+              "RelativeDocumentMoniker": "Proyecto II.csproj",
+              "ToolTip": "C:\\Users\\ozsan\\OneDrive\\Escritorio\\V Semestre\\Progra IV\\Project2_Progra4\\Proyecto II\\Proyecto II.csproj",
+              "RelativeToolTip": "Proyecto II.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-05-27T22:32:13.702Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SvTipoCita.cs",
+              "DocumentMoniker": "C:\\Users\\ozsan\\OneDrive\\Escritorio\\V Semestre\\Progra IV\\Project2_Progra4\\Services\\TipoCita\\SvTipoCita.cs",
+              "RelativeDocumentMoniker": "..\\Services\\TipoCita\\SvTipoCita.cs",
+              "ToolTip": "C:\\Users\\ozsan\\OneDrive\\Escritorio\\V Semestre\\Progra IV\\Project2_Progra4\\Services\\TipoCita\\SvTipoCita.cs",
+              "RelativeToolTip": "..\\Services\\TipoCita\\SvTipoCita.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAbAAAA",
+>>>>>>> Stashed changes
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-27T14:18:37.796Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+<<<<<<< Updated upstream
               "DocumentIndex": 3,
               "Title": "20240522200706_initial.cs",
               "DocumentMoniker": "C:\\Users\\ozsan\\OneDrive\\Escritorio\\V Semestre\\Progra IV\\Project2_Progra\\Services\\Migrations\\20240522200706_initial.cs",
@@ -78,13 +143,22 @@
               "ToolTip": "C:\\Users\\ozsan\\OneDrive\\Escritorio\\V Semestre\\Progra IV\\Project2_Progra\\Services\\Migrations\\20240522200706_initial.cs",
               "RelativeToolTip": "..\\Services\\Migrations\\20240522200706_initial.cs",
               "ViewState": "AQIAAJQAAAAAAAAAAAAgwAAAAAAAAAAA",
+=======
+              "DocumentIndex": 5,
+              "Title": "MyContext.cs",
+              "DocumentMoniker": "C:\\Users\\ozsan\\OneDrive\\Escritorio\\V Semestre\\Progra IV\\Project2_Progra4\\Services\\MyDbContext\\MyContext.cs",
+              "RelativeDocumentMoniker": "..\\Services\\MyDbContext\\MyContext.cs",
+              "ToolTip": "C:\\Users\\ozsan\\OneDrive\\Escritorio\\V Semestre\\Progra IV\\Project2_Progra4\\Services\\MyDbContext\\MyContext.cs",
+              "RelativeToolTip": "..\\Services\\MyDbContext\\MyContext.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAAswDgAAAABAAAA",
+>>>>>>> Stashed changes
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-27T14:15:26.07Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\ozsan\\OneDrive\\Escritorio\\V Semestre\\Progra IV\\Project2_Progra\\Proyecto II\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
@@ -97,18 +171,26 @@
             },
             {
               "$type": "Document",
+<<<<<<< Updated upstream
               "DocumentIndex": 5,
+=======
+              "DocumentIndex": 7,
+>>>>>>> Stashed changes
               "Title": "SvCita.cs",
               "DocumentMoniker": "C:\\Users\\ozsan\\OneDrive\\Escritorio\\V Semestre\\Progra IV\\Project_2\\Services\\Cita\\SvCita.cs",
               "RelativeDocumentMoniker": "..\\..\\Project_2\\Services\\Cita\\SvCita.cs",
               "ToolTip": "C:\\Users\\ozsan\\OneDrive\\Escritorio\\V Semestre\\Progra IV\\Project_2\\Services\\Cita\\SvCita.cs",
               "RelativeToolTip": "..\\..\\Project_2\\Services\\Cita\\SvCita.cs",
+<<<<<<< Updated upstream
               "ViewState": "AQIAAC8AAAAAAAAAAAAIwF0AAAANAAAA",
+=======
+>>>>>>> Stashed changes
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-27T00:36:35.032Z"
             },
             {
               "$type": "Document",
+<<<<<<< Updated upstream
               "DocumentIndex": 4,
               "Title": "UserController.cs",
               "DocumentMoniker": "C:\\Users\\ozsan\\OneDrive\\Escritorio\\V Semestre\\Progra IV\\Project2_Progra\\Proyecto II\\Controllers\\UserController.cs",
@@ -116,19 +198,35 @@
               "ToolTip": "C:\\Users\\ozsan\\OneDrive\\Escritorio\\V Semestre\\Progra IV\\Project2_Progra\\Proyecto II\\Controllers\\UserController.cs",
               "RelativeToolTip": "Controllers\\UserController.cs",
               "ViewState": "AQIAAA4AAAAAAAAAAAAQwFQAAAAAAAAA",
+=======
+              "DocumentIndex": 6,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\ozsan\\OneDrive\\Escritorio\\V Semestre\\Progra IV\\Project2_Progra4\\Proyecto II\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\ozsan\\OneDrive\\Escritorio\\V Semestre\\Progra IV\\Project2_Progra4\\Proyecto II\\Controllers\\UserController.cs",
+              "RelativeToolTip": "Controllers\\UserController.cs",
+              "ViewState": "AQIAAFsAAAAAAAAAAAAwwGoAAAABAAAA",
+>>>>>>> Stashed changes
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-26T13:35:57.614Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+<<<<<<< Updated upstream
               "DocumentIndex": 6,
+=======
+              "DocumentIndex": 8,
+>>>>>>> Stashed changes
               "Title": "SvUser.cs",
               "DocumentMoniker": "C:\\Users\\ozsan\\OneDrive\\Escritorio\\V Semestre\\Progra IV\\Project_2\\Services\\User\\SvUser.cs",
               "RelativeDocumentMoniker": "..\\..\\Project_2\\Services\\User\\SvUser.cs",
               "ToolTip": "C:\\Users\\ozsan\\OneDrive\\Escritorio\\V Semestre\\Progra IV\\Project_2\\Services\\User\\SvUser.cs",
               "RelativeToolTip": "..\\..\\Project_2\\Services\\User\\SvUser.cs",
+<<<<<<< Updated upstream
               "ViewState": "AQIAAGAAAAAAAAAAAAAvwBAAAAAoAAAA",
+=======
+>>>>>>> Stashed changes
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-26T13:34:12.078Z"
             },
@@ -136,11 +234,19 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
+<<<<<<< Updated upstream
               "DocumentMoniker": "C:\\Users\\ozsan\\OneDrive\\Escritorio\\V Semestre\\Progra IV\\Project2_Progra\\Proyecto II\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\ozsan\\OneDrive\\Escritorio\\V Semestre\\Progra IV\\Project2_Progra\\Proyecto II\\Program.cs",
               "RelativeToolTip": "Program.cs",
               "ViewState": "AQIAAB8AAAAAAAAAAAAswC0AAAADAAAA",
+=======
+              "DocumentMoniker": "C:\\Users\\ozsan\\OneDrive\\Escritorio\\V Semestre\\Progra IV\\Project2_Progra4\\Proyecto II\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\ozsan\\OneDrive\\Escritorio\\V Semestre\\Progra IV\\Project2_Progra4\\Proyecto II\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAswBUAAAAAAAAA",
+>>>>>>> Stashed changes
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-26T13:31:55.444Z",
               "EditorCaption": ""
