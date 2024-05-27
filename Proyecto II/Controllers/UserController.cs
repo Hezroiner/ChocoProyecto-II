@@ -54,12 +54,12 @@ namespace Proyecto_II.Controllers
         }
 
         [HttpPost("register")]
-        public IActionResult Register([FromBody] UserRegisterModel userRegisterModel)
+        public IActionResult Register(UserRegisterModel model)
         {
             try
             {
-                var token = _svUser.Register(userRegisterModel);
-                return Ok(new { token });
+                var token = _svUser.Register(model);
+                return Content(token, "text/plain"); // Ensure it returns as plain text
             }
             catch (Exception ex)
             {
@@ -68,12 +68,12 @@ namespace Proyecto_II.Controllers
         }
 
         [HttpPost("login")]
-        public IActionResult Login([FromBody] UserLoginModel userLoginModel)
+        public IActionResult Login(UserLoginModel model)
         {
             try
             {
-                var token = _svUser.Login(userLoginModel);
-                return Ok(new { token });
+                var token = _svUser.Login(model);
+                return Content(token); // Ensure it returns as plain text
             }
             catch (Exception ex)
             {
