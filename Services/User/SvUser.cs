@@ -35,7 +35,7 @@ namespace Proyecto_II.Services
             var user = _myContext.Users
                 .Include(user => user.Citas)
                 .Include(user => user.Role)
-                .FirstOrDefault(user => user.Id == id);
+                .FirstOrDefault(user => user.UserId == id);
 
             if (user == null)
             {
@@ -98,7 +98,7 @@ namespace Proyecto_II.Services
 
             var claims = new[]
             {
-        new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()),
+        new Claim(ClaimTypes.NameIdentifier, user.UserId.ToString()),
         new Claim(ClaimTypes.Name, user.Nombre),
         new Claim(ClaimTypes.Email, user.Email),
             };

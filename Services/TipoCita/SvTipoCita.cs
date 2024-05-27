@@ -1,7 +1,8 @@
-﻿using Proyecto_II.Entities;
+﻿using Microsoft.EntityFrameworkCore;
+using Proyecto_II.Entities;
 using Services;
 using Services.MyDbContext;
-using System.Data.Entity;
+
 
 namespace Proyecto_II.Services
 {
@@ -24,7 +25,7 @@ namespace Proyecto_II.Services
         {
             return _myContext.TiposCita
                  .Include(tipocita => tipocita.Citas)
-                .FirstOrDefault(t => t.Id == id);
+                .FirstOrDefault(t => t.TipoCitaId == id);
         }
     }
 }

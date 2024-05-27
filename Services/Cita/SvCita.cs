@@ -54,7 +54,7 @@ namespace Proyecto_II.Services
             .Include(cita => cita.User)
             .Include(cita => cita.TipoCita)
             .Include(cita => cita.Sucursal)
-            .FirstOrDefault(cita => cita.Id == id);
+            .FirstOrDefault(cita => cita.CitaId == id);
 
             if (cita == null)
             {

@@ -28,7 +28,7 @@ namespace Proyecto_II.Services
         {
             var sucursal = _myContext.Sucursales
                 .Include(sucursal => sucursal.Citas)  // Incluye la relación con Citas
-                .FirstOrDefault(sucursal => sucursal.Id == id);
+                .FirstOrDefault(sucursal => sucursal.SucursalId == id);
 
             if (sucursal == null)
             {
