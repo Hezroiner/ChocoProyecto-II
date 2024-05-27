@@ -10,18 +10,6 @@ C:\Documentos\Programacion\Lenguajes\C#\Entitites\obj\Debug\net7.0\Entitites.dll
 C:\Documentos\Programacion\Lenguajes\C#\Entitites\obj\Debug\net7.0\refint\Entitites.dll
 C:\Documentos\Programacion\Lenguajes\C#\Entitites\obj\Debug\net7.0\Entitites.pdb
 C:\Documentos\Programacion\Lenguajes\C#\Entitites\obj\Debug\net7.0\ref\Entitites.dll
-C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Entitites\bin\Debug\net7.0\Entitites.deps.json
-C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Entitites\bin\Debug\net7.0\Entitites.dll
-C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Entitites\bin\Debug\net7.0\Entitites.pdb
-C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Entitites\obj\Debug\net7.0\Entitites.csproj.AssemblyReference.cache
-C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Entitites\obj\Debug\net7.0\Entitites.GeneratedMSBuildEditorConfig.editorconfig
-C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Entitites\obj\Debug\net7.0\Entitites.AssemblyInfoInputs.cache
-C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Entitites\obj\Debug\net7.0\Entitites.AssemblyInfo.cs
-C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Entitites\obj\Debug\net7.0\Entitites.csproj.CoreCompileInputs.cache
-C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Entitites\obj\Debug\net7.0\Entitites.dll
-C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Entitites\obj\Debug\net7.0\refint\Entitites.dll
-C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Entitites\obj\Debug\net7.0\Entitites.pdb
-C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Entitites\obj\Debug\net7.0\ref\Entitites.dll
 C:\Users\ozsan\OneDrive\Escritorio\V Semestre\Progra IV\Project_2\Entitites\obj\Debug\net7.0\Entitites.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\ozsan\OneDrive\Escritorio\V Semestre\Progra IV\Project_2\Entitites\obj\Debug\net7.0\Entitites.AssemblyInfoInputs.cache
 C:\Users\ozsan\OneDrive\Escritorio\V Semestre\Progra IV\Project_2\Entitites\obj\Debug\net7.0\Entitites.AssemblyInfo.cs
@@ -34,10 +22,25 @@ C:\Users\ozsan\OneDrive\Escritorio\V Semestre\Progra IV\Project_2\Entitites\bin\
 C:\Users\ozsan\OneDrive\Escritorio\V Semestre\Progra IV\Project_2\Entitites\bin\Debug\net7.0\Entitites.dll
 C:\Users\ozsan\OneDrive\Escritorio\V Semestre\Progra IV\Project_2\Entitites\bin\Debug\net7.0\Entitites.pdb
 C:\Users\ozsan\OneDrive\Escritorio\V Semestre\Progra IV\Project_2\Entitites\obj\Debug\net7.0\ref\Entitites.dll
-C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Entitites\bin\Debug\net7.0\Entitites.runtimeconfig.json
-C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Entitites\obj\Debug\net7.0\Entitites.genruntimeconfig.cache
 C:\Users\ozsan\OneDrive\Escritorio\V Semestre\Progra IV\Project_2\Entitites\bin\Debug\net7.0\Entitites.runtimeconfig.json
 C:\Users\ozsan\OneDrive\Escritorio\V Semestre\Progra IV\Project_2\Entitites\obj\Debug\net7.0\Entitites.genruntimeconfig.cache
+<<<<<<< HEAD
+=======
+<<<<<<< Updated upstream
+C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Entitites\bin\Debug\net7.0\Entitites.deps.json
+C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Entitites\bin\Debug\net7.0\Entitites.dll
+C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Entitites\bin\Debug\net7.0\Entitites.pdb
+C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Entitites\obj\Debug\net7.0\Entitites.csproj.AssemblyReference.cache
+C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Entitites\obj\Debug\net7.0\Entitites.GeneratedMSBuildEditorConfig.editorconfig
+C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Entitites\obj\Debug\net7.0\Entitites.AssemblyInfoInputs.cache
+C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Entitites\obj\Debug\net7.0\Entitites.AssemblyInfo.cs
+C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Entitites\obj\Debug\net7.0\Entitites.csproj.CoreCompileInputs.cache
+C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Entitites\obj\Debug\net7.0\Entitites.dll
+C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Entitites\obj\Debug\net7.0\refint\Entitites.dll
+C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Entitites\obj\Debug\net7.0\Entitites.pdb
+C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Entitites\obj\Debug\net7.0\ref\Entitites.dll
+=======
+>>>>>>> origin/Hezroiner
 C:\Users\ozsan\OneDrive\Escritorio\V Semestre\Progra IV\Project2_Progra\Entitites\bin\Debug\net7.0\Entitites.deps.json
 C:\Users\ozsan\OneDrive\Escritorio\V Semestre\Progra IV\Project2_Progra\Entitites\bin\Debug\net7.0\Entitites.runtimeconfig.json
 C:\Users\ozsan\OneDrive\Escritorio\V Semestre\Progra IV\Project2_Progra\Entitites\bin\Debug\net7.0\Entitites.dll
@@ -52,3 +55,21 @@ C:\Users\ozsan\OneDrive\Escritorio\V Semestre\Progra IV\Project2_Progra\Entitite
 C:\Users\ozsan\OneDrive\Escritorio\V Semestre\Progra IV\Project2_Progra\Entitites\obj\Debug\net7.0\Entitites.pdb
 C:\Users\ozsan\OneDrive\Escritorio\V Semestre\Progra IV\Project2_Progra\Entitites\obj\Debug\net7.0\Entitites.genruntimeconfig.cache
 C:\Users\ozsan\OneDrive\Escritorio\V Semestre\Progra IV\Project2_Progra\Entitites\obj\Debug\net7.0\ref\Entitites.dll
+<<<<<<< HEAD
+=======
+C:\Users\ozsan\OneDrive\Escritorio\V Semestre\Progra IV\Project2_Progra4\Entitites\bin\Debug\net7.0\Entitites.deps.json
+C:\Users\ozsan\OneDrive\Escritorio\V Semestre\Progra IV\Project2_Progra4\Entitites\bin\Debug\net7.0\Entitites.runtimeconfig.json
+C:\Users\ozsan\OneDrive\Escritorio\V Semestre\Progra IV\Project2_Progra4\Entitites\bin\Debug\net7.0\Entitites.dll
+C:\Users\ozsan\OneDrive\Escritorio\V Semestre\Progra IV\Project2_Progra4\Entitites\bin\Debug\net7.0\Entitites.pdb
+C:\Users\ozsan\OneDrive\Escritorio\V Semestre\Progra IV\Project2_Progra4\Entitites\obj\Debug\net7.0\Entitites.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ozsan\OneDrive\Escritorio\V Semestre\Progra IV\Project2_Progra4\Entitites\obj\Debug\net7.0\Entitites.AssemblyInfoInputs.cache
+C:\Users\ozsan\OneDrive\Escritorio\V Semestre\Progra IV\Project2_Progra4\Entitites\obj\Debug\net7.0\Entitites.AssemblyInfo.cs
+C:\Users\ozsan\OneDrive\Escritorio\V Semestre\Progra IV\Project2_Progra4\Entitites\obj\Debug\net7.0\Entitites.csproj.CoreCompileInputs.cache
+C:\Users\ozsan\OneDrive\Escritorio\V Semestre\Progra IV\Project2_Progra4\Entitites\obj\Debug\net7.0\Entitites.sourcelink.json
+C:\Users\ozsan\OneDrive\Escritorio\V Semestre\Progra IV\Project2_Progra4\Entitites\obj\Debug\net7.0\Entitites.dll
+C:\Users\ozsan\OneDrive\Escritorio\V Semestre\Progra IV\Project2_Progra4\Entitites\obj\Debug\net7.0\refint\Entitites.dll
+C:\Users\ozsan\OneDrive\Escritorio\V Semestre\Progra IV\Project2_Progra4\Entitites\obj\Debug\net7.0\Entitites.pdb
+C:\Users\ozsan\OneDrive\Escritorio\V Semestre\Progra IV\Project2_Progra4\Entitites\obj\Debug\net7.0\Entitites.genruntimeconfig.cache
+C:\Users\ozsan\OneDrive\Escritorio\V Semestre\Progra IV\Project2_Progra4\Entitites\obj\Debug\net7.0\ref\Entitites.dll
+>>>>>>> Stashed changes
+>>>>>>> origin/Hezroiner

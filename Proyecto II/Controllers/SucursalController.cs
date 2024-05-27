@@ -1,7 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Proyecto_II.Entities;
+
 using Proyecto_II.Services;
 using Services;
+using Services.DTO;
+using System.Collections.Generic;
 
 namespace Proyecto_II.Controllers
 {
@@ -9,7 +11,7 @@ namespace Proyecto_II.Controllers
     [ApiController]
     public class SucursalController : ControllerBase
     {
-        private ISucursal _svSucursal;
+        private readonly ISucursal _svSucursal;
 
         public SucursalController(ISucursal svSucursal)
         {
@@ -18,16 +20,36 @@ namespace Proyecto_II.Controllers
 
         // Get All
         [HttpGet]
-        public IEnumerable<Sucursal> Get()
+        public IEnumerable<SucursalDTO> Get()
         {
-            return _svSucursal.GetAll();
+            var sucursales = _svSucursal.GetAll();
+            var sucursalDTOs = new List<SucursalDTO>();
+
+            foreach (var sucursal in sucursales)
+            {
+                sucursalDTOs.Add(new SucursalDTO
+                {
+                    SucursalId = sucursal.SucursalId,
+                    Nombre = sucursal.Nombre
+                    // Puedes mapear otras propiedades aquí si es necesario
+                });
+            }
+
+            return sucursalDTOs;
         }
 
         // Get By Id
         [HttpGet("{id}")]
-        public Sucursal Get(int id)
+        public SucursalDTO Get(int id)
         {
-            return _svSucursal.GetById(id);
+            var sucursal = _svSucursal.GetById(id);
+
+            return new SucursalDTO
+            {
+                SucursalId = sucursal.SucursalId,
+                Nombre = sucursal.Nombre
+                // Puedes mapear otras propiedades aquí si es necesario
+            };
         }
     }
 }

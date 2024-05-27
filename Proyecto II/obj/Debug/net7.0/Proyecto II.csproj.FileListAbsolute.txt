@@ -1,17 +1,3 @@
-C:\Documentos\Programacion\Lenguajes\C#\Proyecto II\obj\Debug\net7.0\Proyecto II.csproj.AssemblyReference.cache
-C:\Documentos\Programacion\Lenguajes\C#\Proyecto II\obj\Debug\net7.0\Proyecto II.GeneratedMSBuildEditorConfig.editorconfig
-C:\Documentos\Programacion\Lenguajes\C#\Proyecto II\obj\Debug\net7.0\Proyecto II.AssemblyInfoInputs.cache
-C:\Documentos\Programacion\Lenguajes\C#\Proyecto II\obj\Debug\net7.0\Proyecto II.AssemblyInfo.cs
-C:\Documentos\Programacion\Lenguajes\C#\Proyecto II\obj\Debug\net7.0\Proyecto II.csproj.CoreCompileInputs.cache
-C:\Documentos\Programacion\Lenguajes\C#\Proyecto II\obj\Debug\net7.0\Proyecto II.MvcApplicationPartsAssemblyInfo.cs
-C:\Documentos\Programacion\Lenguajes\C#\Proyecto II\obj\Debug\net7.0\Proyecto II.MvcApplicationPartsAssemblyInfo.cache
-C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Proyecto II\obj\Debug\net7.0\Proyecto II.csproj.AssemblyReference.cache
-C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Proyecto II\obj\Debug\net7.0\Proyecto II.GeneratedMSBuildEditorConfig.editorconfig
-C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Proyecto II\obj\Debug\net7.0\Proyecto II.AssemblyInfoInputs.cache
-C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Proyecto II\obj\Debug\net7.0\Proyecto II.AssemblyInfo.cs
-C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Proyecto II\obj\Debug\net7.0\Proyecto II.csproj.CoreCompileInputs.cache
-C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Proyecto II\obj\Debug\net7.0\Proyecto II.MvcApplicationPartsAssemblyInfo.cs
-C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Proyecto II\obj\Debug\net7.0\Proyecto II.MvcApplicationPartsAssemblyInfo.cache
 C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Proyecto II\bin\Debug\net7.0\appsettings.Development.json
 C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Proyecto II\bin\Debug\net7.0\appsettings.json
 C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Proyecto II\bin\Debug\net7.0\Proyecto II.exe
@@ -22,6 +8,7 @@ C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Proyecto II\
 C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Proyecto II\bin\Debug\net7.0\Azure.Core.dll
 C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Proyecto II\bin\Debug\net7.0\Azure.Identity.dll
 C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Proyecto II\bin\Debug\net7.0\Humanizer.dll
+C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Proyecto II\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Proyecto II\bin\Debug\net7.0\Microsoft.AspNetCore.JsonPatch.dll
 C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Proyecto II\bin\Debug\net7.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
 C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Proyecto II\bin\Debug\net7.0\Microsoft.AspNetCore.OpenApi.dll
@@ -250,8 +237,17 @@ C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Proyecto II\
 C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Proyecto II\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Proyecto II\bin\Debug\net7.0\Entitites.dll
 C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Proyecto II\bin\Debug\net7.0\Services.dll
-C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Proyecto II\bin\Debug\net7.0\Services.pdb
 C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Proyecto II\bin\Debug\net7.0\Entitites.pdb
+C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Proyecto II\bin\Debug\net7.0\Services.pdb
+C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Proyecto II\obj\Debug\net7.0\Proyecto II.csproj.AssemblyReference.cache
+C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Proyecto II\obj\Debug\net7.0\Proyecto II.GeneratedMSBuildEditorConfig.editorconfig
+C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Proyecto II\obj\Debug\net7.0\Proyecto II.AssemblyInfoInputs.cache
+C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Proyecto II\obj\Debug\net7.0\Proyecto II.AssemblyInfo.cs
+C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Proyecto II\obj\Debug\net7.0\Proyecto II.csproj.CoreCompileInputs.cache
+C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Proyecto II\obj\Debug\net7.0\Proyecto II.MvcApplicationPartsAssemblyInfo.cs
+C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Proyecto II\obj\Debug\net7.0\Proyecto II.MvcApplicationPartsAssemblyInfo.cache
+C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Proyecto II\obj\Debug\net7.0\Proyecto II.RazorAssemblyInfo.cache
+C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Proyecto II\obj\Debug\net7.0\Proyecto II.RazorAssemblyInfo.cs
 C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Proyecto II\obj\Debug\net7.0\staticwebassets\msbuild.Proyecto II.Microsoft.AspNetCore.StaticWebAssets.props
 C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Proyecto II\obj\Debug\net7.0\staticwebassets\msbuild.build.Proyecto II.props
 C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Proyecto II\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.Proyecto II.props
@@ -267,6 +263,10 @@ C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Proyecto II\
 C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Proyecto II\obj\Debug\net7.0\Proyecto II.genruntimeconfig.cache
 C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Proyecto II\obj\Debug\net7.0\ref\Proyecto II.dll
 <<<<<<< Updated upstream
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> origin/Hezroiner
 C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Proyecto II\obj\Debug\net7.0\Proyecto II.RazorAssemblyInfo.cache
 C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Proyecto II\obj\Debug\net7.0\Proyecto II.RazorAssemblyInfo.cs
 =======
@@ -1094,8 +1094,11 @@ C:\Users\ozsan\OneDrive\Escritorio\V Semestre\Progra IV\Project2_Progra\Proyecto
 C:\Users\ozsan\OneDrive\Escritorio\V Semestre\Progra IV\Project2_Progra\Proyecto II\obj\Debug\net7.0\Proyecto II.pdb
 C:\Users\ozsan\OneDrive\Escritorio\V Semestre\Progra IV\Project2_Progra\Proyecto II\obj\Debug\net7.0\Proyecto II.genruntimeconfig.cache
 C:\Users\ozsan\OneDrive\Escritorio\V Semestre\Progra IV\Project2_Progra\Proyecto II\obj\Debug\net7.0\ref\Proyecto II.dll
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
+=======
+>>>>>>> origin/Hezroiner
 C:\Users\ozsan\OneDrive\Escritorio\V Semestre\Progra IV\Project2_Progra4\Proyecto II\bin\Debug\net7.0\appsettings.Development.json
 C:\Users\ozsan\OneDrive\Escritorio\V Semestre\Progra IV\Project2_Progra4\Proyecto II\bin\Debug\net7.0\appsettings.json
 C:\Users\ozsan\OneDrive\Escritorio\V Semestre\Progra IV\Project2_Progra4\Proyecto II\bin\Debug\net7.0\Proyecto II.exe

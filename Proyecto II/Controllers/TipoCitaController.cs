@@ -1,34 +1,54 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Proyecto_II.Entities;
 using Proyecto_II.Services;
 using Services;
+using Services.DTO;
+using System.Collections.Generic;
 
 namespace Proyecto_II.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class TipoCitaController : Controller
+    public class TipoCitaController : ControllerBase
     {
-            private ITipoCita _svTpoCita;
+        private readonly ITipoCita _svTipoCita;
 
-            public TipoCitaController(ITipoCita svTipoCita)
+        public TipoCitaController(ITipoCita svTipoCita)
+        {
+            _svTipoCita = svTipoCita;
+        }
+
+        // Get All
+        [HttpGet]
+        public IEnumerable<TipoCitaDTO> Get()
+        {
+            var tiposCita = _svTipoCita.GetAll();
+            var tipoCitaDTOs = new List<TipoCitaDTO>();
+
+            foreach (var tipoCita in tiposCita)
             {
-                _svTpoCita = svTipoCita;
+                tipoCitaDTOs.Add(new TipoCitaDTO
+                {
+                    TipoCitaId = tipoCita.TipoCitaId,
+                    Nombre = tipoCita.Nombre
+                    // Puedes mapear otras propiedades aquí si es necesario
+                });
             }
 
-            //Get All
-            [HttpGet]
-            public IEnumerable<TipoCita> Get()
-            {
-                return _svTpoCita.GetAll();
-            }
+            return tipoCitaDTOs;
+        }
 
-            //GetById
-            [HttpGet("{id}")]
-            public TipoCita Get(int id)
+        // Get By Id
+        [HttpGet("{id}")]
+        public TipoCitaDTO Get(int id)
+        {
+            var tipoCita = _svTipoCita.GetById(id);
+
+            return new TipoCitaDTO
             {
-                return _svTpoCita.GetById(id);
-            }
+                TipoCitaId = tipoCita.TipoCitaId,
+                Nombre = tipoCita.Nombre
+                // Puedes mapear otras propiedades aquí si es necesario
+            };
+        }
     }
 }
-

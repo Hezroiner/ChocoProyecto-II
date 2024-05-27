@@ -2,6 +2,7 @@
 using Proyecto_II.Entities;
 using Proyecto_II.Services;
 using Services;
+using Services.DTO;
 
 namespace Proyecto_II.Controllers
 {
@@ -16,17 +17,38 @@ namespace Proyecto_II.Controllers
             _svRole = svRole;
         }
 
+        // Get All
         [HttpGet]
-        public IEnumerable<Role> Get()
+        public IEnumerable<RoleDTO> Get()
         {
-            return _svRole.GetAll();
+            var roles = _svRole.GetAll();
+            var roleDTOs = new List<RoleDTO>();
+
+            foreach (var role in roles)
+            {
+                roleDTOs.Add(new RoleDTO
+                {
+                    RoleId = role.RoleId,
+                    Nombre = role.Nombre,
+
+                });
+            }
+
+            return roleDTOs;
         }
 
         // Get By Id
         [HttpGet("{id}")]
-        public Role Get(int id)
+        public RoleDTO Get(int id)
         {
-            return _svRole.GetById(id);
+            var role = _svRole.GetById(id);
+
+            return new RoleDTO
+            {
+                RoleId = role.RoleId,
+                Nombre = role.Nombre
+            };
         }
+
     }
 }

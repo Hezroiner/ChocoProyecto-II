@@ -16,9 +16,6 @@
                 @Html.DisplayNameFor(model => model.FechaHora)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Lugar)
-            </th>
-            <th>
                 @Html.DisplayNameFor(model => model.Status)
             </th>
             <th>
@@ -40,9 +37,6 @@
                 @Html.DisplayFor(modelItem => item.FechaHora)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Lugar)
-            </td>
-            <td>
                 @Html.DisplayFor(modelItem => item.Status)
             </td>
             <td>
@@ -52,9 +46,9 @@
                 @Html.DisplayFor(modelItem => item.TipoCita.Nombre)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                <a asp-action="Edit" asp-route-id="@item.CitaId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.CitaId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.CitaId">Delete</a>
             </td>
         </tr>
 }

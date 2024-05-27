@@ -1,6 +1,10 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Proyecto_II.Entities;
+using Proyecto_II.Services;
 using Services;
+using Services.DTO;
+using System;
+using System.Collections.Generic;
 
 namespace Proyecto_II.Controllers
 {
@@ -15,96 +19,152 @@ namespace Proyecto_II.Controllers
             _svCita = svCita;
         }
 
-        //Get All
+
+        // GET: api/Cita
         [HttpGet]
-        public IEnumerable<Cita> Get()
+        public ActionResult<IEnumerable<CitaDTO>> Get()
         {
-            return _svCita.GetAll();
+            try
+            {
+                var citas = _svCita.GetAll();
+                var citaDTOs = new List<CitaDTO>();
+
+                foreach (var cita in citas)
+                {
+                    citaDTOs.Add(new CitaDTO
+                    {
+                        CitaId = cita.CitaId,
+                        FechaHora = cita.FechaHora,
+                        Status = cita.Status,
+                        UserId = cita.UserId,
+                        TipoCitaId = cita.TipoCitaId,
+                        SucursalId = cita.SucursalId
+                    });
+                }
+
+                return Ok(citaDTOs);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { message = "An error occurred while processing your request.", details = ex.Message });
+            }
         }
 
-        //GetById
+        // GET: api/Cita/5
         [HttpGet("{id}")]
         public IActionResult Get(int id)
         {
             try
             {
                 var cita = _svCita.GetById(id);
-                return Ok(cita);  // Retorna la cita si es encontrada
+                var citaDTO = new CitaDTO
+                {
+                    CitaId = cita.CitaId,
+                    FechaHora = cita.FechaHora,
+                    Status = cita.Status,
+                    UserId = cita.UserId,
+                    TipoCitaId = cita.TipoCitaId,
+                    SucursalId = cita.SucursalId
+                };
+
+                return Ok(citaDTO);
             }
             catch (KeyNotFoundException ex)
             {
-                // Maneja la excepción y retorna un 404 Not Found
-                return NotFound(new { message = ex.Message });
+                return NotFound(ex.Message);
             }
             catch (Exception ex)
             {
-                // Maneja cualquier otra excepción y retorna un 500 Internal Server Error
                 return StatusCode(500, new { message = "An error occurred while processing your request.", details = ex.Message });
             }
         }
 
+        // POST: api/Cita
         [HttpPost]
-        public IActionResult Post(Cita cita)
+        public IActionResult Post(CitaDTO citaDTO)
         {
             try
             {
+                var cita = new Cita
+                {
+                    FechaHora = citaDTO.FechaHora,
+                    Status = citaDTO.Status,
+                    UserId = citaDTO.UserId,
+                    TipoCitaId = citaDTO.TipoCitaId,
+                    SucursalId = citaDTO.SucursalId
+                };
+
                 _svCita.AddCita(cita);
-                return Ok(cita); // Retorna la cita agregada si se realiza con éxito
-            }
-            catch (InvalidOperationException ex)
-            {
-                // Maneja la excepción específica que indica que ya existe una cita para el mismo paciente en el mismo día
-                return BadRequest(new { message = ex.Message });
+
+                return Ok(cita);
             }
             catch (Exception ex)
             {
-                // Maneja otras excepciones de manera genérica
                 return StatusCode(500, new { message = "An error occurred while processing your request.", details = ex.Message });
             }
         }
 
 
-        //Put
+        // Update Cita
         [HttpPut("{id}")]
-            public void Put(int id, [FromBody] Cita cita)
+        public IActionResult Put(int id, [FromBody] Cita cita)
+        {
+            try
             {
-                _svCita.Update(id, new Cita
-                {
-                    FechaHora = cita.FechaHora,
-                    Lugar = cita.Lugar,
-                    Status = cita.Status
-                });
+                _svCita.Update(id, cita);
+                return Ok("Cita actualizada correctamente.");
             }
+            catch (KeyNotFoundException ex)
+            {
+                return NotFound(ex.Message);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { message = "An error occurred while processing your request.", details = ex.Message });
+            }
+        }
 
-            //Delete
-            [HttpDelete("{id}")]
-            public void Delete(int id)
+        // Delete Cita
+        [HttpDelete("{id}")]
+        public IActionResult Delete(int id)
+        {
+            try
             {
                 _svCita.Delete(id);
+                return Ok("Cita eliminada correctamente.");
             }
-
-            //Cancelar Cita
-            [HttpPatch("cancelar/{id}")]
-            public IActionResult CancelarCita(int id)
+            catch (KeyNotFoundException ex)
             {
-                try
-                {
-                    _svCita.CancelarCita(id);
-                    return Ok("Cita cancelada con éxito.");
-                }
-                catch (InvalidOperationException ex)
-                {
-                    return BadRequest(ex.Message);
-                }
-                catch (KeyNotFoundException ex)
-                {
-                    return NotFound(ex.Message);
-                }
-                catch (Exception ex)
-                {
-                    // Manejo general de excepciones
-                    return StatusCode(500, "Ha ocurrido un error interno en el servidor.");
-                }
+                return NotFound(ex.Message);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { message = "An error occurred while processing your request.", details = ex.Message });
+            }
+        }
+
+        // Cancelar Cita
+        [HttpPatch("cancelar/{id}")]
+        public IActionResult CancelarCita(int id)
+        {
+            try
+            {
+                _svCita.CancelarCita(id);
+                return Ok("Cita cancelada con éxito.");
+            }
+            catch (InvalidOperationException ex)
+            {
+                return BadRequest(ex.Message);
+            }
+            catch (KeyNotFoundException ex)
+            {
+                return NotFound(ex.Message);
+            }
+            catch (Exception ex)
+            {
+                // Manejo general de excepciones
+                return StatusCode(500, new { message = "Ha ocurrido un error interno en el servidor.", details = ex.Message });
             }
         }
     }
+}
