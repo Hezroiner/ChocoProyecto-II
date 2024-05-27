@@ -1,10 +1,6 @@
 ﻿using Proyecto_II.Entities;
 using Services;
 using Services.MyDbContext;
-<<<<<<< Updated upstream
-using System.Data.Entity;
-=======
->>>>>>> Stashed changes
 
 namespace Proyecto_II.Services
 {
