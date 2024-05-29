@@ -2,8 +2,8 @@
 {
     public class Sucursal
     {
-        public int Id { get; set; }
-        public string NombreSucursal { get; set; }
+        public int SucursalId { get; set; }
+        public string Nombre { get; set; }
         public List<Cita> Citas { get; set; }
 
     }

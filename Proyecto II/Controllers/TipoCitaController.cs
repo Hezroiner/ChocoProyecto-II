@@ -28,7 +28,7 @@ namespace Proyecto_II.Controllers
             {
                 tipoCitaDTOs.Add(new TipoCitaDTO
                 {
-                    Id = tipoCita.Id,
+                    TipoCitaId = tipoCita.TipoCitaId,
                     Nombre = tipoCita.Nombre
                     // Puedes mapear otras propiedades aquí si es necesario
                 });
@@ -45,7 +45,7 @@ namespace Proyecto_II.Controllers
 
             return new TipoCitaDTO
             {
-                Id = tipoCita.Id,
+                TipoCitaId = tipoCita.TipoCitaId,
                 Nombre = tipoCita.Nombre
                 // Puedes mapear otras propiedades aquí si es necesario
             };

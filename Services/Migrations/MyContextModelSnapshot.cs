@@ -24,18 +24,14 @@ namespace Services.Migrations
 
             modelBuilder.Entity("Proyecto_II.Entities.Cita", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<int>("CitaId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CitaId"));
 
                     b.Property<DateTime>("FechaHora")
                         .HasColumnType("datetime2");
-
-                    b.Property<string>("Lugar")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Status")
                         .IsRequired()
@@ -50,7 +46,7 @@ namespace Services.Migrations
                     b.Property<int>("UserId")
                         .HasColumnType("int");
 
-                    b.HasKey("Id");
+                    b.HasKey("CitaId");
 
                     b.HasIndex("SucursalId");
 
@@ -92,84 +88,84 @@ namespace Services.Migrations
 
             modelBuilder.Entity("Proyecto_II.Entities.Sucursal", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<int>("SucursalId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("SucursalId"));
 
-                    b.Property<string>("NombreSucursal")
+                    b.Property<string>("Nombre")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("Id");
+                    b.HasKey("SucursalId");
 
                     b.ToTable("Sucursales");
 
                     b.HasData(
                         new
                         {
-                            Id = 1,
-                            NombreSucursal = "Clinica Santa Cruz"
+                            SucursalId = 1,
+                            Nombre = "Clinica Santa Cruz"
                         },
                         new
                         {
-                            Id = 2,
-                            NombreSucursal = "Clinica Nicoya"
+                            SucursalId = 2,
+                            Nombre = "Clinica Nicoya"
                         },
                         new
                         {
-                            Id = 3,
-                            NombreSucursal = "Clinica Libera"
+                            SucursalId = 3,
+                            Nombre = "Clinica Libera"
                         });
                 });
 
             modelBuilder.Entity("Proyecto_II.Entities.TipoCita", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<int>("TipoCitaId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("TipoCitaId"));
 
                     b.Property<string>("Nombre")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("Id");
+                    b.HasKey("TipoCitaId");
 
                     b.ToTable("TiposCita");
 
                     b.HasData(
                         new
                         {
-                            Id = 1,
+                            TipoCitaId = 1,
                             Nombre = "Medicina General"
                         },
                         new
                         {
-                            Id = 2,
+                            TipoCitaId = 2,
                             Nombre = "Odontología"
                         },
                         new
                         {
-                            Id = 3,
+                            TipoCitaId = 3,
                             Nombre = "Pediatría"
                         },
                         new
                         {
-                            Id = 4,
+                            TipoCitaId = 4,
                             Nombre = "Neurología"
                         });
                 });
 
             modelBuilder.Entity("Proyecto_II.Entities.User", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<int>("UserId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("UserId"));
 
                     b.Property<string>("Email")
                         .IsRequired()
@@ -190,7 +186,7 @@ namespace Services.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("Id");
+                    b.HasKey("UserId");
 
                     b.HasIndex("RoleId");
 

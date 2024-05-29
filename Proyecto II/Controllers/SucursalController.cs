@@ -29,8 +29,8 @@ namespace Proyecto_II.Controllers
             {
                 sucursalDTOs.Add(new SucursalDTO
                 {
-                    Id = sucursal.Id,
-                    NombreSucursal = sucursal.NombreSucursal
+                    SucursalId = sucursal.SucursalId,
+                    Nombre = sucursal.Nombre
                     // Puedes mapear otras propiedades aquí si es necesario
                 });
             }
@@ -46,8 +46,8 @@ namespace Proyecto_II.Controllers
 
             return new SucursalDTO
             {
-                Id = sucursal.Id,
-                NombreSucursal = sucursal.NombreSucursal
+                SucursalId = sucursal.SucursalId,
+                Nombre = sucursal.Nombre
                 // Puedes mapear otras propiedades aquí si es necesario
             };
         }

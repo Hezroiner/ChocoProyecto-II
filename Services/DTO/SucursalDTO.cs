@@ -8,8 +8,8 @@ namespace Services.DTO
 {
     public class SucursalDTO
     {
-        public int Id { get; set; }
-        public string NombreSucursal { get; set; }
+        public int SucursalId { get; set; }
+        public string Nombre { get; set; }
         // Puedes agregar otras propiedades aquí si es necesario
     }
 }

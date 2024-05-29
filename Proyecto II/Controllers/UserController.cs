@@ -31,7 +31,7 @@ namespace Proyecto_II.Controllers
                 {
                     userDTOs.Add(new UserDTO
                     {
-                        Id = user.Id,
+                        UserId = user.UserId,
                         Nombre = user.Nombre,
                         Email = user.Email,
                         Telefono = user.Telefono
@@ -57,7 +57,7 @@ namespace Proyecto_II.Controllers
 
                 var userDTO = new UserDTO
                 {
-                    Id = user.Id,
+                    UserId = user.UserId,
                     Nombre = user.Nombre,
                     Email = user.Email,
                     Telefono = user.Telefono

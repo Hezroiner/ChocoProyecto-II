@@ -8,7 +8,7 @@ namespace Services.DTO
 {
     public class CitaDTO
     {
-        public int Id { get; set; }
+        public int CitaId { get; set; }
         public DateTime FechaHora { get; set; }
         public string Status { get; set; }
         public int UserId { get; set; }

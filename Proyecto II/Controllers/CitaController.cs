@@ -33,7 +33,7 @@ namespace Proyecto_II.Controllers
                 {
                     citaDTOs.Add(new CitaDTO
                     {
-                        Id = cita.Id,
+                        CitaId = cita.CitaId,
                         FechaHora = cita.FechaHora,
                         Status = cita.Status,
                         UserId = cita.UserId,
@@ -59,7 +59,7 @@ namespace Proyecto_II.Controllers
                 var cita = _svCita.GetById(id);
                 var citaDTO = new CitaDTO
                 {
-                    Id = cita.Id,
+                    CitaId = cita.CitaId,
                     FechaHora = cita.FechaHora,
                     Status = cita.Status,
                     UserId = cita.UserId,
