@@ -22,33 +22,19 @@ namespace Proyecto_II.Controllers
 
         // GET: api/Cita
         [HttpGet]
-        public ActionResult<IEnumerable<CitaDTO>> Get()
+        public ActionResult<IEnumerable<Cita>> Get()
         {
             try
             {
-                var citas = _svCita.GetAll();
-                var citaDTOs = new List<CitaDTO>();
-
-                foreach (var cita in citas)
-                {
-                    citaDTOs.Add(new CitaDTO
-                    {
-                        CitaId = cita.CitaId,
-                        FechaHora = cita.FechaHora,
-                        Status = cita.Status,
-                        UserId = cita.UserId,
-                        TipoCitaId = cita.TipoCitaId,
-                        SucursalId = cita.SucursalId
-                    });
-                }
-
-                return Ok(citaDTOs);
+                var citas = _svCita.GetAll(); // Suponiendo que GetAll() devuelve una lista de objetos Cita.
+                return Ok(citas);
             }
             catch (Exception ex)
             {
                 return StatusCode(500, new { message = "An error occurred while processing your request.", details = ex.Message });
             }
         }
+
 
         // GET: api/Cita/5
         [HttpGet("{id}")]
@@ -104,7 +90,7 @@ namespace Proyecto_II.Controllers
             }
         }
 
-
+           
         // Update Cita
         [HttpPut("{id}")]
         public IActionResult Put(int id, [FromBody] Cita cita)
