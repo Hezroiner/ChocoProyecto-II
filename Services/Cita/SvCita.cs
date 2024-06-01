@@ -89,7 +89,7 @@ namespace Proyecto_II.Services
 
         public List<Cita> GetAll()
         {
-            return _myContext.Citas.ToList();
+            return _myContext.Citas.Include(x=> x.User).Include(x=> x.TipoCita).ToList();
         }
 
         public Cita GetById(int id)
