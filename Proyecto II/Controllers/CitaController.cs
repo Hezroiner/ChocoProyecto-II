@@ -13,59 +13,11 @@ namespace Proyecto_II.Controllers
     public class CitaController : Controller
     {
         private ICita _svCita;
-
         public CitaController(ICita svCita)
         {
             _svCita = svCita;
         }
 
-
-        // GET: api/Cita
-        [HttpGet]
-        public ActionResult<IEnumerable<Cita>> Get()
-        {
-            try
-            {
-                var citas = _svCita.GetAll(); // Suponiendo que GetAll() devuelve una lista de objetos Cita.
-                return Ok(citas);
-            }
-            catch (Exception ex)
-            {
-                return StatusCode(500, new { message = "An error occurred while processing your request.", details = ex.Message });
-            }
-        }
-
-
-        // GET: api/Cita/5
-        [HttpGet("{id}")]
-        public IActionResult Get(int id)
-        {
-            try
-            {
-                var cita = _svCita.GetById(id);
-                var citaDTO = new CitaDTO
-                {
-                    CitaId = cita.CitaId,
-                    FechaHora = cita.FechaHora,
-                    Status = cita.Status,
-                    UserId = cita.UserId,
-                    TipoCitaId = cita.TipoCitaId,
-                    SucursalId = cita.SucursalId
-                };
-
-                return Ok(citaDTO);
-            }
-            catch (KeyNotFoundException ex)
-            {
-                return NotFound(ex.Message);
-            }
-            catch (Exception ex)
-            {
-                return StatusCode(500, new { message = "An error occurred while processing your request.", details = ex.Message });
-            }
-        }
-
-        // POST: api/Cita
         [HttpPost]
         public IActionResult Post(CitaDTO citaDTO)
         {
@@ -74,15 +26,24 @@ namespace Proyecto_II.Controllers
                 var cita = new Cita
                 {
                     FechaHora = citaDTO.FechaHora,
-                    Status = citaDTO.Status,
+                    Status = "ACTIVO", // Establecer el valor predeterminado como "ACTIVO"
                     UserId = citaDTO.UserId,
                     TipoCitaId = citaDTO.TipoCitaId,
                     SucursalId = citaDTO.SucursalId
                 };
 
-                _svCita.AddCita(cita);
+                _svCita.AddCita(cita); // Pasar la cita, no citaDTO
 
-                return Ok(cita);
+                var response = new
+                {
+                    CitaId = cita.CitaId,
+                    FechaHora = cita.FechaHora,
+                    Status = cita.Status,
+                    UserId = cita.UserId,
+                    // Otros campos...
+                };
+
+                return Ok(response);
             }
             catch (Exception ex)
             {
@@ -90,15 +51,34 @@ namespace Proyecto_II.Controllers
             }
         }
 
-           
-        // Update Cita
-        [HttpPut("{id}")]
-        public IActionResult Put(int id, [FromBody] Cita cita)
+        // GET: api/Cita
+        [HttpGet]
+        public ActionResult<IEnumerable<CitaDTO>> Get()
         {
             try
             {
-                _svCita.Update(id, cita);
-                return Ok("Cita actualizada correctamente.");
+                var citas = _svCita.GetAll();
+                return Ok(citas);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { message = "An error occurred while processing your request.", details = ex.Message });
+            }
+        }
+
+        // GET: api/Cita/5
+        [HttpGet("{id}")]
+        public IActionResult Get(int id)
+        {
+            try
+            {
+                var cita = _svCita.GetById(id);
+                if (cita == null)
+                {
+                    return NotFound("Cita not found.");
+                }
+
+                return Ok(cita);
             }
             catch (KeyNotFoundException ex)
             {
@@ -109,6 +89,47 @@ namespace Proyecto_II.Controllers
                 return StatusCode(500, new { message = "An error occurred while processing your request.", details = ex.Message });
             }
         }
+
+        // PUT: api/Cita/5
+        [HttpPut("{id}")]
+        public IActionResult Put(int id, CitaDTO citaDTO)
+        {
+            try
+            {
+                // Verificar si la cita existe
+                var existingCita = _svCita.GetById(id);
+                if (existingCita == null)
+                {
+                    return NotFound("Cita not found.");
+                }
+
+                // Actualizar los datos de la cita existente con los datos proporcionados en el DTO
+                existingCita.FechaHora = citaDTO.FechaHora;
+                existingCita.Status = citaDTO.Status;
+                existingCita.UserId = citaDTO.UserId;
+                existingCita.TipoCitaId = citaDTO.TipoCitaId;
+                existingCita.SucursalId = citaDTO.SucursalId;
+
+                // Llamar al método en el servicio para actualizar la cita
+                _svCita.UpdateCita(existingCita);
+
+                // Retornar la cita actualizada
+                return Ok(existingCita);
+            }
+            catch (InvalidOperationException ex)
+            {
+                return BadRequest(new { message = ex.Message });
+            }
+            catch (KeyNotFoundException ex)
+            {
+                return NotFound(new { message = ex.Message });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { message = "An error occurred while processing your request.", details = ex.Message });
+            }
+        }
+
 
         // Delete Cita
         [HttpDelete("{id}")]

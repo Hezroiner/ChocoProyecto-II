@@ -53,7 +53,7 @@ namespace Proyecto_II.Services
             return user;
         }
 
-        public string Register(UserRegisterModel model)
+        public void Register(UserRegisterModel model)
         {
             if (model == null || string.IsNullOrEmpty(model.Nombre) || string.IsNullOrEmpty(model.Email) || string.IsNullOrEmpty(model.Password))
             {
@@ -76,9 +76,8 @@ namespace Proyecto_II.Services
 
             _myContext.Users.Add(user);
             _myContext.SaveChanges();
-
-            return GenerateJwtToken(user);
         }
+
 
         public string Login(UserLoginModel model)
         {
@@ -88,7 +87,8 @@ namespace Proyecto_II.Services
                 throw new Exception("Invalid credentials.");
             }
 
-            return GenerateJwtToken(user);
+            var token = GenerateJwtToken(user);
+            return token;
         }
 
         private string GenerateJwtToken(User user)
@@ -96,22 +96,24 @@ namespace Proyecto_II.Services
             var tokenHandler = new JwtSecurityTokenHandler();
             var key = Encoding.ASCII.GetBytes(_jwtKey);
 
-            var claims = new[]
-            {
+            var claims = new List<Claim>
+    {
         new Claim(ClaimTypes.NameIdentifier, user.UserId.ToString()),
         new Claim(ClaimTypes.Name, user.Nombre),
         new Claim(ClaimTypes.Email, user.Email),
+        new Claim(ClaimTypes.Role, user.RoleId.ToString())
+    };
+
+            var tokenDescriptor = new SecurityTokenDescriptor
+            {
+                Subject = new ClaimsIdentity(claims),
+                Expires = DateTime.UtcNow.AddDays(7),
+                SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
             };
 
-            var tokenDescriptor = new JwtSecurityToken(
-                issuer: null,
-                audience: null,
-                claims: claims,
-                expires: DateTime.UtcNow.AddDays(7),
-                signingCredentials: new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
-            );
-
-            return tokenHandler.WriteToken(tokenDescriptor);
+            var token = tokenHandler.CreateToken(tokenDescriptor);
+            return tokenHandler.WriteToken(token);
         }
+
     }
 }
