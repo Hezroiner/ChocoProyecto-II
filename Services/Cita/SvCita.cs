@@ -20,16 +20,43 @@ namespace Proyecto_II.Services
             _configuration = configuration;
         }
 
-        public Cita AddCita(Cita cita)
+        public CitaDTO AddCita(CitaDTO citaDTO)
         {
+            if (!_myContext.Sucursales.Any(s => s.SucursalId == citaDTO.SucursalId))
+            {
+                throw new InvalidOperationException("El SucursalId proporcionado no existe.");
+            }
+
+            // Verificar si el UserId es válido
+            if (!_myContext.Users.Any(u => u.UserId == citaDTO.UserId))
+            {
+                throw new InvalidOperationException("El UserId proporcionado no existe.");
+            }
+
+            // Verificar si el TipoCitaId es válido
+            if (!_myContext.TiposCita.Any(t => t.TipoCitaId == citaDTO.TipoCitaId))
+            {
+                throw new InvalidOperationException("El TipoCitaId proporcionado no existe.");
+            }
+
             // Verificar si ya existe una cita activa para el mismo paciente en el mismo día
             if (_myContext.Citas.Any(c =>
-                c.UserId == cita.UserId &&
-                c.FechaHora.Date == cita.FechaHora.Date &&
+                c.UserId == citaDTO.UserId &&
+                c.FechaHora.Date == citaDTO.FechaHora.Date &&
                 c.Status == "ACTIVA"))
             {
                 throw new InvalidOperationException("No se puede crear otra cita para el mismo paciente en el mismo día.");
             }
+
+            // Crear la nueva cita
+            var cita = new Cita
+            {
+                FechaHora = citaDTO.FechaHora,
+                Status = "ACTIVA",
+                UserId = citaDTO.UserId,
+                TipoCitaId = citaDTO.TipoCitaId,
+                SucursalId = citaDTO.SucursalId
+            };
 
             // Agregar la nueva cita a la base de datos
             _myContext.Citas.Add(cita);
@@ -38,7 +65,11 @@ namespace Proyecto_II.Services
             // Llamar a la función para enviar el correo electrónico
             SendEmail(cita);
 
-            return cita;
+            // Actualizar el DTO con la información de la cita creada
+            citaDTO.CitaId = cita.CitaId;
+            citaDTO.Status = cita.Status;
+
+            return citaDTO;
         }
 
 

@@ -6,7 +6,7 @@ namespace Services
 {
     public interface ICita
     {
-        public Cita AddCita(Cita cita);
+        public CitaDTO AddCita(CitaDTO citaDTO);
         public IEnumerable<CitaDTO> GetAll();
         public CitaDTO GetById(int id);
         public void UpdateCita(CitaDTO citaDTO);

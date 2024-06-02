@@ -19,35 +19,21 @@ namespace Proyecto_II.Controllers
         }
 
         [HttpPost]
-        public IActionResult Post(CitaDTO citaDTO)
+        public ActionResult<CitaDTO> AddCita([FromBody] CitaDTO citaDTO)
         {
+            if (citaDTO == null)
+            {
+                return BadRequest("CitaDTO cannot be null");
+            }
+
             try
             {
-                var cita = new Cita
-                {
-                    FechaHora = citaDTO.FechaHora,
-                    Status = "ACTIVO", // Establecer el valor predeterminado como "ACTIVO"
-                    UserId = citaDTO.UserId,
-                    TipoCitaId = citaDTO.TipoCitaId,
-                    SucursalId = citaDTO.SucursalId
-                };
-
-                _svCita.AddCita(cita); // Pasar la cita, no citaDTO
-
-                var response = new
-                {
-                    CitaId = cita.CitaId,
-                    FechaHora = cita.FechaHora,
-                    Status = cita.Status,
-                    UserId = cita.UserId,
-                    // Otros campos...
-                };
-
-                return Ok(response);
+                var addCita = _svCita.AddCita(citaDTO);
+                return CreatedAtAction(nameof(AddCita), new { id = addCita.CitaId }, addCita);
             }
-            catch (Exception ex)
+            catch (InvalidOperationException ex)
             {
-                return StatusCode(500, new { message = "An error occurred while processing your request.", details = ex.Message });
+                return BadRequest(ex.Message);
             }
         }
 
