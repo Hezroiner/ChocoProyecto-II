@@ -22,22 +22,22 @@ namespace Proyecto_II.Services
 
         public CitaDTO AddCita(CitaDTO citaDTO)
         {
-            if (!_myContext.Sucursales.Any(s => s.SucursalId == citaDTO.SucursalId))
-            {
-                throw new InvalidOperationException("El SucursalId proporcionado no existe.");
-            }
+            //if (!_myContext.Sucursales.Any(s => s.SucursalId == citaDTO.SucursalId))
+            //{
+            //    throw new InvalidOperationException("El SucursalId proporcionado no existe.");
+            //}
 
-            // Verificar si el UserId es válido
-            if (!_myContext.Users.Any(u => u.UserId == citaDTO.UserId))
-            {
-                throw new InvalidOperationException("El UserId proporcionado no existe.");
-            }
+            //// Verificar si el UserId es válido
+            //if (!_myContext.Users.Any(u => u.UserId == citaDTO.UserId))
+            //{
+            //    throw new InvalidOperationException("El UserId proporcionado no existe.");
+            //}
 
-            // Verificar si el TipoCitaId es válido
-            if (!_myContext.TiposCita.Any(t => t.TipoCitaId == citaDTO.TipoCitaId))
-            {
-                throw new InvalidOperationException("El TipoCitaId proporcionado no existe.");
-            }
+            //// Verificar si el TipoCitaId es válido
+            //if (!_myContext.TiposCita.Any(t => t.TipoCitaId == citaDTO.TipoCitaId))
+            //{
+            //    throw new InvalidOperationException("El TipoCitaId proporcionado no existe.");
+            //}
 
             // Verificar si ya existe una cita activa para el mismo paciente en el mismo día
             if (_myContext.Citas.Any(c =>
