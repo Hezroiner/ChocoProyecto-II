@@ -67,6 +67,7 @@ C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Services\obj
 =======
 <<<<<<< Updated upstream
 C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Services\obj\Debug\net7.0\ref\Services.dll
+<<<<<<< Updated upstream
 =======
 >>>>>>> origin/Hezroiner
 C:\Users\ozsan\OneDrive\Escritorio\V Semestre\Progra IV\Project2_Progra\Services\bin\Debug\net7.0\Services.deps.json
@@ -89,6 +90,8 @@ C:\Users\ozsan\OneDrive\Escritorio\V Semestre\Progra IV\Project2_Progra\Services
 C:\Users\ozsan\OneDrive\Escritorio\V Semestre\Progra IV\Project2_Progra\Services\obj\Debug\net7.0\ref\Services.dll
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> Stashed changes
 C:\Users\ozsan\OneDrive\Escritorio\V Semestre\Progra IV\Project2_Progra4\Services\bin\Debug\net7.0\Services.deps.json
 C:\Users\ozsan\OneDrive\Escritorio\V Semestre\Progra IV\Project2_Progra4\Services\bin\Debug\net7.0\Services.runtimeconfig.json
 C:\Users\ozsan\OneDrive\Escritorio\V Semestre\Progra IV\Project2_Progra4\Services\bin\Debug\net7.0\Services.dll
@@ -107,5 +110,8 @@ C:\Users\ozsan\OneDrive\Escritorio\V Semestre\Progra IV\Project2_Progra4\Service
 C:\Users\ozsan\OneDrive\Escritorio\V Semestre\Progra IV\Project2_Progra4\Services\obj\Debug\net7.0\Services.pdb
 C:\Users\ozsan\OneDrive\Escritorio\V Semestre\Progra IV\Project2_Progra4\Services\obj\Debug\net7.0\Services.genruntimeconfig.cache
 C:\Users\ozsan\OneDrive\Escritorio\V Semestre\Progra IV\Project2_Progra4\Services\obj\Debug\net7.0\ref\Services.dll
+<<<<<<< Updated upstream
 >>>>>>> Stashed changes
 >>>>>>> origin/Hezroiner
+=======
+>>>>>>> Stashed changes
