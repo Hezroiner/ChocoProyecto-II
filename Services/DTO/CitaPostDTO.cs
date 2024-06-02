@@ -6,17 +6,12 @@ using System.Threading.Tasks;
 
 namespace Services.DTO
 {
-    public class CitaDTO
+    public class CitaPostDTO
     {
-
         public int CitaId { get; set; }
         public DateTime FechaHora { get; set; }
-        public string Status { get; set; }
         public int UserId { get; set; }
-        public string UserName { get; set; } 
         public int TipoCitaId { get; set; }
-        public string TipoCitaNombre { get; set; } 
         public int SucursalId { get; set; }
-        public string SucursalNombre { get; set; }
     }
 }

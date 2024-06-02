@@ -13,12 +13,43 @@ namespace Proyecto_II.Controllers
     public class CitaController : Controller
     {
         private ICita _svCita;
-
         public CitaController(ICita svCita)
         {
             _svCita = svCita;
         }
 
+        [HttpPost]
+        public IActionResult Post(CitaDTO citaDTO)
+        {
+            try
+            {
+                var cita = new Cita
+                {
+                    FechaHora = citaDTO.FechaHora,
+                    Status = "ACTIVO", // Establecer el valor predeterminado como "ACTIVO"
+                    UserId = citaDTO.UserId,
+                    TipoCitaId = citaDTO.TipoCitaId,
+                    SucursalId = citaDTO.SucursalId
+                };
+
+                _svCita.AddCita(cita); // Pasar la cita, no citaDTO
+
+                var response = new
+                {
+                    CitaId = cita.CitaId,
+                    FechaHora = cita.FechaHora,
+                    Status = cita.Status,
+                    UserId = cita.UserId,
+                    // Otros campos...
+                };
+
+                return Ok(response);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { message = "An error occurred while processing your request.", details = ex.Message });
+            }
+        }
 
         // GET: api/Cita
         [HttpGet]
@@ -27,22 +58,7 @@ namespace Proyecto_II.Controllers
             try
             {
                 var citas = _svCita.GetAll();
-                var citaDTOs = new List<CitaDTO>();
-
-                foreach (var cita in citas)
-                {
-                    citaDTOs.Add(new CitaDTO
-                    {
-                        CitaId = cita.CitaId,
-                        FechaHora = cita.FechaHora,
-                        Status = cita.Status,
-                        UserId = cita.UserId,
-                        TipoCitaId = cita.TipoCitaId,
-                        SucursalId = cita.SucursalId
-                    });
-                }
-
-                return Ok(citaDTOs);
+                return Ok(citas);
             }
             catch (Exception ex)
             {
@@ -57,63 +73,13 @@ namespace Proyecto_II.Controllers
             try
             {
                 var cita = _svCita.GetById(id);
-                var citaDTO = new CitaDTO
+                if (cita == null)
                 {
-                    CitaId = cita.CitaId,
-                    FechaHora = cita.FechaHora,
-                    Status = cita.Status,
-                    UserId = cita.UserId,
-                    TipoCitaId = cita.TipoCitaId,
-                    SucursalId = cita.SucursalId
-                };
-
-                return Ok(citaDTO);
-            }
-            catch (KeyNotFoundException ex)
-            {
-                return NotFound(ex.Message);
-            }
-            catch (Exception ex)
-            {
-                return StatusCode(500, new { message = "An error occurred while processing your request.", details = ex.Message });
-            }
-        }
-
-        // POST: api/Cita
-        [HttpPost]
-        public IActionResult Post(CitaDTO citaDTO)
-        {
-            try
-            {
-                var cita = new Cita
-                {
-                    FechaHora = citaDTO.FechaHora,
-                    Status = citaDTO.Status,
-                    UserId = citaDTO.UserId,
-                    TipoCitaId = citaDTO.TipoCitaId,
-                    SucursalId = citaDTO.SucursalId
-                };
-
-                _svCita.AddCita(cita);
+                    return NotFound("Cita not found.");
+                }
 
                 return Ok(cita);
             }
-            catch (Exception ex)
-            {
-                return StatusCode(500, new { message = "An error occurred while processing your request.", details = ex.Message });
-            }
-        }
-
-
-        // Update Cita
-        [HttpPut("{id}")]
-        public IActionResult Put(int id, [FromBody] Cita cita)
-        {
-            try
-            {
-                _svCita.Update(id, cita);
-                return Ok("Cita actualizada correctamente.");
-            }
             catch (KeyNotFoundException ex)
             {
                 return NotFound(ex.Message);
@@ -123,6 +89,47 @@ namespace Proyecto_II.Controllers
                 return StatusCode(500, new { message = "An error occurred while processing your request.", details = ex.Message });
             }
         }
+
+        // PUT: api/Cita/5
+        [HttpPut("{id}")]
+        public IActionResult Put(int id, CitaDTO citaDTO)
+        {
+            try
+            {
+                // Verificar si la cita existe
+                var existingCita = _svCita.GetById(id);
+                if (existingCita == null)
+                {
+                    return NotFound("Cita not found.");
+                }
+
+                // Actualizar los datos de la cita existente con los datos proporcionados en el DTO
+                existingCita.FechaHora = citaDTO.FechaHora;
+                existingCita.Status = citaDTO.Status;
+                existingCita.UserId = citaDTO.UserId;
+                existingCita.TipoCitaId = citaDTO.TipoCitaId;
+                existingCita.SucursalId = citaDTO.SucursalId;
+
+                // Llamar al método en el servicio para actualizar la cita
+                _svCita.UpdateCita(existingCita);
+
+                // Retornar la cita actualizada
+                return Ok(existingCita);
+            }
+            catch (InvalidOperationException ex)
+            {
+                return BadRequest(new { message = ex.Message });
+            }
+            catch (KeyNotFoundException ex)
+            {
+                return NotFound(new { message = ex.Message });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { message = "An error occurred while processing your request.", details = ex.Message });
+            }
+        }
+
 
         // Delete Cita
         [HttpDelete("{id}")]
