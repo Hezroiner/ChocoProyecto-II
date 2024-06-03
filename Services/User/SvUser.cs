@@ -96,12 +96,14 @@ namespace Proyecto_II.Services
             var tokenHandler = new JwtSecurityTokenHandler();
             var key = Encoding.ASCII.GetBytes(_jwtKey);
 
+            // Define claims with custom names
             var claims = new List<Claim>
     {
-        new Claim(ClaimTypes.NameIdentifier, user.UserId.ToString()),
-        new Claim(ClaimTypes.Name, user.Nombre),
-        new Claim(ClaimTypes.Email, user.Email),
-        new Claim(ClaimTypes.Role, user.RoleId.ToString())
+        new Claim("Id", user.UserId.ToString()), // Custom claim for user ID
+        new Claim("Nombre", user.Nombre),        // Custom claim for name
+        new Claim("Email", user.Email),          // Custom claim for email
+        new Claim("Telefono", user.Telefono),    // Custom claim for phone number
+        new Claim(JwtRegisteredClaimNames.Iat, DateTimeOffset.UtcNow.ToUnixTimeSeconds().ToString(), ClaimValueTypes.Integer64) // Issued at claim
     };
 
             var tokenDescriptor = new SecurityTokenDescriptor

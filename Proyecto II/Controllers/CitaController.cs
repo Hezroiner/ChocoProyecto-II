@@ -76,6 +76,28 @@ namespace Proyecto_II.Controllers
             }
         }
 
+
+        [HttpGet("user/{userId}")]
+        public IActionResult GetCitasByUserId(int userId)
+        {
+            try
+            {
+                var citas = _svCita.GetCitaByUserId(userId);
+                return Ok(citas);
+            }
+            catch (KeyNotFoundException ex)
+            {
+                return NotFound(ex.Message);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { message = "An error occurred while processing your request.", details = ex.Message });
+            }
+        }
+
+
+
+
         // PUT: api/Cita/5
         [HttpPut("{id}")]
         public IActionResult Put(int id, CitaDTO citaDTO)

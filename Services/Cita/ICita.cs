@@ -9,6 +9,7 @@ namespace Services
         public CitaDTO AddCita(CitaDTO citaDTO);
         public IEnumerable<CitaDTO> GetAll();
         public CitaDTO GetById(int id);
+        public List<CitaDTO> GetCitaByUserId(int userId);
         public void UpdateCita(CitaDTO citaDTO);
         public void Delete(int id);
         public void CancelarCita(int id);

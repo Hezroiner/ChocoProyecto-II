@@ -22,24 +22,6 @@ namespace Proyecto_II.Services
 
         public CitaDTO AddCita(CitaDTO citaDTO)
         {
-            //if (!_myContext.Sucursales.Any(s => s.SucursalId == citaDTO.SucursalId))
-            //{
-            //    throw new InvalidOperationException("El SucursalId proporcionado no existe.");
-            //}
-
-            //// Verificar si el UserId es válido
-            //if (!_myContext.Users.Any(u => u.UserId == citaDTO.UserId))
-            //{
-            //    throw new InvalidOperationException("El UserId proporcionado no existe.");
-            //}
-
-            //// Verificar si el TipoCitaId es válido
-            //if (!_myContext.TiposCita.Any(t => t.TipoCitaId == citaDTO.TipoCitaId))
-            //{
-            //    throw new InvalidOperationException("El TipoCitaId proporcionado no existe.");
-            //}
-
-            // Verificar si ya existe una cita activa para el mismo paciente en el mismo día
             if (_myContext.Citas.Any(c =>
                 c.UserId == citaDTO.UserId &&
                 c.FechaHora.Date == citaDTO.FechaHora.Date &&
@@ -142,7 +124,12 @@ namespace Proyecto_II.Services
 
         public CitaDTO GetById(int id)
         {
-            var cita = _myContext.Citas.FirstOrDefault(c => c.CitaId == id);
+            var cita = _myContext.Citas
+                         .Include(c => c.User)
+                         .Include(c => c.TipoCita)
+                         .Include(c => c.Sucursal)
+                         .FirstOrDefault(c => c.CitaId == id);
+
             if (cita == null) return null;
 
             return new CitaDTO
@@ -150,14 +137,42 @@ namespace Proyecto_II.Services
                 CitaId = cita.CitaId,
                 FechaHora = cita.FechaHora,
                 Status = cita.Status,
-                UserId = cita.UserId,
+                UserId = cita.User.UserId, 
                 UserName = cita.User.Nombre,
-                TipoCitaId = cita.TipoCitaId,
+                TipoCitaId = cita.TipoCita.TipoCitaId,
                 TipoCitaNombre = cita.TipoCita.Nombre,
-                SucursalId = cita.SucursalId,
+                SucursalId = cita.Sucursal.SucursalId,
                 SucursalNombre = cita.Sucursal.Nombre
             };
         }
+
+        public List<CitaDTO> GetCitaByUserId(int userId)
+        {
+            var citas = _myContext.Citas
+                                  .Include(c => c.User)
+                                  .Include(c => c.TipoCita)
+                                  .Include(c => c.Sucursal)
+                                  .Where(c => c.UserId == userId)
+                                  .ToList();
+
+            if (citas == null || citas.Count == 0) return new List<CitaDTO>();
+
+            return citas.Select(cita => new CitaDTO
+            {
+                CitaId = cita.CitaId,
+                FechaHora = cita.FechaHora,
+                Status = cita.Status,
+                UserId = cita.User.UserId,  // Use null conditional operator to avoid null reference exceptions
+                UserName = cita.User.Nombre,
+                TipoCitaId = cita.TipoCita.TipoCitaId,
+                TipoCitaNombre = cita.TipoCita.Nombre,
+                SucursalId = cita.Sucursal.SucursalId,
+                SucursalNombre = cita.Sucursal.Nombre
+            }).ToList();
+        }
+
+
+
 
         public void UpdateCita(CitaDTO citaDTO)
         {
