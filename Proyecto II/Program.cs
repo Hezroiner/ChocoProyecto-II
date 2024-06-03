@@ -20,6 +20,13 @@ builder.Services.AddDbContext<MyContext>(options =>
 
 var key = Encoding.ASCII.GetBytes(builder.Configuration["Jwt:Key"]);
 
+builder.Services.AddAuthorization(options =>
+{
+    options.AddPolicy("AdminPolicy", policy => policy.RequireRole("ADMIN"));
+    options.AddPolicy("UserPolicy", policy => policy.RequireRole("USER"));
+});
+
+
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(options =>
     {
@@ -58,7 +65,11 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
 app.UseAuthentication();
 app.UseAuthorization();
+
+
 app.MapControllers();
+
 app.Run();

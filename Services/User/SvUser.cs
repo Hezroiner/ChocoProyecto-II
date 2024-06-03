@@ -81,7 +81,10 @@ namespace Proyecto_II.Services
 
         public string Login(UserLoginModel model)
         {
-            var user = _myContext.Users.FirstOrDefault(u => u.Email == model.Email);
+            var user = _myContext.Users
+                .Include(u => u.Role)
+                .FirstOrDefault(u => u.Email == model.Email);
+
             if (user == null || user.Password != model.Password)
             {
                 throw new Exception("Invalid credentials.");
@@ -91,31 +94,35 @@ namespace Proyecto_II.Services
             return token;
         }
 
+
         private string GenerateJwtToken(User user)
         {
             var tokenHandler = new JwtSecurityTokenHandler();
             var key = Encoding.ASCII.GetBytes(_jwtKey);
+            var issuedAt = DateTime.UtcNow;
+            var expires = issuedAt.AddDays(7);
 
-            // Define claims with custom names
+          
             var claims = new List<Claim>
     {
-        new Claim("Id", user.UserId.ToString()), // Custom claim for user ID
-        new Claim("Nombre", user.Nombre),        // Custom claim for name
-        new Claim("Email", user.Email),          // Custom claim for email
-        new Claim("Telefono", user.Telefono),    // Custom claim for phone number
-        new Claim(JwtRegisteredClaimNames.Iat, DateTimeOffset.UtcNow.ToUnixTimeSeconds().ToString(), ClaimValueTypes.Integer64) // Issued at claim
+        new Claim("Id", user.UserId.ToString()), 
+        new Claim("Nombre", user.Nombre),        
+        new Claim("Email", user.Email),          
+        new Claim("Telefono", user.Telefono),
+        new Claim(ClaimTypes.Role, user.Role.Nombre),
+        new Claim(JwtRegisteredClaimNames.Iat, new DateTimeOffset(issuedAt).ToUnixTimeSeconds().ToString(), ClaimValueTypes.Integer64),
     };
 
             var tokenDescriptor = new SecurityTokenDescriptor
             {
                 Subject = new ClaimsIdentity(claims),
-                Expires = DateTime.UtcNow.AddDays(7),
+                Expires = expires,
+                NotBefore = issuedAt,
                 SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
             };
 
             var token = tokenHandler.CreateToken(tokenDescriptor);
             return tokenHandler.WriteToken(token);
         }
-
     }
 }

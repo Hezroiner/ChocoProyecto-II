@@ -1,10 +1,12 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Proyecto_II.Entities;
 using Proyecto_II.Services;
 using Services;
 using Services.DTO;
 using System;
 using System.Collections.Generic;
+using System.Data;
 
 namespace Proyecto_II.Controllers
 {
@@ -18,6 +20,7 @@ namespace Proyecto_II.Controllers
             _svCita = svCita;
         }
 
+        [Authorize(Roles = "USER")]
         [HttpPost]
         public ActionResult<CitaDTO> AddCita([FromBody] CitaDTO citaDTO)
         {
@@ -98,7 +101,7 @@ namespace Proyecto_II.Controllers
 
 
 
-        // PUT: api/Cita/5
+        [Authorize(Roles = "USER")]
         [HttpPut("{id}")]
         public IActionResult Put(int id, CitaDTO citaDTO)
         {
@@ -139,7 +142,7 @@ namespace Proyecto_II.Controllers
         }
 
 
-        // Delete Cita
+        [Authorize(Roles = "ADMIN")]
         [HttpDelete("{id}")]
         public IActionResult Delete(int id)
         {
