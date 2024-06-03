@@ -81,14 +81,19 @@ namespace Proyecto_II.Controllers
         {
             try
             {
-                var token = _svUser.Register(model);
-                return Content(token, "text/plain"); // Ensure it returns as plain text
+                _svUser.Register(model); // Llamando al método Register del servicio
+                return Ok("Usuario registrado exitosamente."); // O cualquier otro mensaje de éxito
             }
-            catch (Exception ex)
+            catch (ArgumentException ex)
             {
                 return BadRequest(new { message = ex.Message });
             }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { message = "An error occurred while processing your request.", details = ex.Message });
+            }
         }
+
 
         [HttpPost("login")]
         public IActionResult Login(UserLoginModel model)

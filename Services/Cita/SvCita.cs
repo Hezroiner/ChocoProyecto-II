@@ -5,6 +5,7 @@ using Services;
 using Services.MyDbContext;
 using System.Net.Mail;
 using System.Net;
+using Services.DTO;
 
 namespace Proyecto_II.Services
 {
@@ -19,22 +20,40 @@ namespace Proyecto_II.Services
             _configuration = configuration;
         }
 
-        public Cita AddCita(Cita cita)
+        public CitaDTO AddCita(CitaDTO citaDTO)
         {
             if (_myContext.Citas.Any(c =>
-                c.UserId == cita.UserId &&
-                c.FechaHora.Date == cita.FechaHora.Date &&
+                c.UserId == citaDTO.UserId &&
+                c.FechaHora.Date == citaDTO.FechaHora.Date &&
                 c.Status == "ACTIVA"))
             {
                 throw new InvalidOperationException("No se puede crear otra cita para el mismo paciente en el mismo día.");
             }
+
+            // Crear la nueva cita
+            var cita = new Cita
+            {
+                FechaHora = citaDTO.FechaHora,
+                Status = "ACTIVA",
+                UserId = citaDTO.UserId,
+                TipoCitaId = citaDTO.TipoCitaId,
+                SucursalId = citaDTO.SucursalId
+            };
+
+            // Agregar la nueva cita a la base de datos
             _myContext.Citas.Add(cita);
             _myContext.SaveChanges();
 
-
+            // Llamar a la función para enviar el correo electrónico
             SendEmail(cita);
-            return cita;
+
+            // Actualizar el DTO con la información de la cita creada
+            citaDTO.CitaId = cita.CitaId;
+            citaDTO.Status = cita.Status;
+
+            return citaDTO;
         }
+
 
         private void SendEmail(Cita cita)
         {
@@ -87,47 +106,104 @@ namespace Proyecto_II.Services
             }
         }
 
-        public List<Cita> GetAll()
+        public IEnumerable<CitaDTO> GetAll()
         {
-            return _myContext.Citas.Include(x=> x.User).Include(x=> x.TipoCita).ToList();
+            return _myContext.Citas.Select(c => new CitaDTO
+            {
+                CitaId = c.CitaId,
+                FechaHora = c.FechaHora,
+                Status = c.Status,
+                UserId = c.UserId,
+                UserName = c.User.Nombre, // Assuming 'Nombre' is a property in 'User'
+                TipoCitaId = c.TipoCitaId,
+                TipoCitaNombre = c.TipoCita.Nombre, // Assuming 'Nombre' is a property in 'TipoCita'
+                SucursalId = c.SucursalId,
+                SucursalNombre = c.Sucursal.Nombre // Assuming 'Nombre' is a property in 'Sucursal'
+            }).ToList();
         }
 
-        public Cita GetById(int id)
+        public CitaDTO GetById(int id)
         {
             var cita = _myContext.Citas
-            .Include(cita => cita.User)
-            .Include(cita => cita.TipoCita)
-            .Include(cita => cita.Sucursal)
-            .FirstOrDefault(cita => cita.CitaId == id);
+                         .Include(c => c.User)
+                         .Include(c => c.TipoCita)
+                         .Include(c => c.Sucursal)
+                         .FirstOrDefault(c => c.CitaId == id);
 
-            if (cita == null)
+            if (cita == null) return null;
+
+            return new CitaDTO
             {
-                // Manejo de la situación cuando no se encuentra la entidad cita
-                throw new KeyNotFoundException("Cita not found");
-            }
-
-            return cita;
+                CitaId = cita.CitaId,
+                FechaHora = cita.FechaHora,
+                Status = cita.Status,
+                UserId = cita.User.UserId, 
+                UserName = cita.User.Nombre,
+                TipoCitaId = cita.TipoCita.TipoCitaId,
+                TipoCitaNombre = cita.TipoCita.Nombre,
+                SucursalId = cita.Sucursal.SucursalId,
+                SucursalNombre = cita.Sucursal.Nombre
+            };
         }
 
-        public Cita Update(int id, Cita newCita)
+        public List<CitaDTO> GetCitaByUserId(int userId)
         {
-            Cita updateCita = _myContext.Citas.Find(id);
+            var citas = _myContext.Citas
+                                  .Include(c => c.User)
+                                  .Include(c => c.TipoCita)
+                                  .Include(c => c.Sucursal)
+                                  .Where(c => c.UserId == userId)
+                                  .ToList();
 
-            if (updateCita is not null)
+            if (citas == null || citas.Count == 0) return new List<CitaDTO>();
+
+            return citas.Select(cita => new CitaDTO
             {
-                updateCita.FechaHora = newCita.FechaHora;
-                updateCita.Status = newCita.Status;
+                CitaId = cita.CitaId,
+                FechaHora = cita.FechaHora,
+                Status = cita.Status,
+                UserId = cita.User.UserId,  // Use null conditional operator to avoid null reference exceptions
+                UserName = cita.User.Nombre,
+                TipoCitaId = cita.TipoCita.TipoCitaId,
+                TipoCitaNombre = cita.TipoCita.Nombre,
+                SucursalId = cita.Sucursal.SucursalId,
+                SucursalNombre = cita.Sucursal.Nombre
+            }).ToList();
+        }
 
-                _myContext.Citas.Update(updateCita);
-                _myContext.SaveChanges();
+
+
+
+        public void UpdateCita(CitaDTO citaDTO)
+        {
+            var cita = _myContext.Citas.FirstOrDefault(c => c.CitaId == citaDTO.CitaId);
+            if (cita == null)
+            {
+                throw new KeyNotFoundException("Cita not found.");
             }
 
-            return updateCita;
+            cita.FechaHora = citaDTO.FechaHora;
+            cita.Status = citaDTO.Status;
+            cita.UserId = citaDTO.UserId;
+            cita.TipoCitaId = citaDTO.TipoCitaId;
+            cita.SucursalId = citaDTO.SucursalId;
+
+            _myContext.Citas.Update(cita);
+            _myContext.SaveChanges();
+        }
+
+        private Cita GetCitaEntityById(int id)
+        {
+            return _myContext.Citas.FirstOrDefault(c => c.CitaId == id);
         }
 
         public void CancelarCita(int id)
         {
-            var cita = GetById(id);
+            var cita = GetCitaEntityById(id);
+            if (cita == null)
+            {
+                throw new KeyNotFoundException("Cita no encontrada.");
+            }
 
             if (cita.FechaHora < DateTime.Now.AddHours(24))
             {

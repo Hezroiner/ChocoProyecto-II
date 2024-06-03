@@ -53,7 +53,7 @@ namespace Proyecto_II.Services
             return user;
         }
 
-        public string Register(UserRegisterModel model)
+        public void Register(UserRegisterModel model)
         {
             if (model == null || string.IsNullOrEmpty(model.Nombre) || string.IsNullOrEmpty(model.Email) || string.IsNullOrEmpty(model.Password))
             {
@@ -76,42 +76,53 @@ namespace Proyecto_II.Services
 
             _myContext.Users.Add(user);
             _myContext.SaveChanges();
-
-            return GenerateJwtToken(user);
         }
+
 
         public string Login(UserLoginModel model)
         {
-            var user = _myContext.Users.FirstOrDefault(u => u.Email == model.Email);
+            var user = _myContext.Users
+                .Include(u => u.Role)
+                .FirstOrDefault(u => u.Email == model.Email);
+
             if (user == null || user.Password != model.Password)
             {
                 throw new Exception("Invalid credentials.");
             }
 
-            return GenerateJwtToken(user);
+            var token = GenerateJwtToken(user);
+            return token;
         }
+
 
         private string GenerateJwtToken(User user)
         {
             var tokenHandler = new JwtSecurityTokenHandler();
             var key = Encoding.ASCII.GetBytes(_jwtKey);
+            var issuedAt = DateTime.UtcNow;
+            var expires = issuedAt.AddDays(7);
 
-            var claims = new[]
+          
+            var claims = new List<Claim>
+    {
+        new Claim("Id", user.UserId.ToString()), 
+        new Claim("Nombre", user.Nombre),        
+        new Claim("Email", user.Email),          
+        new Claim("Telefono", user.Telefono),
+        new Claim("RoleId", user.Role.RoleId.ToString()),
+        new Claim(JwtRegisteredClaimNames.Iat, new DateTimeOffset(issuedAt).ToUnixTimeSeconds().ToString(), ClaimValueTypes.Integer64),
+    };
+
+            var tokenDescriptor = new SecurityTokenDescriptor
             {
-        new Claim(ClaimTypes.NameIdentifier, user.UserId.ToString()),
-        new Claim(ClaimTypes.Name, user.Nombre),
-        new Claim(ClaimTypes.Email, user.Email),
+                Subject = new ClaimsIdentity(claims),
+                Expires = expires,
+                NotBefore = issuedAt,
+                SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
             };
 
-            var tokenDescriptor = new JwtSecurityToken(
-                issuer: null,
-                audience: null,
-                claims: claims,
-                expires: DateTime.UtcNow.AddDays(7),
-                signingCredentials: new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
-            );
-
-            return tokenHandler.WriteToken(tokenDescriptor);
+            var token = tokenHandler.CreateToken(tokenDescriptor);
+            return tokenHandler.WriteToken(token);
         }
     }
 }
