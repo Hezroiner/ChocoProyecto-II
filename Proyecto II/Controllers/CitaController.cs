@@ -20,8 +20,8 @@ namespace Proyecto_II.Controllers
             _svCita = svCita;
         }
 
-        [Authorize(Roles = "USER")]
         [HttpPost]
+        [Authorize(Policy = "USER")]
         public ActionResult<CitaDTO> AddCita([FromBody] CitaDTO citaDTO)
         {
             if (citaDTO == null)
@@ -101,8 +101,8 @@ namespace Proyecto_II.Controllers
 
 
 
-        [Authorize(Roles = "USER")]
         [HttpPut("{id}")]
+        [Authorize(Policy = "USER")]
         public IActionResult Put(int id, CitaDTO citaDTO)
         {
             try
@@ -142,8 +142,8 @@ namespace Proyecto_II.Controllers
         }
 
 
-        [Authorize(Roles = "ADMIN")]
         [HttpDelete("{id}")]
+        [Authorize(Policy = "ADMIN")]
         public IActionResult Delete(int id)
         {
             try

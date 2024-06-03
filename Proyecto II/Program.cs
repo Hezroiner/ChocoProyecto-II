@@ -22,8 +22,10 @@ var key = Encoding.ASCII.GetBytes(builder.Configuration["Jwt:Key"]);
 
 builder.Services.AddAuthorization(options =>
 {
-    options.AddPolicy("AdminPolicy", policy => policy.RequireRole("ADMIN"));
-    options.AddPolicy("UserPolicy", policy => policy.RequireRole("USER"));
+    options.AddPolicy("ADMIN", policy =>
+        policy.RequireClaim("RoleId", "1")); // "1" representa el rol de ADMIN
+    options.AddPolicy("USER", policy =>
+        policy.RequireClaim("RoleId", "2")); // "2" representa el rol de USER
 });
 
 
@@ -44,11 +46,14 @@ builder.Services.AddControllers()
     .AddNewtonsoftJson(x =>
         x.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
 
+
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("Policy1", builder =>
+    options.AddPolicy("AllowAll", builder =>
     {
-        builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader();
+        builder.AllowAnyOrigin()
+               .AllowAnyMethod()
+               .AllowAnyHeader();
     });
 });
 
@@ -69,7 +74,7 @@ app.UseHttpsRedirection();
 app.UseAuthentication();
 app.UseAuthorization();
 
-
+app.UseCors("AllowAll");
 app.MapControllers();
 
 app.Run();

@@ -109,7 +109,7 @@ namespace Proyecto_II.Services
         new Claim("Nombre", user.Nombre),        
         new Claim("Email", user.Email),          
         new Claim("Telefono", user.Telefono),
-        new Claim(ClaimTypes.Role, user.Role.Nombre),
+        new Claim("RoleId", user.Role.RoleId.ToString()),
         new Claim(JwtRegisteredClaimNames.Iat, new DateTimeOffset(issuedAt).ToUnixTimeSeconds().ToString(), ClaimValueTypes.Integer64),
     };
 
