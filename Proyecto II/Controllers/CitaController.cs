@@ -22,21 +22,16 @@ namespace Proyecto_II.Controllers
 
         [HttpPost]
         [Authorize(Policy = "USER")]
-        public ActionResult<CitaDTO> AddCita([FromBody] CitaDTO citaDTO)
+        public async Task<ActionResult<CitaDTO>>PostCita(CitaPostDTO citaPostDTO)
         {
-            if (citaDTO == null)
-            {
-                return BadRequest("CitaDTO cannot be null");
-            }
-
             try
             {
-                var addCita = _svCita.AddCita(citaDTO);
-                return CreatedAtAction(nameof(AddCita), new { id = addCita.CitaId }, addCita);
+                var citaDTO = _svCita.AddCita(citaPostDTO);
+                return CreatedAtAction(nameof(Get), new { id = citaDTO.CitaId }, citaDTO);
             }
             catch (InvalidOperationException ex)
             {
-                return BadRequest(ex.Message);
+                return BadRequest(new { message = ex.Message });
             }
         }
 
@@ -103,43 +98,23 @@ namespace Proyecto_II.Controllers
 
         [HttpPut("{id}")]
         [Authorize(Policy = "USER")]
-        public IActionResult Put(int id, CitaDTO citaDTO)
+        public ActionResult<CitaDTO> PutCita(int id, CitaPostDTO citaPostDTO)
         {
             try
             {
-                // Verificar si la cita existe
-                var existingCita = _svCita.GetById(id);
-                if (existingCita == null)
-                {
-                    return NotFound("Cita not found.");
-                }
-
-                // Actualizar los datos de la cita existente con los datos proporcionados en el DTO
-                existingCita.FechaHora = citaDTO.FechaHora;
-                existingCita.Status = citaDTO.Status;
-                existingCita.UserId = citaDTO.UserId;
-                existingCita.TipoCitaId = citaDTO.TipoCitaId;
-                existingCita.SucursalId = citaDTO.SucursalId;
-
-                // Llamar al método en el servicio para actualizar la cita
-                _svCita.UpdateCita(existingCita);
-
-                // Retornar la cita actualizada
-                return Ok(existingCita);
-            }
-            catch (InvalidOperationException ex)
-            {
-                return BadRequest(new { message = ex.Message });
+                var citaDTO = _svCita.UpdateCita(id, citaPostDTO);
+                return Ok(citaDTO);
             }
             catch (KeyNotFoundException ex)
             {
                 return NotFound(new { message = ex.Message });
             }
-            catch (Exception ex)
+            catch (InvalidOperationException ex)
             {
-                return StatusCode(500, new { message = "An error occurred while processing your request.", details = ex.Message });
+                return BadRequest(new { message = ex.Message });
             }
         }
+
 
 
         [HttpDelete("{id}")]
