@@ -20,11 +20,11 @@ namespace Proyecto_II.Services
             _configuration = configuration;
         }
 
-        public CitaDTO AddCita(CitaDTO citaDTO)
+        public CitaDTO AddCita(CitaPostDTO citaPostDTO)
         {
             if (_myContext.Citas.Any(c =>
-                c.UserId == citaDTO.UserId &&
-                c.FechaHora.Date == citaDTO.FechaHora.Date &&
+                c.UserId == citaPostDTO.UserId &&
+                c.FechaHora.Date == citaPostDTO.FechaHora.Date &&
                 c.Status == "ACTIVA"))
             {
                 throw new InvalidOperationException("No se puede crear otra cita para el mismo paciente en el mismo día.");
@@ -33,11 +33,11 @@ namespace Proyecto_II.Services
             // Crear la nueva cita
             var cita = new Cita
             {
-                FechaHora = citaDTO.FechaHora,
+                FechaHora = citaPostDTO.FechaHora,
                 Status = "ACTIVA",
-                UserId = citaDTO.UserId,
-                TipoCitaId = citaDTO.TipoCitaId,
-                SucursalId = citaDTO.SucursalId
+                UserId = citaPostDTO.UserId,
+                TipoCitaId = citaPostDTO.TipoCitaId,
+                SucursalId = citaPostDTO.SucursalId
             };
 
             // Agregar la nueva cita a la base de datos
@@ -47,9 +47,16 @@ namespace Proyecto_II.Services
             // Llamar a la función para enviar el correo electrónico
             SendEmail(cita);
 
-            // Actualizar el DTO con la información de la cita creada
-            citaDTO.CitaId = cita.CitaId;
-            citaDTO.Status = cita.Status;
+            // Mapear la entidad Cita al DTO
+            var citaDTO = new CitaDTO
+            {
+                CitaId = cita.CitaId,
+                FechaHora = cita.FechaHora,
+                Status = cita.Status,
+                UserId = cita.UserId,
+                TipoCitaId = cita.TipoCitaId,
+                SucursalId = cita.SucursalId
+            };
 
             return citaDTO;
         }
@@ -174,23 +181,46 @@ namespace Proyecto_II.Services
 
 
 
-        public void UpdateCita(CitaDTO citaDTO)
+        public CitaDTO UpdateCita(int id, CitaPostDTO citaPostDto)
         {
-            var cita = _myContext.Citas.FirstOrDefault(c => c.CitaId == citaDTO.CitaId);
+            var cita = _myContext.Citas.FirstOrDefault(c => c.CitaId == id);
             if (cita == null)
             {
-                throw new KeyNotFoundException("Cita not found.");
+                throw new KeyNotFoundException("Cita no encontrada.");
             }
 
-            cita.FechaHora = citaDTO.FechaHora;
-            cita.Status = citaDTO.Status;
-            cita.UserId = citaDTO.UserId;
-            cita.TipoCitaId = citaDTO.TipoCitaId;
-            cita.SucursalId = citaDTO.SucursalId;
+            if (_myContext.Citas.Any(c =>
+                c.UserId == citaPostDto.UserId &&
+                c.FechaHora.Date == citaPostDto.FechaHora.Date &&
+                c.Status == "ACTIVA" &&
+                c.CitaId != id))
+            {
+                throw new InvalidOperationException("No se puede crear otra cita para el mismo paciente en el mismo día.");
+            }
+
+            // Actualizar los campos de la cita existente
+            cita.FechaHora = citaPostDto.FechaHora;
+            cita.UserId = citaPostDto.UserId;
+            cita.TipoCitaId = citaPostDto.TipoCitaId;
+            cita.SucursalId = citaPostDto.SucursalId;
 
             _myContext.Citas.Update(cita);
             _myContext.SaveChanges();
+
+            // Mapear la entidad Cita al DTO
+            var citaDTO = new CitaDTO
+            {
+                CitaId = cita.CitaId,
+                FechaHora = cita.FechaHora,
+                Status = cita.Status,
+                UserId = cita.UserId,
+                TipoCitaId = cita.TipoCitaId,
+                SucursalId = cita.SucursalId
+            };
+
+            return citaDTO;
         }
+
 
         private Cita GetCitaEntityById(int id)
         {
