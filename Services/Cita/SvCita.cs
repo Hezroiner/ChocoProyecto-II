@@ -235,7 +235,7 @@ namespace Proyecto_II.Services
                 throw new KeyNotFoundException("Cita no encontrada.");
             }
 
-            if (cita.FechaHora < DateTime.Now.AddHours(24))
+            if (cita.FechaHora > DateTime.Now.AddHours(24))
             {
                 throw new InvalidOperationException("Las citas se deben cancelar con mínimo 24 horas de antelación.");
             }
