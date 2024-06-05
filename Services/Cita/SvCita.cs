@@ -76,21 +76,62 @@ namespace Proyecto_II.Services
             var sucursal = _myContext.Sucursales.FirstOrDefault(s => s.SucursalId == cita.SucursalId);
 
             var emailFrom = _configuration["EmailSettings:From"];
+            var emailFromDisplayName = _configuration["EmailSettings:FromDisplayName"]; // Agrega esto en tu configuración
             var smtpServer = _configuration["EmailSettings:SmtpServer"];
             var smtpPort = int.Parse(_configuration["EmailSettings:Port"]);
             var smtpUsername = _configuration["EmailSettings:Username"];
             var smtpPassword = _configuration["EmailSettings:Password"];
             var emailTo = user.Email;
-            var subject = "Nueva cita creada";
+            var subject = "Confirmación de Cita";
 
             // Obtener el nombre del tipo de cita y la sucursal
             var tipoCitaNombre = tipoCita != null ? tipoCita.Nombre : "No especificado";
             var sucursalNombre = sucursal != null ? sucursal.Nombre : "No especificado";
 
-            var body = $"Se ha creado una nueva cita para usted. Detalles: Fecha: {cita.FechaHora}, Tipo: {tipoCitaNombre}, Sucursal: {sucursalNombre}.";
+            // Cuerpo del correo en formato HTML
+            var body = $@"
+    <html>
+    <head>
+        <style>
+            body {{ font-family: Arial, sans-serif; color: #333; }}
+            .container {{ max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid #ddd; border-radius: 10px; background-color: #f9f9f9; }}
+            .header {{ background-color: #007bff; color: #fff; padding: 10px; border-radius: 10px 10px 0 0; text-align: center; }}
+            .details {{ margin: 20px 0; }}
+            .footer {{ text-align: center; color: #999; font-size: 12px; }}
+        </style>
+    </head>
+    <body>
+        <div class='container'>
+            <div class='header'>
+                <h1>Confirmación de Cita</h1>
+            </div>
+            <div class='details'>
+                <p>Estimado/a {user.Nombre},</p>
+                <p>Se ha creado una nueva cita para usted. A continuación, los detalles:</p>
+                <ul>
+                    <li><strong>ID de su Cita:</strong> {cita.CitaId}</li>
+                    <li><strong>Fecha:</strong> {cita.FechaHora}</li>
+                    <li><strong>Tipo:</strong> {tipoCitaNombre}</li>
+                    <li><strong>Sucursal:</strong> {sucursalNombre}</li>
+                </ul>
+            </div>
+            <div class='footer'>
+                <p>Gracias por confiar en nosotros.</p>
+                <p>&copy; 2024 Su Compañía. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </body>
+    </html>";
 
-            using (var message = new MailMessage(emailFrom, emailTo, subject, body))
+            using (var message = new MailMessage())
             {
+                // Usa el nombre para mostrar junto con la dirección de correo electrónico
+                message.From = new MailAddress(emailFrom, emailFromDisplayName);
+                message.To.Add(emailTo);
+                message.Subject = subject;
+                message.Body = body;
+                message.IsBodyHtml = true;  // Indicamos que el cuerpo es HTML
+
                 using (var client = new SmtpClient(smtpServer, smtpPort))
                 {
                     client.UseDefaultCredentials = false;
@@ -256,7 +297,7 @@ namespace Proyecto_II.Services
                 throw new KeyNotFoundException("Cita no encontrada.");
             }
 
-            if (cita.FechaHora > DateTime.Now.AddHours(24))
+            if (cita.FechaHora < DateTime.Now.AddHours(24))
             {
                 throw new InvalidOperationException("Las citas se deben cancelar con mínimo 24 horas de antelación.");
             }
