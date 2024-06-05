@@ -136,6 +136,20 @@ namespace Proyecto_II.Controllers
             }
         }
 
+        [HttpGet("fecha")]
+        public ActionResult<List<CitaDTO>> GetByFechaCita([FromQuery] DateTime fecha)
+        {
+            try
+            {
+                var citas = _svCita.GetByFechaCita(fecha);
+                return Ok(citas);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, ex.Message);
+            }
+        }
+
         // Cancelar Cita
         [HttpPatch("cancelar/{id}")]
         public IActionResult CancelarCita(int id)

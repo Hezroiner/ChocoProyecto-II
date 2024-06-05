@@ -153,6 +153,27 @@ namespace Proyecto_II.Services
             };
         }
 
+        public List<CitaDTO> GetByFechaCita(DateTime fecha)
+        {
+            var citas = _myContext.Citas
+                .Where(c => c.FechaHora.Date == fecha.Date)
+                .Select(c => new CitaDTO
+                {
+                    CitaId = c.CitaId,
+                    FechaHora = c.FechaHora,
+                    Status = c.Status,
+                    UserId = c.UserId,
+                    UserName = c.User.Nombre,
+                    TipoCitaId = c.TipoCitaId,
+                    TipoCitaNombre = c.TipoCita.Nombre,
+                    SucursalId = c.SucursalId,
+                    SucursalNombre = c.Sucursal.Nombre
+                })
+                .ToList();
+
+            return citas;
+        }
+
         public List<CitaDTO> GetCitaByUserId(int userId)
         {
             var citas = _myContext.Citas
