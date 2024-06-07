@@ -20,6 +20,7 @@ namespace Proyecto_II.Controllers
             _svCita = svCita;
         }
 
+        //Post
         [HttpPost]
         [Authorize(Policy = "USER")]
         public async Task<ActionResult<CitaDTO>>PostCita(CitaPostDTO citaPostDTO)
@@ -46,7 +47,7 @@ namespace Proyecto_II.Controllers
             }
             catch (Exception ex)
             {
-                return StatusCode(500, new { message = "An error occurred while processing your request.", details = ex.Message });
+                return StatusCode(500, new { message = "Ha ocurrido un error interno en el servidor.", details = ex.Message });
             }
         }
 
@@ -70,11 +71,11 @@ namespace Proyecto_II.Controllers
             }
             catch (Exception ex)
             {
-                return StatusCode(500, new { message = "An error occurred while processing your request.", details = ex.Message });
+                return StatusCode(500, new { message = "Ha ocurrido un error interno en el servidor.", details = ex.Message });
             }
         }
 
-
+        //GetbyIdUser
         [HttpGet("user/{userId}")]
         public IActionResult GetCitasByUserId(int userId)
         {
@@ -89,13 +90,13 @@ namespace Proyecto_II.Controllers
             }
             catch (Exception ex)
             {
-                return StatusCode(500, new { message = "An error occurred while processing your request.", details = ex.Message });
+                return StatusCode(500, new { message = "Ha ocurrido un error interno en el servidor.", details = ex.Message });
             }
         }
 
 
 
-
+        //Put
         [HttpPut("{id}")]
         [Authorize(Policy = "USER")]
         public ActionResult<CitaDTO> PutCita(int id, CitaPostDTO citaPostDTO)
@@ -132,10 +133,10 @@ namespace Proyecto_II.Controllers
             }
             catch (Exception ex)
             {
-                return StatusCode(500, new { message = "An error occurred while processing your request.", details = ex.Message });
+                return StatusCode(500, new { message = "Ha ocurrido un error interno en el servidor.", details = ex.Message });
             }
         }
-
+        //Get Fecha
         [HttpGet("fecha")]
         public ActionResult<List<CitaDTO>> GetByFechaCita([FromQuery] DateTime fecha)
         {
@@ -150,7 +151,7 @@ namespace Proyecto_II.Controllers
             }
         }
 
-        // Cancelar Cita
+        //Patch
         [HttpPatch("cancelar/{id}")]
         public IActionResult CancelarCita(int id)
         {
@@ -169,7 +170,7 @@ namespace Proyecto_II.Controllers
             }
             catch (Exception ex)
             {
-                // Manejo general de excepciones
+                
                 return StatusCode(500, new { message = "Ha ocurrido un error interno en el servidor.", details = ex.Message });
             }
         }

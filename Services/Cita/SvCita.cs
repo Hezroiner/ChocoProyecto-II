@@ -30,7 +30,6 @@ namespace Proyecto_II.Services
                 throw new InvalidOperationException("No se puede crear otra cita para el mismo paciente en el mismo día.");
             }
 
-            // Crear la nueva cita
             var cita = new Cita
             {
                 FechaHora = citaPostDTO.FechaHora,
@@ -40,14 +39,11 @@ namespace Proyecto_II.Services
                 SucursalId = citaPostDTO.SucursalId
             };
 
-            // Agregar la nueva cita a la base de datos
             _myContext.Citas.Add(cita);
             _myContext.SaveChanges();
 
-            // Llamar a la función para enviar el correo electrónico
             SendEmail(cita);
 
-            // Mapear la entidad Cita al DTO
             var citaDTO = new CitaDTO
             {
                 CitaId = cita.CitaId,
@@ -65,18 +61,12 @@ namespace Proyecto_II.Services
         private void SendEmail(Cita cita)
         {
             var user = _myContext.Users.FirstOrDefault(u => u.UserId == cita.UserId);
-            if (user == null)
-            {
-                // Manejar el caso cuando el usuario no está encontrado
-                return;
-            }
 
-            // Cargar el tipo de cita y la sucursal desde la base de datos
             var tipoCita = _myContext.TiposCita.FirstOrDefault(tc => tc.TipoCitaId == cita.TipoCitaId);
             var sucursal = _myContext.Sucursales.FirstOrDefault(s => s.SucursalId == cita.SucursalId);
 
             var emailFrom = _configuration["EmailSettings:From"];
-            var emailFromDisplayName = _configuration["EmailSettings:FromDisplayName"]; // Agrega esto en tu configuración
+            var emailFromDisplayName = _configuration["EmailSettings:FromDisplayName"]; 
             var smtpServer = _configuration["EmailSettings:SmtpServer"];
             var smtpPort = int.Parse(_configuration["EmailSettings:Port"]);
             var smtpUsername = _configuration["EmailSettings:Username"];
@@ -84,11 +74,11 @@ namespace Proyecto_II.Services
             var emailTo = user.Email;
             var subject = "Confirmación de Cita";
 
-            // Obtener el nombre del tipo de cita y la sucursal
+            
             var tipoCitaNombre = tipoCita != null ? tipoCita.Nombre : "No especificado";
             var sucursalNombre = sucursal != null ? sucursal.Nombre : "No especificado";
 
-            // Cuerpo del correo en formato HTML
+            
             var body = $@"
     <html>
     <head>
@@ -117,7 +107,7 @@ namespace Proyecto_II.Services
             </div>
             <div class='footer'>
                 <p>Gracias por confiar en nosotros.</p>
-                <p>&copy; 2024 Su Compañía. Todos los derechos reservados.</p>
+                <p>&copy; 2024 Choco-Clinica. Todos los derechos reservados.</p>
             </div>
         </div>
     </body>
@@ -125,12 +115,12 @@ namespace Proyecto_II.Services
 
             using (var message = new MailMessage())
             {
-                // Usa el nombre para mostrar junto con la dirección de correo electrónico
+               
                 message.From = new MailAddress(emailFrom, emailFromDisplayName);
                 message.To.Add(emailTo);
                 message.Subject = subject;
                 message.Body = body;
-                message.IsBodyHtml = true;  // Indicamos que el cuerpo es HTML
+                message.IsBodyHtml = true;  
 
                 using (var client = new SmtpClient(smtpServer, smtpPort))
                 {
@@ -162,11 +152,11 @@ namespace Proyecto_II.Services
                 FechaHora = c.FechaHora,
                 Status = c.Status,
                 UserId = c.UserId,
-                UserName = c.User.Nombre, // Assuming 'Nombre' is a property in 'User'
+                UserName = c.User.Nombre, 
                 TipoCitaId = c.TipoCitaId,
-                TipoCitaNombre = c.TipoCita.Nombre, // Assuming 'Nombre' is a property in 'TipoCita'
+                TipoCitaNombre = c.TipoCita.Nombre, 
                 SucursalId = c.SucursalId,
-                SucursalNombre = c.Sucursal.Nombre // Assuming 'Nombre' is a property in 'Sucursal'
+                SucursalNombre = c.Sucursal.Nombre 
             }).ToList();
         }
 
@@ -231,7 +221,7 @@ namespace Proyecto_II.Services
                 CitaId = cita.CitaId,
                 FechaHora = cita.FechaHora,
                 Status = cita.Status,
-                UserId = cita.User.UserId,  // Use null conditional operator to avoid null reference exceptions
+                UserId = cita.User.UserId, 
                 UserName = cita.User.Nombre,
                 TipoCitaId = cita.TipoCita.TipoCitaId,
                 TipoCitaNombre = cita.TipoCita.Nombre,
@@ -260,7 +250,7 @@ namespace Proyecto_II.Services
                 throw new InvalidOperationException("No se puede crear otra cita para el mismo paciente en el mismo día.");
             }
 
-            // Actualizar los campos de la cita existente
+            
             cita.FechaHora = citaPostDto.FechaHora;
             cita.UserId = citaPostDto.UserId;
             cita.TipoCitaId = citaPostDto.TipoCitaId;
@@ -269,7 +259,7 @@ namespace Proyecto_II.Services
             _myContext.Citas.Update(cita);
             _myContext.SaveChanges();
 
-            // Mapear la entidad Cita al DTO
+           
             var citaDTO = new CitaDTO
             {
                 CitaId = cita.CitaId,

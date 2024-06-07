@@ -31,7 +31,7 @@ namespace Proyecto_II.Controllers
                 {
                     SucursalId = sucursal.SucursalId,
                     Nombre = sucursal.Nombre
-                    // Puedes mapear otras propiedades aquí si es necesario
+                    
                 });
             }
 
@@ -48,7 +48,7 @@ namespace Proyecto_II.Controllers
             {
                 SucursalId = sucursal.SucursalId,
                 Nombre = sucursal.Nombre
-                // Puedes mapear otras propiedades aquí si es necesario
+                
             };
         }
     }

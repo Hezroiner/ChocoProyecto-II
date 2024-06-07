@@ -27,12 +27,12 @@ namespace Proyecto_II.Services
         public Sucursal GetById(int id)
         {
             var sucursal = _myContext.Sucursales
-                .Include(sucursal => sucursal.Citas)  // Incluye la relación con Citas
+                .Include(sucursal => sucursal.Citas)
                 .FirstOrDefault(sucursal => sucursal.SucursalId == id);
 
             if (sucursal == null)
             {
-                throw new KeyNotFoundException("Sucursal not found");
+                throw new KeyNotFoundException("Sucursal no encontrado");
             }
 
             return sucursal;
