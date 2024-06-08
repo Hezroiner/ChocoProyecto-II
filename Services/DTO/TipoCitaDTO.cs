@@ -10,6 +10,6 @@ namespace Services.DTO
     {
         public int TipoCitaId { get; set; }
         public string Nombre { get; set; }
-        // Puedes agregar otras propiedades aquí si es necesario
+        
     }
 }

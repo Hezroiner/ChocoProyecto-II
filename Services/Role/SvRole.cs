@@ -19,19 +19,19 @@ namespace Proyecto_II.Services
         public List<Role> GetAll()
         {
             return _myContext.Roles
-                 .Include(role => role.Users) // Relacion de role y users
+                 .Include(role => role.Users)
                 .ToList();
         }
 
         public Role GetById(int id)
         {
             var role = _myContext.Roles
-                .Include(role => role.Users) // Relacion de role y users
+                .Include(role => role.Users)
                 .FirstOrDefault(role => role.RoleId == id);
 
             if (role == null)
             {
-                throw new KeyNotFoundException("Role not found");
+                throw new KeyNotFoundException("Role no encontrado");
             }
 
             return role;

@@ -35,7 +35,7 @@ namespace Proyecto_II.Controllers
                         Nombre = user.Nombre,
                         Email = user.Email,
                         Telefono = user.Telefono
-                        // Puedes mapear otras propiedades aquí si es necesario
+                        
                     });
                 }
 
@@ -43,7 +43,7 @@ namespace Proyecto_II.Controllers
             }
             catch (Exception ex)
             {
-                return StatusCode(500, new { message = "An error occurred while processing your request.", details = ex.Message });
+                return StatusCode(500, new { message = "Ha ocurrido un error interno en el servidor.", details = ex.Message });
             }
         }
 
@@ -61,18 +61,18 @@ namespace Proyecto_II.Controllers
                     Nombre = user.Nombre,
                     Email = user.Email,
                     Telefono = user.Telefono
-                    // Puedes mapear otras propiedades aquí si es necesario
+                    
                 };
 
-                return Ok(userDTO);  // Retorna el usuario si es encontrado
+                return Ok(userDTO);  
             }
             catch (KeyNotFoundException ex)
             {
-                return NotFound(new { message = ex.Message }); // Retorna un 404 Not Found si no se encuentra el usuario
+                return NotFound(new { message = ex.Message }); 
             }
             catch (Exception ex)
             {
-                return StatusCode(500, new { message = "An error occurred while processing your request.", details = ex.Message });
+                return StatusCode(500, new { message = "Ha ocurrido un error interno en el servidor.", details = ex.Message });
             }
         }
 
@@ -81,8 +81,8 @@ namespace Proyecto_II.Controllers
         {
             try
             {
-                _svUser.Register(model); // Llamando al método Register del servicio
-                return Ok("Usuario registrado exitosamente."); // O cualquier otro mensaje de éxito
+                _svUser.Register(model);
+                return Ok("Usuario registrado exitosamente."); 
             }
             catch (ArgumentException ex)
             {
@@ -90,7 +90,7 @@ namespace Proyecto_II.Controllers
             }
             catch (Exception ex)
             {
-                return StatusCode(500, new { message = "An error occurred while processing your request.", details = ex.Message });
+                return StatusCode(500, new { message = "Ha ocurrido un error interno en el servidor.", details = ex.Message });
             }
         }
 
@@ -101,7 +101,7 @@ namespace Proyecto_II.Controllers
             try
             {
                 var token = _svUser.Login(model);
-                return Content(token); // Ensure it returns as plain text
+                return Content(token); 
             }
             catch (Exception ex)
             {

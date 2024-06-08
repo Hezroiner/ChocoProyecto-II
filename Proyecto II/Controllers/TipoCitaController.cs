@@ -30,7 +30,7 @@ namespace Proyecto_II.Controllers
                 {
                     TipoCitaId = tipoCita.TipoCitaId,
                     Nombre = tipoCita.Nombre
-                    // Puedes mapear otras propiedades aquí si es necesario
+                   
                 });
             }
 
@@ -47,7 +47,7 @@ namespace Proyecto_II.Controllers
             {
                 TipoCitaId = tipoCita.TipoCitaId,
                 Nombre = tipoCita.Nombre
-                // Puedes mapear otras propiedades aquí si es necesario
+                
             };
         }
     }
