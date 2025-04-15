@@ -80,7 +80,8 @@
               "RelativeToolTip": "appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-05-27T00:37:23.896Z"
+              "WhenOpened": "2024-05-27T00:37:23.896Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -90,9 +91,10 @@
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Documentos\\Programacion\\Lenguajes\\C#\\Proyect II\\ChocoProyecto-II\\Proyecto II\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABMAAAA2AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-26T13:31:55.444Z"
+              "WhenOpened": "2024-05-26T13:31:55.444Z",
+              "EditorCaption": ""
             }
           ]
         }
