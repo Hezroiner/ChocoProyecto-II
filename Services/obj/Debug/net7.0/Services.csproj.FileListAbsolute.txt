@@ -58,9 +58,10 @@ C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Services\obj
 C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Services\obj\Debug\net7.0\Services.AssemblyInfoInputs.cache
 C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Services\obj\Debug\net7.0\Services.AssemblyInfo.cs
 C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Services\obj\Debug\net7.0\Services.csproj.CoreCompileInputs.cache
-C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Services\obj\Debug\net7.0\Services.csproj.CopyComplete
 C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Services\obj\Debug\net7.0\Services.dll
 C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Services\obj\Debug\net7.0\refint\Services.dll
 C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Services\obj\Debug\net7.0\Services.pdb
 C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Services\obj\Debug\net7.0\Services.genruntimeconfig.cache
 C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Services\obj\Debug\net7.0\ref\Services.dll
+C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Services\obj\Debug\net7.0\Services.sourcelink.json
+C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Services\obj\Debug\net7.0\Services.csproj.Up2Date
