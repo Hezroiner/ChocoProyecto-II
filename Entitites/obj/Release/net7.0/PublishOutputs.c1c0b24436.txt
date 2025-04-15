@@ -1,0 +1,3 @@
+C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Proyecto II\out\Entitites.dll
+C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Proyecto II\out\Entitites.deps.json
+C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Proyecto II\out\Entitites.pdb
