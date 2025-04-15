@@ -2,28 +2,34 @@
 FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
 WORKDIR /src
 
-# Copiamos el archivo de proyecto y restauramos las dependencias
-COPY ["Proyecto II.csproj", "./"]
-RUN dotnet restore "./Proyecto II.csproj"
+# Copia el archivo del proyecto desde la carpeta "Proyecto II" al contenedor
+COPY ["Proyecto II/Proyecto II.csproj", "Proyecto II/"]
 
-# Copiamos el resto del código fuente
+# Copia todos los demás archivos (incluyendo la solución, otros proyectos, etc.)
 COPY . .
 
-# Publicamos la aplicación en modo Release y generamos la carpeta de salida
+# Establece el directorio de trabajo dentro del proyecto
+WORKDIR "/src/Proyecto II"
+
+# Restaura las dependencias del proyecto
+RUN dotnet restore "Proyecto II.csproj"
+
+# Publica la aplicación en modo Release y genera la carpeta de salida
 RUN dotnet publish "Proyecto II.csproj" -c Release -o /app/publish
 
 # Etapa 2: Runtime
 FROM mcr.microsoft.com/dotnet/aspnet:7.0 AS runtime
 WORKDIR /app
 
-# Copiamos los archivos publicados desde la etapa de build
+# Copia la publicación desde la etapa anterior
 COPY --from=build /app/publish .
 
-# Configuramos la variable de entorno para que la aplicación escuche en el puerto 80
+# Configura la URL para que la aplicación escuche en el puerto 80
 ENV ASPNETCORE_URLS=http://+:80
 
-# Exponemos el puerto 80
+# Expone el puerto 80
 EXPOSE 80
 
-# Configuramos el punto de entrada para ejecutar la aplicación
+# Establece el comando de entrada para ejecutar la aplicación.
+# Nota: Asegúrate de que el nombre del ensamblado publicado sea "Proyecto II.dll"
 ENTRYPOINT ["dotnet", "Proyecto II.dll"]
