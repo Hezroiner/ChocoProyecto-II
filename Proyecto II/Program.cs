@@ -16,7 +16,11 @@ builder.Services.AddScoped<IUser, SvUser>();
 builder.Services.AddScoped<IRole, SvRole>();
 
 builder.Services.AddDbContext<MyContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+    options.UseMySql(
+        builder.Configuration.GetConnectionString("DefaultConnection"),
+        new MySqlServerVersion(new Version(8, 0, 25))
+)
+);
 
 var key = Encoding.ASCII.GetBytes(builder.Configuration["Jwt:Key"]);
 
@@ -42,9 +46,9 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
         };
     });
 
-builder.Services.AddControllers()
-    .AddNewtonsoftJson(x =>
-        x.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
+    builder.Services.AddControllers()
+        .AddNewtonsoftJson(x =>
+            x.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
 
 
 builder.Services.AddCors(options =>

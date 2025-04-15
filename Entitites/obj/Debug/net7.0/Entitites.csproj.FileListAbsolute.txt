@@ -27,7 +27,6 @@ C:\Users\ozsan\OneDrive\Escritorio\V Semestre\Progra IV\Project_2\Entitites\obj\
 C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Entitites\bin\Debug\net7.0\Entitites.deps.json
 C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Entitites\bin\Debug\net7.0\Entitites.dll
 C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Entitites\bin\Debug\net7.0\Entitites.pdb
-C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Entitites\obj\Debug\net7.0\Entitites.csproj.AssemblyReference.cache
 C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Entitites\obj\Debug\net7.0\Entitites.GeneratedMSBuildEditorConfig.editorconfig
 C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Entitites\obj\Debug\net7.0\Entitites.AssemblyInfoInputs.cache
 C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Entitites\obj\Debug\net7.0\Entitites.AssemblyInfo.cs
@@ -36,3 +35,4 @@ C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Entitites\ob
 C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Entitites\obj\Debug\net7.0\refint\Entitites.dll
 C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Entitites\obj\Debug\net7.0\Entitites.pdb
 C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Entitites\obj\Debug\net7.0\ref\Entitites.dll
+C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Entitites\obj\Debug\net7.0\Entitites.sourcelink.json

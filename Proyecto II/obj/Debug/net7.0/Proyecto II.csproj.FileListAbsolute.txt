@@ -53,7 +53,6 @@ C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Proyecto II\
 C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Proyecto II\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
 C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Proyecto II\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
 C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Proyecto II\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
-C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Proyecto II\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
 C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Proyecto II\bin\Debug\net7.0\Mono.TextTemplating.dll
 C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Proyecto II\bin\Debug\net7.0\Newtonsoft.Json.dll
 C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Proyecto II\bin\Debug\net7.0\Newtonsoft.Json.Bson.dll
@@ -76,7 +75,6 @@ C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Proyecto II\
 C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Proyecto II\bin\Debug\net7.0\System.Composition.Runtime.dll
 C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Proyecto II\bin\Debug\net7.0\System.Composition.TypedParts.dll
 C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Proyecto II\bin\Debug\net7.0\System.Configuration.ConfigurationManager.dll
-C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Proyecto II\bin\Debug\net7.0\System.Drawing.Common.dll
 C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Proyecto II\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
 C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Proyecto II\bin\Debug\net7.0\System.Memory.Data.dll
 C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Proyecto II\bin\Debug\net7.0\System.Reflection.MetadataLoadContext.dll
@@ -229,12 +227,7 @@ C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Proyecto II\
 C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Proyecto II\bin\Debug\net7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
 C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Proyecto II\bin\Debug\net7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
 C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Proyecto II\bin\Debug\net7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
-C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Proyecto II\bin\Debug\net7.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
-C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Proyecto II\bin\Debug\net7.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
-C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Proyecto II\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
 C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Proyecto II\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
-C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Proyecto II\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
-C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Proyecto II\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Proyecto II\bin\Debug\net7.0\Entitites.dll
 C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Proyecto II\bin\Debug\net7.0\Services.dll
 C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Proyecto II\bin\Debug\net7.0\Entitites.pdb
@@ -256,9 +249,34 @@ C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Proyecto II\
 C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Proyecto II\obj\Debug\net7.0\staticwebassets.build.json
 C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Proyecto II\obj\Debug\net7.0\staticwebassets.development.json
 C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Proyecto II\obj\Debug\net7.0\scopedcss\bundle\Proyecto II.styles.css
-C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Proyecto II\obj\Debug\net7.0\Proyecto II.csproj.CopyComplete
 C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Proyecto II\obj\Debug\net7.0\Proyecto II.dll
 C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Proyecto II\obj\Debug\net7.0\refint\Proyecto II.dll
 C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Proyecto II\obj\Debug\net7.0\Proyecto II.pdb
 C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Proyecto II\obj\Debug\net7.0\Proyecto II.genruntimeconfig.cache
 C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Proyecto II\obj\Debug\net7.0\ref\Proyecto II.dll
+C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Proyecto II\obj\Debug\net7.0\Proyecto II.sourcelink.json
+C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Proyecto II\obj\Debug\net7.0\Proyecto.2EEC158D.Up2Date
+C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Proyecto II\bin\Debug\net7.0\BouncyCastle.Cryptography.dll
+C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Proyecto II\bin\Debug\net7.0\Google.Protobuf.dll
+C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Proyecto II\bin\Debug\net7.0\K4os.Compression.LZ4.dll
+C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Proyecto II\bin\Debug\net7.0\K4os.Compression.LZ4.Streams.dll
+C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Proyecto II\bin\Debug\net7.0\K4os.Hash.xxHash.dll
+C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Proyecto II\bin\Debug\net7.0\MySql.Data.dll
+C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Proyecto II\bin\Debug\net7.0\MySqlConnector.dll
+C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Proyecto II\bin\Debug\net7.0\Pomelo.EntityFrameworkCore.MySql.dll
+C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Proyecto II\bin\Debug\net7.0\System.Diagnostics.DiagnosticSource.dll
+C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Proyecto II\bin\Debug\net7.0\System.Diagnostics.EventLog.dll
+C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Proyecto II\bin\Debug\net7.0\System.IO.Pipelines.dll
+C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Proyecto II\bin\Debug\net7.0\System.Text.Encoding.CodePages.dll
+C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Proyecto II\bin\Debug\net7.0\System.Text.Encodings.Web.dll
+C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Proyecto II\bin\Debug\net7.0\System.Text.Json.dll
+C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Proyecto II\bin\Debug\net7.0\ZstdSharp.dll
+C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Proyecto II\bin\Debug\net7.0\runtimes\win-x64\native\comerr64.dll
+C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Proyecto II\bin\Debug\net7.0\runtimes\win-x64\native\gssapi64.dll
+C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Proyecto II\bin\Debug\net7.0\runtimes\win-x64\native\k5sprt64.dll
+C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Proyecto II\bin\Debug\net7.0\runtimes\win-x64\native\krb5_64.dll
+C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Proyecto II\bin\Debug\net7.0\runtimes\win-x64\native\krbcc64.dll
+C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Proyecto II\bin\Debug\net7.0\runtimes\win\lib\net7.0\System.Diagnostics.EventLog.Messages.dll
+C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Proyecto II\bin\Debug\net7.0\runtimes\win\lib\net7.0\System.Diagnostics.EventLog.dll
+C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Proyecto II\bin\Debug\net7.0\runtimes\win\lib\net7.0\System.Text.Encoding.CodePages.dll
+C:\Documentos\Programacion\Lenguajes\C#\Proyect II\ChocoProyecto-II\Proyecto II\bin\Debug\net7.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll

@@ -1,24 +1,20 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\ozsan\\OneDrive\\Escritorio\\V Semestre\\Progra IV\\Project_2\\Proyecto II\\",
+  "WorkspaceRootPath": "C:\\Documentos\\Programacion\\Lenguajes\\C#\\Proyect II\\ChocoProyecto-II\\Proyecto II\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A9878358-71CB-46D7-84A0-8964F787872C}|Proyecto II.csproj|c:\\users\\ozsan\\onedrive\\escritorio\\v semestre\\progra iv\\project_2\\proyecto ii\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A9878358-71CB-46D7-84A0-8964F787872C}|Proyecto II.csproj|solutionrelative:controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A9878358-71CB-46D7-84A0-8964F787872C}|Proyecto II.csproj|c:\\users\\ozsan\\onedrive\\escritorio\\v semestre\\progra iv\\project_2\\proyecto ii\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A9878358-71CB-46D7-84A0-8964F787872C}|Proyecto II.csproj|c:\\documentos\\programacion\\lenguajes\\c#\\proyect ii\\chocoproyecto-ii\\proyecto ii\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A9878358-71CB-46D7-84A0-8964F787872C}|Proyecto II.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{25402358-273D-4F84-9F5E-EFC22AC5BE13}|..\\Services\\Services.csproj|c:\\users\\ozsan\\onedrive\\escritorio\\v semestre\\progra iv\\project_2\\services\\user\\svuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A9878358-71CB-46D7-84A0-8964F787872C}|Proyecto II.csproj|c:\\users\\ozsan\\onedrive\\escritorio\\v semestre\\progra iv\\project_2\\proyecto ii\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{A9878358-71CB-46D7-84A0-8964F787872C}|Proyecto II.csproj|c:\\documentos\\programacion\\lenguajes\\c#\\proyect ii\\chocoproyecto-ii\\proyecto ii\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{A9878358-71CB-46D7-84A0-8964F787872C}|Proyecto II.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{25402358-273D-4F84-9F5E-EFC22AC5BE13}|..\\Services\\Services.csproj|c:\\users\\ozsan\\onedrive\\escritorio\\v semestre\\progra iv\\project_2\\services\\cita\\svcita.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0B58BD4B-0D3B-4DEA-8474-6AE680F0C495}|..\\Entitites\\Entitites.csproj|c:\\documentos\\programacion\\lenguajes\\c#\\proyect ii\\chocoproyecto-ii\\entitites\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B58BD4B-0D3B-4DEA-8474-6AE680F0C495}|..\\Entitites\\Entitites.csproj|c:\\documentos\\programacion\\lenguajes\\c#\\proyect ii\\chocoproyecto-ii\\entitites\\sucursal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -28,21 +24,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 8,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\ozsan\\OneDrive\\Escritorio\\V Semestre\\Progra IV\\Project_2\\Proyecto II\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Users\\ozsan\\OneDrive\\Escritorio\\V Semestre\\Progra IV\\Project_2\\Proyecto II\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-05-27T00:37:23.896Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
@@ -57,60 +40,60 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "SvCita.cs",
-              "DocumentMoniker": "C:\\Users\\ozsan\\OneDrive\\Escritorio\\V Semestre\\Progra IV\\Project_2\\Services\\Cita\\SvCita.cs",
-              "RelativeDocumentMoniker": "..\\Services\\Cita\\SvCita.cs",
-              "ToolTip": "C:\\Users\\ozsan\\OneDrive\\Escritorio\\V Semestre\\Progra IV\\Project_2\\Services\\Cita\\SvCita.cs",
-              "RelativeToolTip": "..\\Services\\Cita\\SvCita.cs",
-              "ViewState": "AQIAAC8AAAAAAAAAAAAIwF0AAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-27T00:36:35.032Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "C:\\Users\\ozsan\\OneDrive\\Escritorio\\V Semestre\\Progra IV\\Project_2\\Proyecto II\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "Controllers\\UserController.cs",
-              "ToolTip": "C:\\Users\\ozsan\\OneDrive\\Escritorio\\V Semestre\\Progra IV\\Project_2\\Proyecto II\\Controllers\\UserController.cs",
-              "RelativeToolTip": "Controllers\\UserController.cs",
-              "ViewState": "AQIAADgAAAAAAAAAAAAwwFQAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-26T13:35:57.614Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "SvUser.cs",
-              "DocumentMoniker": "C:\\Users\\ozsan\\OneDrive\\Escritorio\\V Semestre\\Progra IV\\Project_2\\Services\\User\\SvUser.cs",
-              "RelativeDocumentMoniker": "..\\Services\\User\\SvUser.cs",
-              "ToolTip": "C:\\Users\\ozsan\\OneDrive\\Escritorio\\V Semestre\\Progra IV\\Project_2\\Services\\User\\SvUser.cs*",
-              "RelativeToolTip": "..\\Services\\User\\SvUser.cs*",
-              "ViewState": "AQIAAGAAAAAAAAAAAAAvwBAAAAAoAAAA",
+              "Title": "Role.cs",
+              "DocumentMoniker": "C:\\Documentos\\Programacion\\Lenguajes\\C#\\Proyect II\\ChocoProyecto-II\\Entitites\\Role.cs",
+              "RelativeDocumentMoniker": "..\\Entitites\\Role.cs",
+              "ToolTip": "C:\\Documentos\\Programacion\\Lenguajes\\C#\\Proyect II\\ChocoProyecto-II\\Entitites\\Role.cs",
+              "RelativeToolTip": "..\\Entitites\\Role.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-26T13:34:12.078Z",
+              "WhenOpened": "2025-04-15T16:27:25.206Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Sucursal.cs",
+              "DocumentMoniker": "C:\\Documentos\\Programacion\\Lenguajes\\C#\\Proyect II\\ChocoProyecto-II\\Entitites\\Sucursal.cs",
+              "RelativeDocumentMoniker": "..\\Entitites\\Sucursal.cs",
+              "ToolTip": "C:\\Documentos\\Programacion\\Lenguajes\\C#\\Proyect II\\ChocoProyecto-II\\Entitites\\Sucursal.cs",
+              "RelativeToolTip": "..\\Entitites\\Sucursal.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-15T01:47:33.715Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Documentos\\Programacion\\Lenguajes\\C#\\Proyect II\\ChocoProyecto-II\\Proyecto II\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Documentos\\Programacion\\Lenguajes\\C#\\Proyect II\\ChocoProyecto-II\\Proyecto II\\appsettings.json*",
+              "RelativeToolTip": "appsettings.json*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-05-27T00:37:23.896Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\ozsan\\OneDrive\\Escritorio\\V Semestre\\Progra IV\\Project_2\\Proyecto II\\Program.cs",
+              "DocumentMoniker": "C:\\Documentos\\Programacion\\Lenguajes\\C#\\Proyect II\\ChocoProyecto-II\\Proyecto II\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\ozsan\\OneDrive\\Escritorio\\V Semestre\\Progra IV\\Project_2\\Proyecto II\\Program.cs*",
+              "ToolTip": "C:\\Documentos\\Programacion\\Lenguajes\\C#\\Proyect II\\ChocoProyecto-II\\Proyecto II\\Program.cs*",
               "RelativeToolTip": "Program.cs*",
-              "ViewState": "AQIAADMAAAAAAAAAAAAAAD8AAAAKAAAA",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABMAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-26T13:31:55.444Z",
               "EditorCaption": ""
