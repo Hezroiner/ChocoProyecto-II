@@ -11,7 +11,7 @@ using Services.MyDbContext;
 namespace Services.Migrations
 {
     [DbContext(typeof(MyContext))]
-    [Migration("20250416025522_Migrations")]
+    [Migration("20250416033152_Migrations")]
     partial class Migrations
     {
         /// <inheritdoc />
