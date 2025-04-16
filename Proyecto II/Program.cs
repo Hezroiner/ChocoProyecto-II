@@ -80,5 +80,7 @@ app.UseAuthorization();
 
 app.UseCors("AllowAll");
 app.MapControllers();
-
+var port = Environment.GetEnvironmentVariable("PORT") ?? "10000";
+app.Urls.Clear();
+app.Urls.Add($"http://0.0.0.0:{port}");
 app.Run();
