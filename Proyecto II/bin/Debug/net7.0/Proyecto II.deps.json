@@ -2774,7 +2774,8 @@
         "dependencies": {
           "Entitites": "1.0.0",
           "Microsoft.EntityFrameworkCore": "7.0.19",
-          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.19"
+          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.19",
+          "Pomelo.EntityFrameworkCore.MySql": "7.0.0"
         },
         "runtime": {
           "Services.dll": {
